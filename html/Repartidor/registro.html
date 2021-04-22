@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
     <meta charset="utf-8">
@@ -17,7 +18,7 @@
             rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="../bootstrap/css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="../bootstrap/css/sb-admin-2.css" rel="stylesheet">
 
 
     <link href="estilosAdminRest.css" rel="stylesheet" type="text/css">
@@ -25,81 +26,29 @@
     <link href="../bootstrap/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 
 </head>
-<body>
 
-<div>
-    <!-- Sidebar -->
-    <ul class="navbar-nav  sidebar sidebar-dark accordion" style="background-color:#701111       ;" id="accordionSidebar">
+<body id="page-top">
 
-        <!-- Sidebar - Brand -->
-        <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
-            <div class="sidebar-brand-icon rotate-n-15">
-                <i class="fas fa-laugh-wink"></i>
-            </div>
-            <div class="sidebar-brand-text mx-3">Food Delivery </div>
-        </a>
-
-        <!-- Divider -->
-        <hr class="sidebar-divider my-0">
-
-        <!-- Nav Item - Dashboard -->
-        <li class="nav-item">
-            <a class="nav-link" href="#">
-                <i class="fas fa-fw fa-list"></i>
-                <span>Categorias</span></a>
-        </li>
+<!-- Page Wrapper -->
+<div id="wrapper">
 
 
-        <!-- Nav Item - Pages Collapse Menu -->
-        <li class="nav-item">
-            <a class="nav-link" href="#" >
-                <i class="fas fa-fw fa-cog"></i>
-                <span>Pedidos</span>
-            </a>
-        </li>
-
-        <!-- Nav Item - Utilities Collapse Menu -->
-        <li class="nav-item">
-            <a class="nav-link" href="#">
-                <i class="fas fa-fw fa-laugh-wink"></i>
-                <span>Extras</span>
-            </a>
-        </li>
-
-        <!-- Nav Item - Pages Collapse Menu -->
-        <li class="nav-item">
-            <a class="nav-link " href="#">
-                <i class="fas fa-fw fa-folder"></i>
-                <span>Reportes</span>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link " href="#">
-                <i class="fas fa-fw fa-folder"></i>
-                <span>Cupones</span>
-            </a>
-        </li>
-
-        <!-- Divider -->
-        <hr class="sidebar-divider d-none d-md-block">
-
-        <!-- Sidebar Toggler (Sidebar) -->
-        <div class="text-center d-none d-md-inline">
-            <button class="rounded-circle border-0" id="sidebarToggle"></button>
-        </div>
-
-    </ul>
-    <!-- End of Sidebar -->
 
     <!-- Content Wrapper -->
-    <div id="content-wrapper" class="d-flex flex-column">
+    <div id="content-wrapper" class="d-flex flex-column" >
 
         <!-- Main Content -->
         <div id="content">
 
             <!-- Topbar -->
-            <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
-
+            <nav class="navbar navbar-expand  topbar mb-4 static-top shadow" style="background-color:#701111;" >
+                <a class="navbar-brand d-flex align-items-center justify-content-center" href="#" >
+                    <div class="navbar-brand rotate-n-15">
+                        <i class="fas fa-truck-loading" style="color: white"></i>
+                    </div>
+                    <div class="navbar-brand-text mx-3" style="color: white">
+                        Food Delivery</div>
+                </a>
                 <!-- Sidebar Toggle (Topbar) -->
                 <form class="form-inline">
                     <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
@@ -107,111 +56,230 @@
                     </button>
                 </form>
 
-                <!-- Topbar Search -->
-                <form
-                        class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-                    <div class="input-group">
-                        <input type="text" class="form-control bg-light border-0 small" placeholder="Buscar..."
-                               aria-label="Search" aria-describedby="basic-addon2">
-                        <div class="input-group-append">
-                            <button class="btn botonbusca" type="button">
-                                <i class="fas fa-search fa-sm"></i>
-                            </button>
-                        </div>
-                    </div>
-                </form>
+
 
                 <!-- Topbar Navbar -->
-                <ul class="navbar-nav ml-auto">
 
-                    <!-- Nav Item - Search Dropdown (Visible Only XS) -->
-                    <li class="nav-item dropdown no-arrow d-sm-none">
-                        <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
-                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fas fa-search fa-fw"></i>
-                        </a>
-                    </li>
-
-                    <!-- Nav Item - Alerts -->
-                    <li class="nav-item dropdown no-arrow mx-1">
-                        <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
-                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fas fa-bell fa-fw"></i>
-                            <!-- Counter - Alerts -->
-                            <span class="badge badge-danger badge-counter">3+</span>
-                        </a>
-                        <!-- Dropdown - Alerts -->
-                        <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in "
-                             aria-labelledby="alertsDropdown">
-                            <h6 class="notificacion">
-                                Nuevos Pedidos
-                            </h6>
-                            <a class="dropdown-item d-flex align-items-center" href="#">
-                                <div class="mr-3">
-                                    <div class="icon-circle notificacion">
-                                        <i class="fas fa-file-alt text-white"></i>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="small text-gray-500">Los Olivos - 12:45 pm</div>
-                                    <span class="font-weight-bold">Arroz con pollo</span>
-                                </div>
-                            </a>
-                            <a class="dropdown-item d-flex align-items-center" href="#">
-                                <div class="mr-3">
-                                    <div class="icon-circle notificacion">
-                                        <i class="fas fa-file-alt text-white"></i>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="small text-gray-500">Los Olivos - 12:45 pm</div>
-                                    <span class="font-weight-bold">Arroz con pollo</span>
-                                </div>
-                            </a>
-                            <a class="dropdown-item d-flex align-items-center" href="#">
-                                <div class="mr-3">
-                                    <div class="icon-circle notificacion">
-                                        <i class="fas fa-file-alt text-white"></i>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="small text-gray-500">Los Olivos - 12:45 pm</div>
-                                    <span class="font-weight-bold">Arroz con pollo</span>
-                                </div>
-                            </a>
-                            <a class="dropdown-item text-center small text-gray-500" href="#">Ver todos los pedidos</a>
-                        </div>
-                    </li>
 
                     <div class="topbar-divider d-none d-sm-block"></div>
 
-                    <!-- Nav Item - User Information -->
-                    <li class="nav-item dropdown no-arrow">
-                        <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
-                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span class="mr-2 d-none d-lg-inline text-gray-600 small">Joham Romucho</span>
-                            <i class="fas fa-user"></i>
-                        </a>
-                        <!-- Dropdown - User Information -->
-                        <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
-                             aria-labelledby="userDropdown">
-                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                                <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                                Cerrar Sesión
-                            </a>
-                        </div>
-                    </li>
 
                 </ul>
 
             </nav>
             <!-- End of Topbar -->
 
+            <!-- Begin Page Content -->
+            <div class="container">
+
+                <a class="dropdown-item user" href="#" data-toggle="modal" data-target="#volverModal" style="position: relative; right:12%">
+                    <i class="fas fa-chevron-circle-left"></i>
+                    Volver
+                </a>
+                <h1 style="color: black">Registro</h1>
+                <p>Complete el siguiente formulario para que el administrador general acepte o rechace su solicitud de repartidor.</p>
+                <form class="user">
+
+                    <div class="form-group row">
+                        <div class="col-sm-6 mb-2 mb-sm-0">
+                            <input type="text" class="form-control"
+                                   id="exampleNombre"
+                                   placeholder="Nombres">
+                        </div>
+                        <div class="col-sm-6 mb-2">
+                            <input type="text" class="form-control"
+                                   id="exampleApellido"
+                                   placeholder="Apellidos">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-6 mb-2 mb-sm-0">
+                            <input type="email" class="form-control"
+                                   id="exampleCorreo"
+                                   placeholder="Correo electrónico">
+                        </div>
+                        <div class="col-sm-6 mb-2">
+                            <input placeholder="Fecha de nacimiento" class="form-control" type="text"
+                                   onfocus="(this.type='date')" onblur="(this.type='text')" id="date">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="col-sm-6 mb-2 mb-sm-0">
+                            <select class="form-control">
+                                <option value="" disabled selected>Sexo</option>
+                                <option value="Femenino">Femenino</option>
+                                <option value="Masculino">Masculino</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-6  mb-2 mb-sm-0">
+                            <input type="number" class="form-control"
+                                   id="exampleTelefono" placeholder="Teléfono">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-6 mb-2 mt-2 mb-sm-0">
+                            <input type="number" class="form-control"
+                                   id="exampleDNI" placeholder="DNI">
+                        </div>
+                        <div class="col-sm-6 mb-2 mb-sm-0">
+                            <select class="form-control  ">
+                                <option value="" disabled selected>Registro de direcciones</option>
+                                <option value="Cercado de Lima">Cercado de Lima</option>
+                                <option value="Bellavista">Bellavista</option>
+                                <option value="Carmen de la Legua">Carmen de la Legua</option>
+                                <option value="La Perla">La Perla</option>
+                                <option value="La Punta">La Punta</option>
+                                <option value="Ventanilla"> Ventanilla</option>
+                                <option value="Barranco">Barranco</option>
+                                <option value="Breña">Breña</option>
+                                <option value="Comas">Comas</option>
+                                <option value="Chorrillos">Chorrillos</option>
+                                <option value="El Agustino">El Agustino</option>
+                                <option value="Jesús María">Jesús María</option>
+                            </select>
+                        </div>
+
+                    </div>
+                    <div class="form-group row">
 
 
+                        <div class="col-sm-6 mb-2 mb-sm-0">
+                            <h4 style="color: black">Transporte</h4>
+                            <p>Seleccione el tipo de transporte con el que realizará las entregas.</p>
+                            <div class="form-group row">
+                                <div class="col-sm-12 mb-2 mb-sm-0">
+                                    <select class="form-control">
+                                        <option value="" disabled selected>Tipo de transporte</option>
+                                        <option value="Moto">Moto</option>
+                                        <option value="Bicicleta">Bicicleta</option>
+                                    </select>
+                                </div>
 
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-sm-12 mb-2 mb-sm-0">
+                                    <input type="text" class="form-control"
+                                           id="examplePlaca" placeholder="Placa" disabled>
+                                </div>
+
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-sm-12 mb-2 mb-sm-0">
+                                    <input type="text" class="form-control"
+                                           id="exampleLicencia"
+                                           placeholder="Licencia de conducir" disabled>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                        <div class="col-sm-6 mb-2 mb-sm-0">
+                            <h4 style="color: black">Contraseña</h4>
+                            <p>La contraseña debe contar con al menos 8 caracteres.</p>
+                            <div class="form-group row">
+                                <div class="col-sm-12 mb-2 mb-sm-0">
+                                    <input type="password" class="form-control" id="inputPassword1" placeholder="Contraseña">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-sm-12 mb-2 mb-sm-0">
+                                    <input type="password" class="form-control" id="inputPassword2" placeholder="Confirmar contraseña">
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="col-sm-6 mb-2 mb-sm-0">
+                            <h4 style="color: black">Foto de perfil</h4>
+                            <p>Adjunte una foto de perfil para su cuenta. Esta debe ser una fotografía en la que se visualice claramente su rostro</p>
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="inputGroupFile03">
+                                <label class="custom-file-label" for="inputGroupFile03">Adjuntar archivo</label>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group row">
+
+                    </div>
+                    <hr>
+                    <a href="login.html" class="btn btn-primary btn-user btn-block">
+                        Registrar cuenta
+                    </a>
+                </form>
+
+
+            </div>
+            <!-- /.container-fluid -->
+
+        </div>
+        <!-- End of Main Content -->
+
+        <!-- Footer -->
+        <footer class="sticky-footer bg-white">
+            <div class="container my-auto">
+                <div class="copyright text-center my-auto">
+                    <span>Geek Developers &copy; 2021-1</span>
+                </div>
+            </div>
+        </footer>
+        <!-- End of Footer -->
+
+    </div>
+    <!-- End of Content Wrapper -->
 
 </div>
+<!-- End of Page Wrapper -->
+
+<!-- Scroll to Top Button-->
+<a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+</a>
+
+<!-- VOlver Modal-->
+<div class="modal fade" id="volverModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">¿Desea volver?</h5>
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">Al seleecionar el botón volver, no se guardará la información registrada.</div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                <a class="btn btn-primary" href="/html/Login.html">Volver</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap core JavaScript-->
+<script src="../bootstrap/vendor/jquery/jquery.min.js"></script>
+<script src="../bootstrap/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Core plugin JavaScript-->
+<script src="../bootstrap/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+<!-- Custom scripts for all pages-->
+<script src="../bootstrap/js/sb-admin-2.min.js"></script>
+
+<!-- Page level plugins -->
+<script src="../bootstrap/vendor/datatables/jquery.dataTables.min.js"></script>
+<script src="../bootstrap/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+<!-- Page level custom scripts -->
+<script src="../bootstrap/js/demo/datatables-demo.js"></script>
 
 </body>
+
 </html>
