@@ -4451,7 +4451,7 @@ input[type="button"].btn-block {
 }
 
 .card {
-  position: relative;
+  position: center;
   display: flex;
   flex-direction: column;
   min-width: 0;
