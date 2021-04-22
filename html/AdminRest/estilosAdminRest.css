@@ -30,7 +30,6 @@ h6.notificacion{
   .pagination a.active {
     background-color: #ffffff;
     color: #701111;
-    border-block-color: #701111;
   }
   .pagination a {
     color: rgb(255, 255, 255);
