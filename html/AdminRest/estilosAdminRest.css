@@ -19,3 +19,23 @@ h6.notificacion{
     font-size: .95rem;
     color: #ffffff
 }
+/* Add a black background color to the top navigation */
+.topnav {
+    position: relative;
+    background-color: #ffffff;
+    overflow: hidden;
+    left: 50%;
+    position: absolute;
+  }
+  .pagination a.active {
+    background-color: #ffffff;
+    color: #701111;
+    border-block-color: #701111;
+  }
+  .pagination a {
+    color: rgb(255, 255, 255);
+    padding: 8px 16px;
+    background-color:  #701111;
+    transition: background-color .3s;
+    
+  }
