@@ -42,3 +42,9 @@ h6.notificacion{
       background-color: rgb(255, 255, 255);
       color: black;
   }
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+
