@@ -38,3 +38,7 @@ h6.notificacion{
     transition: background-color .3s;
     
   }
+  .bontondate{
+      background-color: rgb(255, 255, 255);
+      color: black;
+  }
