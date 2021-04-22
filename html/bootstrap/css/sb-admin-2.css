@@ -3767,6 +3767,8 @@ input[type="button"].btn-block {
   height: calc(1.5em + 0.75rem + 2px);
   margin: 0;
   opacity: 0;
+
+
 }
 
 .custom-file-input:focus ~ .custom-file-label {
@@ -3780,7 +3782,7 @@ input[type="button"].btn-block {
 }
 
 .custom-file-input:lang(en) ~ .custom-file-label::after {
-  content: "Browse";
+  content: "Examinar";
 }
 
 .custom-file-input ~ .custom-file-label[data-browse]::after {
@@ -10853,7 +10855,6 @@ form.user .custom-checkbox.small label {
 }
 
 form.user .form-control-user {
-  font-size: 0.8rem;
   border-radius: 10rem;
   padding: 1.5rem 1rem;
 }
