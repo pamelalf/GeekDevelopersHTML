@@ -10829,6 +10829,24 @@ a:focus {
   background: url("https://images.unsplash.com/photo-1597075000512-e64635882ac4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
   background-position: center;
   background-size: cover;
+
+}
+
+.bg-oriental-image {
+  background: url("https://images.unsplash.com/photo-1436327266874-c2e4e1ac7a97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80");
+  background-position: center;
+  background-size: cover;
+  opacity: 0.5;
+}
+
+.bg-oriental-image:hover{
+  opacity: 1.0;
+}
+
+.bg-card-image {
+  background: url("https://images.unsplash.com/photo-1597075000512-e64635882ac4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
+  background-position: center;
+  background-size: cover;
 }
 
 
