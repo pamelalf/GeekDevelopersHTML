@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Solicitudes</title>
+    <title>Reporte de ingresos</title>
 
     <!-- Custom fonts for this template/BASE-COPIAR-NOBORRAR/bootstrap/vendor/fontawesome-free/css/all.min.css -->
     <link href="../bootstrap/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -111,19 +111,7 @@
                     </button>
                 </form>
 
-                <!-- Topbar Search -->
-                <form
-                        class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-                    <div class="input-group">
-                        <input type="text" class="form-control bg-light border-0 small" placeholder="Buscar..."
-                               aria-label="Search" aria-describedby="basic-addon2">
-                        <div class="input-group-append">
-                            <button class="btn botonbusca" type="button">
-                                <i class="fas fa-search fa-sm"></i>
-                            </button>
-                        </div>
-                    </div>
-                </form>
+
 
                 <!-- Topbar Navbar -->
                 <ul class="navbar-nav ml-auto">
@@ -214,96 +202,206 @@
 
             <!-- Begin Page Content -->
             <div class="container-fluid">
-				<table class="table">
-				  <thead>
-					<tr>
-					  <th scope="col">#</th>
-					  <th scope="col">Pedido</th>
-					  <th scope="col">Aceptar</th>
-					  <th scope="col">Rechazar</th>
-					</tr>
-				  </thead>
-				  <tbody>
-					<tr>
-					  <th scope="row">1</th>
-					  <td>Arroz con pollo - Restaurante amarillo</td>
-					  <td>
-                          <i class="fas fa-check-circle"></i>
-                      </td>
-					  <td>
-                          <i class="fas fa-times-circle"></i>
-                      </td>
-					</tr>
-					<tr>
-					  <th scope="row">2</th>
-					  <td>Sopa - Restaurante María</td>
-                        <td>
-                            <i class="fas fa-check-circle"></i>
-                        </td>
-                        <td>
-                            <i class="fas fa-times-circle"></i>
-                        </td>
-					</tr>
-				  </tbody>
-				</table>
 
-                <!--Pagination -->
-                <nav aria-label="...">
-                    <ul class="pagination justify-content-center">
-                        <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Previous">
-                                <span aria-hidden="true">&laquo;</span>
-                            </a>
-                        </li>
-                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item active" aria-current="page">
-                            <a class="page-link" href="#">2</a>
-                        </li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Next">
-                                <span aria-hidden="true">&raquo;</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <!-- End of pagination -->
-                <div class="container-fluid">
-                    <div class="card">
-                        <div class="card-header">
-                            Pedido mas cercano
+                <!-- DataTales Example -->
+                <form>
+                    <div class=" form-group row" >
+                        <div class="col-sm-6 mb-2  " >
+                            <a class="btn btn-secondary " >Quitar filtros</a>
                         </div>
-                        <div class="card-body">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <div class="row">
-                                            <h1 class="card-title">Ceviche - Restaurante Marino</h1>
-                                            <p class="card-text">Dirección de restaurante: Av. Universitaria 345<br>
-                                                Direción de cliente: Av. Universitaria 987<br>
-                                                Producto: Ceviche<br>
-                                                Hora de registro de pedido:   17:49<br>
-                                                Método de pago : Efectivo</p>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-6">
-                                                <i class="fas fa-check-circle"></i>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <i class="fas fa-times-circle"></i>
-                                            </div>
-                                        </div>
+                        <div class="col-sm-6 mb-2 " style="position: relative; left: 33.5%" >
+                           Ingreso total : S/. 28.0
+                        </div>
 
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/70/b9/5f/salon-principal.jpg" class="img-fluid">
-                                    </div>
-                                </div>
-                            </div>
+
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-3 mb-2">
+                            <input placeholder="Desde" class="form-control" type="text"
+                                   onfocus="(this.type='date')" onblur="(this.type='text')" id="date1">
+                        </div>
+                        <div class="col-sm-3 mb-2">
+                            <input placeholder="Hasta" class="form-control" type="text"
+                                   onfocus="(this.type='date')" onblur="(this.type='text')" id="date2">
+                        </div>
+                        <div class="col-sm-3 mb-2 mb-sm-0">
+                            <select class="form-control  ">
+                                <option value="" disabled selected>Buscar por distrito</option>
+                                <option value="Cercado de Lima">Cercado de Lima</option>
+                                <option value="Bellavista">Bellavista</option>
+                                <option value="Carmen de la Legua">Carmen de la Legua</option>
+                                <option value="La Perla">La Perla</option>
+                                <option value="La Punta">La Punta</option>
+                                <option value="Ventanilla"> Ventanilla</option>
+                                <option value="Barranco">Barranco</option>
+                                <option value="Breña">Breña</option>
+                                <option value="Comas">Comas</option>
+                                <option value="Chorrillos">Chorrillos</option>
+                                <option value="El Agustino">El Agustino</option>
+                                <option value="Jesús María">Jesús María</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-3 mb-2 mb-sm-0">
+                            <input type="busquedaRestaurante" class="form-control"
+                                   id="exampleRestaurante"
+                                   placeholder="Búsqueda por restaurante">
+                        </div>
+                    </div>
+
+
+                </form>
+
+                <div class="card shadow mb-4">
+                    <div class="card-header py-3 " style="background-color: #701111;">
+
+                        <div class="d-sm-flex align-items-center justify-content-between">
+
+                            <h5 class="font-weight-bold text-white text-lg-center mx-auto ">Reporte de ingresos</h5>
+                            <a class="btn btn-warning mr-1">Exportar</a>
+                        </div>
+
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <thead>
+                                <tr>
+                                    <th class="text-center">
+                                        N°
+                                    </th>
+                                    <th class="text-center">
+                                        Pedido
+                                    </th>
+                                    <th class="text-center">
+                                        Restaurante
+                                    </th>
+                                    <th class="text-center">
+                                        Código
+                                    </th>
+                                    <th class="text-center">
+                                        Distrito
+                                    </th>
+                                    <th class="text-center">
+                                        Fecha
+                                    </th>
+                                    <th class="text-center">
+                                        Ingresos(S/.)
+                                    </th>
+                                    <th class="text-center">
+                                        Calificación
+                                    </th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td style="width: 300px">1</td>
+                                    <td style="width: 700px">Pollo a la brasa</td>
+                                    <td style="width: 250px">La Leña</td>
+                                    <td style="width: 160px">123455</td>
+                                    <td style="width: 160px">La Molina</td>
+                                    <td style="width: 160px">04/02/2021</td>
+                                    <td style="width: 160px">4</td>
+                                    <td style="width: 160px">4.5</td>
+
+                                </tr>
+                                <tr>
+                                    <td style="width: 300px">2</td>
+                                    <td style="width: 700px">Pollo a la brasa</td>
+                                    <td style="width: 250px">La Leña</td>
+                                    <td style="width: 160px">123455</td>
+                                    <td style="width: 160px">La Molina</td>
+                                    <td style="width: 160px">04/02/2021</td>
+                                    <td style="width: 160px">6</td>
+                                    <td style="width: 160px">4.5</td>
+
+                                </tr>
+                                <tr>
+                                    <td style="width: 300px">3</td>
+                                    <td style="width: 700px">Pollo a la brasa</td>
+                                    <td style="width: 250px">La Leña</td>
+                                    <td style="width: 160px">123455</td>
+                                    <td style="width: 160px">La Molina</td>
+                                    <td style="width: 160px">04/02/2021</td>
+                                    <td style="width: 160px">6</td>
+                                    <td style="width: 160px">4.5</td>
+
+                                </tr>
+                                <tr>
+                                    <td style="width: 300px">4</td>
+                                    <td style="width: 700px">Pollo a la brasa</td>
+                                    <td style="width: 250px">La Leña</td>
+                                    <td style="width: 160px">123455</td>
+                                    <td style="width: 160px">La Molina</td>
+                                    <td style="width: 160px">04/02/2021</td>
+                                    <td style="width: 160px">4</td>
+                                    <td style="width: 160px">4.5</td>
+
+                                </tr>
+                                <tr>
+                                    <td style="width: 300px">5</td>
+                                    <td style="width: 700px">Pollo a la brasa</td>
+                                    <td style="width: 250px">La Leña</td>
+                                    <td style="width: 160px">123455</td>
+                                    <td style="width: 160px">La Molina</td>
+                                    <td style="width: 160px">04/02/2021</td>
+                                    <td style="width: 160px">4</td>
+                                    <td style="width: 160px">4.5</td>
+
+                                </tr>
+                                <tr>
+                                    <td style="width: 300px">6</td>
+                                    <td style="width: 700px">Pollo a la brasa</td>
+                                    <td style="width: 250px">La Leña</td>
+                                    <td style="width: 160px">123455</td>
+                                    <td style="width: 160px">La Molina</td>
+                                    <td style="width: 160px">04/02/2021</td>
+                                    <td style="width: 160px">4</td>
+                                    <td style="width: 160px">4.5</td>
+
+                                </tr>
+                                <tr>
+                                    <td style="width: 300px">7</td>
+                                    <td style="width: 700px">Pollo a la brasa</td>
+                                    <td style="width: 250px">La Leña</td>
+                                    <td style="width: 160px">123455</td>
+                                    <td style="width: 160px">La Molina</td>
+                                    <td style="width: 160px">04/02/2021</td>
+                                    <td style="width: 160px">6</td>
+                                    <td style="width: 160px">4.5</td>
+
+                                </tr>
+                                <tr>
+                                    <td style="width: 300px">8</td>
+                                    <td style="width: 700px">Pollo a la brasa</td>
+                                    <td style="width: 250px">La Leña</td>
+                                    <td style="width: 160px">123455</td>
+                                    <td style="width: 160px">La Molina</td>
+                                    <td style="width: 160px">04/02/2021</td>
+                                    <td style="width: 160px">4</td>
+                                    <td style="width: 160px">4.5</td>
+
+                                </tr>
+
+                                </tbody>
+
+                            </table>
+
+                        </div>
+                        <div class="pagination" style=" margin-left: 630px ;align-content: center">
+                            <a  href="#">&laquo;</a>
+                            <a  href="#" class="active">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a href="#">5</a>
+                            <a href="#">6</a>
+                            <a href="#">&raquo;</a>
                         </div>
                     </div>
                 </div>
+
             </div>
+
             <!-- /.container-fluid -->
 
         </div>
