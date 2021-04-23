@@ -11690,6 +11690,29 @@ a:focus {
     opacity: 0.5;
 }
 
+.image_box {
+    display: inline-block;
+    clip-path: polygon(0 0, 100% 57%, 100% 0);
+    padding: 0px 0px 4px 5px;
+    position: relative;
+}
+
+.content {
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    right: 0px;
+    background-color: rgba(248, 105, 60, 0.9);
+    color: #fff;
+    padding: 15px 15px 30px 25px;
+    clip-path: polygon(0 0, 100% 57%, 100% 0);
+}
+.image_box img {
+    display: block;
+    clip-path: polygon(0 0, 100% 57%, 100% 0);
+    object-fit: fill;
+}
+
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
     background-color: transparent;

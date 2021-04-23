@@ -20,6 +20,7 @@
     <!-- Custom styles for this template -->
     <link href="../bootstrap/css/sb-admin-2.min.css" rel="stylesheet">
     <link href="../AdminRest/cssAR/estilosAdminRest.css" rel="stylesheet" type="text/css">
+    <link href="cssC/estilosCliente.css" rel="stylesheet" type="text/css">
 
     <!-- Custom styles for this page -->
     <link href="../bootstrap/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
@@ -278,6 +279,32 @@
 <!-- -------------------------------------------------------------------------------------------------------------------------------------------------->
             <!-- Begin Page Content -->
             <div class="container-fluid">
+                <form>
+                    <div class="form-group row">
+                        <div class="col-sm-3 mb-2 ">
+                            <select class="form-control ">
+                                <option value="" disabled selected>Rango de Precios</option>
+                                <option value="1">Menor a S/15 </option>
+                                <option value="2">S/15 - S/25 </option>
+                                <option value="3">S/25 - S/40</option>
+                                <option value="5">Mayor S/40</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-3 mb-2 ">
+                            <select class="form-control ">
+                                <option value="" disabled selected>Valoración</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+
+                </form>
 
                 <!-- DataTales Example -->
                 <div class="card shadow mb-4">
@@ -331,14 +358,14 @@
         <!-- --------------------------------------------------------------------- -->
                             <td>
                                 <div style=text-align:center>
-                                    <input class="form-control" type="text" placeholder=" Litle Caesars Pizza " aria-label="Disabled input example" disabled>
+                                    <input class="form-control ph-center" type="text" placeholder="Litle Caesars Pizza " aria-label="Disabled input example" disabled>
 
                                 <div class="row">
                                     <div class="col">
-                                        <input type="text" class="form-control" placeholder=" Valoración: 5" aria-label="Disabled input example" disabled >
+                                        <input type="text" class="form-control ph-center" placeholder=" Valoración: 5" aria-label="Disabled input example" disabled >
                                     </div>
                                     <div class="col">
-                                        <input type="text" class="form-control" placeholder="15 Calificaciones"  aria-label="Disabled input example" disabled>
+                                        <input type="text" class="form-control ph-center" placeholder="15 Calificaciones"  aria-label="Disabled input example" disabled>
                                     </div>
                                 </div>
                                  </div>
@@ -374,14 +401,14 @@
 
                             <td >
                                 <div style=text-align:center>
-                                    <input class="form-control" type="text" placeholder="North Fish " aria-label="Disabled input example" disabled>
+                                    <input class="form-control ph-center" type="text" placeholder="North Fish " aria-label="Disabled input example" disabled>
 
                                     <div class="row">
                                         <div class="col">
-                                            <input type="text" class="form-control" placeholder=" Valoración: 5" aria-label="Disabled input example" disabled >
+                                            <input type="text" class="form-control ph-center" placeholder=" Valoración: 5" aria-label="Disabled input example" disabled >
                                         </div>
                                         <div class="col">
-                                            <input type="text" class="form-control" placeholder="15 Calificaciones"  aria-label="Disabled input example" disabled>
+                                            <input type="text" class="form-control ph-center" placeholder="15 Calificaciones"  aria-label="Disabled input example" disabled>
                                         </div>
                                     </div>
                                 </div>
@@ -419,14 +446,14 @@
 
                         <td>
                             <div style=text-align:center>
-                                <input class="form-control" type="text" placeholder=" Norky's " aria-label="Disabled input example" disabled>
+                                <input class="form-control ph-center" type="text" placeholder=" Norky's " aria-label="Disabled input example" disabled>
 
                                 <div class="row">
                                     <div class="col">
-                                        <input type="text" class="form-control" placeholder=" Valoración: 4" aria-label="Disabled input example" disabled >
+                                        <input type="text" class="form-control ph-center" placeholder=" Valoración: 4" aria-label="Disabled input example" disabled >
                                     </div>
                                     <div class="col">
-                                        <input type="text" class="form-control" placeholder="13 Calificaciones"  aria-label="Disabled input example" disabled>
+                                        <input type="text" class="form-control ph-center" placeholder="13 Calificaciones"  aria-label="Disabled input example" disabled>
                                     </div>
                                 </div>
                             </div>
