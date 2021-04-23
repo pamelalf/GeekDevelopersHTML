@@ -54,7 +54,6 @@
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <a class="collapse-item" href="listaRestaurantes.html">Restaurantes</a>
-                        <a class="collapse-item" href="listaCategorias.html">Categorías</a>
                     </div>
                 </div>
             </li>
@@ -180,7 +179,7 @@
                             <!-- Dropdown - Alerts -->
                             <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="alertsDropdown">
-                                <h6 class="dropdown-header" style="background-color:#701111; color:white;border:#701111;">
+                                <h6 class="dropdown-header" style="background-color:white; color:#701111; border:#701111;">
                                     Pedidos Pendientes
                                 </h6>
 								<a class="dropdown-item d-flex align-items-center" href="#">
@@ -223,14 +222,14 @@
                             <!-- Dropdown - Messages -->
                             <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="messagesDropdown">
-                                <h6 class="dropdown-header font-weight-bold " style="background-color:#701111; color:white; border:#701111;">
+                                <h6 class="dropdown-header font-weight-bold " style="background-color:white; color:#701111; border:#701111;">
                                     Joham Romucho
                                 </h6>
                                 <a class="dropdown-item d-flex align-items-center">
                                     <div class="mr-3">
                                            <i class="fas fa-mobile"></i>
                                     </div>
-                                    <div class="font-weight-bold">
+                                    <div class="font-weight">
                                         <div class="text-truncate">999999999</div>
                                         <div class="small text-gray-500">Teléfono</div>
                                     </div>
@@ -239,7 +238,7 @@
                                     <div class="mr-3">
                                            <i class="fas fa-map-marker-alt"></i>
                                     </div>
-                                    <div class="font-weight-bold">
+                                    <div class="font-weight">
                                         <div class="text-truncate">Av. Carlo Izaguirre, Los Olivos</div>
                                         <div class="small text-gray-500">Dirección</div>
                                     </div>
@@ -254,8 +253,7 @@
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">Joham Romucho</span>
-                                <img class="img-profile rounded-circle"
-                                    src="../bootstrap/img/undraw_profile.svg">
+                                <img class="img-profile rounded-circle" src="../bootstrap/img/undraw_profile.svg">
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
@@ -280,16 +278,37 @@
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
 
-                    <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800">Tables</h1>
-                    <p class="mb-4">DataTables is a third party plugin that is used to generate the demo table below.
-                        For more information about DataTables, please visit the <a target="_blank"
-                            href="https://datatables.net">official DataTables documentation</a>.</p>
-
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
-                        <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
+                        <div class="card-header py-3 " style="background-color: #701111;">
+                            
+                            <div class="d-sm-flex align-items-center justify-content-between">
+                            <div class="col-sm-1">
+								<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                                data-toggle="dropdown" style="color:white" >
+									<i class="fas fa-filter" style="color:white">
+									</i>
+								</a>
+								<div class="dropdown-menu shadow ">
+									<a class="dropdown-item" href="#" >
+										<select class="form-control" style="width: 130px">
+                                            <option value="">Estados</option>
+                                            <option value="">Aceptado</option>
+                                            <option value="">En camino</option>
+                                        </select>
+									</a>
+								</div>
+							</div>
+								
+                                
+								
+								<h5 class="font-weight-bold text-white  text-center">PEDIDOS ACTUALES</h5>
+                                
+								
+								<a href="#" class=" d-sm-inline-block btn btn-sm bontondate" style="background-color:white;color:black;border:black"><i
+                                        class="fas fa-download fa-sm" ></i> Generar Reporte</a>
+                            </div>
+        
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
@@ -806,22 +825,22 @@
 
     <!-- Logout Modal-->
     <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">×</span>
-                    </button>
-                </div>
-                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-                <div class="modal-footer">
-                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="login.html">Logout</a>
-                </div>
-            </div>
+         aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">¿Desea Salir?</h5>
+            <button class="close" type="button"  data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">Al seleccionar el boton salir, usted cerrará su sesión.</div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+            <a class="btn" style="background-color:#701111; color:white" href="/html/login.html">Cerrar Sesión</a>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- Bootstrap core JavaScript-->
