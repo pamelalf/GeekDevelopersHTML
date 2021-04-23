@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>EDITAR PLATO</title>
+    <title>NUEVO EXTRA</title>
 
     <!-- Custom fonts for this template-->
     <link href="../bootstrap/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -206,144 +206,175 @@
 
             <!-- Begin Page Content -->
             <div class="container-fluid">
+                <!-- Page Heading -->
                 <div class="card shadow mb-4">
-                    <div class="p-3  bg-primary text-white" style="text-align:center ; color: #701111">
-                        <h3 class="h3 font-weight-bold  text-white text-xl-center">EDITAR PLATO</h3>
+                    <div class="p-3  bg-primary text-white"
+                         style="text-align:center">
+                        <h3 class="h3 font-weight-bold  text-white text-xl-center">REGISTRAR EXTRA</h3>
                     </div>
                     <div class="card-body">
+                        <div class="text-xl-left">
 
-                        <div class="table-responsive">
-                            <TABLE class="table">
-                                <TR>
-                                    <TD><b>Nombre de plato: </b></TD>
-                                    <td><input name="name" type="text" value="Arroz chaufa" class="form-control">
-                                    </td>
-                                    <TD ROWSPAN=4><img
-                                            src="https://locosxlaparrilla.com/wp-content/uploads/2015/02/Receta-recetas-locos-x-la-parrilla-locosxlaparrilla-receta-arroz-chaufa-peruano-arroz-chaufa-peruano-arroz-chaufa.jpg"
-                                            width="250">
-                                    </TD>
-                                </TR>
-                                <TR>
-                                    <div class="form-group">
-                                        <TD><b>Descripción: </b></TD>
-                                        <td><input name="name" type="text" value="El plato más delicioso del mundo!!! xddddd" class="form-control">
-                                    </div>
-                                    </td>
-                                </TR>
-                                <TR>
-                                    <div class="form-group">
-                                        <TD><b>Precio: </b></TD>
-                                        <td><input name="precio" type="text" class="form-control" value="S/69.90">
-                                        </td>
-                                    </div>
-                                </TR>
-                                <TR>
-
-                                    <div class="form-group">
-                                        <TD><b>Extras: </b></TD>
-                                        <td><div class="form-row justify-content-center">
-                                            <div class="col-md-5 mb-4">
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                    <label class="form-check-label" for="flexCheckDefault">
-                                                        Cubiertos
-                                                    </label>
+                            <div class="container-fluid">
+                                <div class="tabel-responsive">
+                                    <table class="table">
+                                        <form method="POST" action="" class="justify-content-left" enctype="multipart/form-data"></form>
+                                        <tr>
+                                            <td><label for="nombre">Nombre:</label></td>
+                                            <td colspan="2"><input type="text" class="form-control" id="nombre" name="nombre"></td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td><label>Descripción:</label></td>
+                                            <td colspan="2"><input class="form-control" name="descrip" type="text"
+                                                class="form-control"></td>
+                                            <td rowspan="3" colspan="3"><img id="image_preview"
+                                                src="https://images.squarespace-cdn.com/content/v1/504fafcf84ae1835d7e5c807/1481053836481-1P6LXZV7W56MFQ3XTRYF/ke17ZwdGBToddI8pDm48kEPi1-yrhDrzLshLxN3QC8RZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpwpHDH2dI8XKnmDPhhL-Z4ihJCPIeRMB9aDS9L0YuCpaVeHjzKGTX-CN79Cq4zdtLU/upload-arrow_318-26670.jpg?format=750w"
+                                                width="300"></td>
+                                        </tr>
+                                        <tr>
+                                            <td> <label>Precio unitario:</label></td>
+                                            <td colspan="2"><div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">S/.</span>
+                                                    <input name="cantidad" type="text" class="form-control">
                                                 </div>
-                                            </div>
-                                            <div class="col-md-5 mb-4">
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                                                    <label class="form-check-label" for="flexCheckChecked">
-                                                        Ensaladas
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-5 mb-4">
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
-                                                    <label class="form-check-label" for="flexCheckDefault2">
-                                                        Bebidas
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-5 mb-4">
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
-                                                    <label class="form-check-label" for="flexCheckDefault3">
-                                                        Guarniciones
-                                                    </label>
-                                                </div>
-                                            </div>
+                                            </div></td>
+                                        </tr>
+                                        <tr>
+                                            <td><label>Imagen referencial:</label></td>
+                                            <td colspan="2"> <input type="file" class="form-control"></td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            
+                                            <td colspan="2"><a class="btn btn-primary mb-4 mr-2 "
+                                                data-toggle="modal"
+                                                data-target="#RegistroExitoso"
+                                                href="#RegistroExitoso">
+                                                 Registrar
+                                                 Extra
+                                             </a>
+                                           <a class="btn btn-danger mb-4"
+                                                href="#CancelarRegistro"
+                                                role="button"
+                                                data-toggle="modal"
+                                                data-target="#CancelarRegistro">Cancelar</a></td>
+                                                <div class="modal fade" id="RegistroExitoso" tabindex="-1"
+                                                         role="dialog"
+                                                         aria-labelledby="exampleModalLabel"
+                                                         aria-hidden="true">
+                                                        <div class="modal-dialog" role="document">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h5 class="modal-title text-center"
+                                                                        id="exampleModalRegistro">
+                                                                        ¿Está seguro que desea
+                                                                        registrar este extra?</h5>
+                                                                    <button class="close" type="button"
+                                                                            data-dismiss="modal"
+                                                                            aria-label="Close">
+                                                                        <span aria-hidden="true">×</span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <button type="submit" class="btn btn-primary"
+                                                                            href="">
+                                                                        Sí
+                                                                    </button>
+                                                                    <a class="btn" type="button"
+                                                                       data-dismiss="modal">
+                                                                        No
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                            
+                                        </tr>
+                                    </form>
+                                    </table>
+                                </div>
+                               
+                                
+                            </div>
+                            <div class="modal fade" id="CancelarRegistro" tabindex="-1"
+                                 role="dialog"
+                                 aria-labelledby="exampleModalLabel"
+                                 aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title text-center"
+                                                id="exampleModalCancelarRegistro"
+                                                data-dismiss="modal">¿Desea cancelar el
+                                                registro?</h5>
+                                            <button class="close" type="button"
+                                                    data-dismiss="modal"
+                                                    aria-label="Close">
+                                                <span aria-hidden="true">×</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <a class="btn btn-primary"
+                                               href="">Sí</a>
+                                            <a class="btn" type="button"
+                                               data-dismiss="modal">
+                                                No
+                                            </a>
                                         </div>
                                     </div>
-                                </TR>
-                                <form id="eliminar" method="POST"
-                                      action="">
-
-                                    <tr>
-                                        <td><label class="text-sm-left" style="color: #2e59d9"><small>*Si no
-                                            desea cambiar algún dato, reingrese el mismo
-                                            valor.</small></label></td>
-
-                                        <td>
-                                            <a class="btn btn-block btn-success" data-toggle="modal"
-                                               href="#lModal2" data-target="#lModal2">Actualizar</a>
-                                        <td><a class="btn btn-block btn-primary" data-toggle="modal"
-                                               href="#lModal3" data-target="#lModal3">Cancelar</a></td>
-                                        <td><a class="btn btn-block btn-warning" data-toggle="modal"
-                                               href="#lModal1" data-target="#lModal1">Eliminar Plato</a>
-                                        </td>
-                                    </tr>
-
-                                </form>
-
-                            </TABLE>
+                                </div>
+                            </div>
+                            </form>
                         </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
-    <!-- End of Main Content -->
-    <!-- End of Content Wrapper -->
-    <!-- End of Page Wrapper -->
+</div>
+</div>
+<!-- End of Main Content -->
+<!-- End of Content Wrapper -->
+<!-- End of Page Wrapper -->
 
 
-    <!-- Logout Modal-->
-    <!-- Alerta cierre sesion-->
-    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog"
-         aria-labelledby="exampleModalLabel"
-         aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Usted está a punto de salir ¿Desea continuar?</h5>
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Cerrar">
-                        <span aria-hidden="true">×</span>
-                    </button>
-                </div>
-                <div class="modal-footer">
-                    <a class="btn btn-primary"
-                       href="">Cerrar
-                        Sesión</a>
-                    <a class="btn" type="button"
-                       data-dismiss="modal">
-                        Cancelar
-                    </a>
-                </div>
+<!-- Logout Modal-->
+<!-- Alerta cierre sesion-->
+<div class="modal fade" id="logoutModal" tabindex="-1" role="dialog"
+     aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Usted está a punto de salir ¿Desea continuar?</h5>
+                <button class="close" type="button" data-dismiss="modal" aria-label="Cerrar">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-footer">
+                <a class="btn btn-primary"
+                   href="">Cerrar
+                    Sesión</a>
+                <a class="btn" type="button"
+                   data-dismiss="modal">
+                    Cancelar
+                </a>
             </div>
         </div>
     </div>
-    <!-- Bootstrap core JavaScript-->
-    <script src="../bootstrap/vendor/jquery/jquery.min.js"></script>
-    <script src="../bootstrap/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</div>
+<!-- Bootstrap core JavaScript-->
+<script src="../bootstrap/vendor/jquery/jquery.min.js"></script>
+<script src="../bootstrap/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Core plugin JavaScript-->
-    <script src="../bootstrap/vendor/jquery-easing/jquery.easing.min.js"></script>
+<!-- Core plugin JavaScript-->
+<script src="../bootstrap/vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <!-- Custom scripts for all pages-->
-    <script src="../bootstrap/js/sb-admin-2.min.js"></script>
+<!-- Custom scripts for all pages-->
+<script src="../bootstrap/js/sb-admin-2.min.js"></script>
 
 </div>
 </body>
