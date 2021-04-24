@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Pedido Actual</title>
+    <title>Historial de Pedidos</title>
 
     <!-- Custom fonts for this template -->
     <link href="../bootstrap/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -288,8 +288,8 @@
                         <div class="col-sm-3 mb-2 mb-sm-0">
                             <select class="form-control  ">
                                 <option value="" disabled selected>Estado</option>
-                                <option value="Confirmado">Confirmado</option>
-                                <option value="En camino">En camino</option>
+                                <option value="Confirmado">Cancelado</option>
+                                <option value="En camino">Entregado</option>
                             </select>
                         </div>
 						<div class="col-sm-3 mb-2">
@@ -309,7 +309,7 @@
 
                         <div class="d-sm-flex align-items-center justify-content-between">
 
-                            <h5 class="font-weight-bold text-white text-lg-center mx-auto ">Pedidos Actuales</h5>
+                            <h5 class="font-weight-bold text-white text-lg-center mx-auto ">Pedidos Finalizados</h5>
                         </div>
                     </div>
                         <div class="card-body">
@@ -330,7 +330,7 @@
 													</div>	
 													<div class="row mb-2">
 															<input class="form-control col-6" type="text" placeholder="Tiempo de entrega: 30-45 min" aria-label="Disabled input example" disabled>
-															<input width="" class="form-control col-5 ml-4" type="text" placeholder="En camino" aria-label="Disabled input example" disabled>
+															<input width="" class="form-control col-5 ml-4" style="color:blue" type="text" placeholder="Entregado" aria-label="Disabled input example" disabled>
 													</div>
 												</div>
 												<div class="col-3">
@@ -354,7 +354,7 @@
 													</div>	
 													<div class="row mb-2">
 															<input class="form-control col-6" type="text" placeholder="Tiempo de entrega: 30-45 min" aria-label="Disabled input example" disabled>
-															<input width="" class="form-control col-5 ml-4" type="text" placeholder="En camino" aria-label="Disabled input example" disabled>
+															<input class="form-control col-5 ml-4" style="red" type="text" placeholder="Cancelado" aria-label="Disabled input example" disabled>
 													</div>
 												</div>
 												<div class="col-3">
