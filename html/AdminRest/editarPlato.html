@@ -41,7 +41,7 @@
 
         <!-- Nav Item - Dashboard -->
         <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="categorias.html">
                 <i class="fas fa-fw fa-list"></i>
                 <span>Categorias</span></a>
         </li>
@@ -49,7 +49,7 @@
 
         <!-- Nav Item - Pages Collapse Menu -->
         <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="listaPedidos.html" >
                 <i class="fas fa-fw fa-cog"></i>
                 <span>Pedidos</span>
             </a>
@@ -57,7 +57,7 @@
 
         <!-- Nav Item - Utilities Collapse Menu -->
         <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="extras.html">
                 <i class="fas fa-fw fa-laugh-wink"></i>
                 <span>Extras</span>
             </a>
@@ -65,13 +65,13 @@
 
         <!-- Nav Item - Pages Collapse Menu -->
         <li class="nav-item">
-            <a class="nav-link " href="#">
+            <a class="nav-link " href="reportes.html">
                 <i class="fas fa-fw fa-folder"></i>
                 <span>Reportes</span>
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link " href="#">
+            <a class="nav-link " href="listaCupones.html">
                 <i class="fas fa-fw fa-folder"></i>
                 <span>Cupones</span>
             </a>
@@ -214,6 +214,8 @@
 
                         <div class="table-responsive">
                             <TABLE class="table">
+                                <form id="editar" method="POST"
+                                      action="listaPlatos.html">
                                 <TR>
                                     <TD><b>Nombre de plato: </b></TD>
                                     <td><input name="name" type="text" value="Arroz chaufa" class="form-control">
@@ -277,8 +279,9 @@
                                         </div>
                                     </div>
                                 </TR>
+                                </form>
                                 <form id="eliminar" method="POST"
-                                      action="">
+                                      action="listaPlatos.html">
 
                                     <tr>
                                         <td><label class="text-sm-left" style="color: #2e59d9"><small>*Si no
@@ -288,8 +291,8 @@
                                         <td>
                                             <a class="btn btn-block btn-success" data-toggle="modal"
                                                href="#lModal2" data-target="#lModal2">Actualizar</a>
-                                        <td><a class="btn btn-block btn-primary" data-toggle="modal"
-                                               href="#lModal3" data-target="#lModal3">Cancelar</a></td>
+                                        <td><a class="btn btn-block btn-primary"
+                                               href="listaPlatos.html">Cancelar</a></td>
                                         <td><a class="btn btn-block btn-warning" data-toggle="modal"
                                                href="#lModal1" data-target="#lModal1">Eliminar Plato</a>
                                         </td>
@@ -330,6 +333,72 @@
                     <a class="btn" type="button"
                        data-dismiss="modal">
                         Cancelar
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal1-->
+    <div class="modal fade" id="lModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel2">¿Está seguro que desea eliminar el producto?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" form="eliminar" class="btn btn-primary">Sí</button>
+                    <a class="btn" type="button"
+                       data-dismiss="modal">
+                        No
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal2-->
+    <div class="modal fade" id="lModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel3">¿Está seguro que desea actualizar
+                        este producto?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" form="editar" class="btn btn-primary">Sí</button>
+                    <a class="btn" type="button"
+                       data-dismiss="modal">
+                        No
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="lModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel4">¿Está seguro que desea cancelar la
+                        edición?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-primary" href="extras.html">Sí</a>
+                    <a class="btn" type="button"
+                       data-dismiss="modal">
+                        No
                     </a>
                 </div>
             </div>
