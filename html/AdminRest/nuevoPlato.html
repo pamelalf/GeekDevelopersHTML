@@ -41,7 +41,7 @@
 
         <!-- Nav Item - Dashboard -->
         <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="categorias.html">
                 <i class="fas fa-fw fa-list"></i>
                 <span>Categorias</span></a>
         </li>
@@ -49,7 +49,7 @@
 
         <!-- Nav Item - Pages Collapse Menu -->
         <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="listaPedidos.html" >
                 <i class="fas fa-fw fa-cog"></i>
                 <span>Pedidos</span>
             </a>
@@ -57,7 +57,7 @@
 
         <!-- Nav Item - Utilities Collapse Menu -->
         <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="extras.html">
                 <i class="fas fa-fw fa-laugh-wink"></i>
                 <span>Extras</span>
             </a>
@@ -65,13 +65,13 @@
 
         <!-- Nav Item - Pages Collapse Menu -->
         <li class="nav-item">
-            <a class="nav-link " href="#">
+            <a class="nav-link " href="reportes.html">
                 <i class="fas fa-fw fa-folder"></i>
                 <span>Reportes</span>
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link " href="#">
+            <a class="nav-link " href="listaCupones.html">
                 <i class="fas fa-fw fa-folder"></i>
                 <span>Cupones</span>
             </a>
@@ -218,7 +218,7 @@
                             <div class="container-fluid">
                                 <div class="tabel-responsive">
                                     <table class="table">
-                                        <form method="POST" action="" class="justify-content-left" enctype="multipart/form-data"></form>
+                                        <form method="POST" id="action" action="listaPlatos.html" class="justify-content-left" enctype="multipart/form-data"></form>
                                         <tr>
                                             <td><label for="nombre">Nombre:</label></td>
                                             <td colspan="2"><input type="text" class="form-control" id="nombre" name="nombre"></td>
@@ -255,10 +255,10 @@
                                                 <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
                                                 <label for="vehicle3"> Bebidas</label>
                                                 <input type="checkbox" id="vehie3" name="fdf" value="rf">
-                                                <label for="vehiclssse3"> Guarniciones</label><br></td>
+                                                <label for="vehie3"> Guarniciones</label><br></td>
                                         </tr>
                                         <tr>
-                                            
+
                                             <td colspan="2"><a class="btn btn-primary mb-4 mr-2 "
                                                 data-toggle="modal"
                                                 data-target="#RegistroExitoso"
@@ -267,81 +267,15 @@
                                                  plato
                                              </a>
                                            <a class="btn btn-danger mb-4"
-                                                href="#CancelarRegistro"
+                                                href="listaPlatos.html"
                                                 role="button"
-                                                data-toggle="modal"
-                                                data-target="#CancelarRegistro">Cancelar</a></td>
-                                                <div class="modal fade" id="RegistroExitoso" tabindex="-1"
-                                                         role="dialog"
-                                                         aria-labelledby="exampleModalLabel"
-                                                         aria-hidden="true">
-                                                        <div class="modal-dialog" role="document">
-                                                            <div class="modal-content">
-                                                                <div class="modal-header">
-                                                                    <h5 class="modal-title text-center"
-                                                                        id="exampleModalRegistro">
-                                                                        ¿Está seguro que desea
-                                                                        registrar este producto?</h5>
-                                                                    <button class="close" type="button"
-                                                                            data-dismiss="modal"
-                                                                            aria-label="Close">
-                                                                        <span aria-hidden="true">×</span>
-                                                                    </button>
-                                                                </div>
-                                                                <div class="modal-footer">
-                                                                    <button type="submit" class="btn btn-primary"
-                                                                            href="">
-                                                                        Sí
-                                                                    </button>
-                                                                    <a class="btn" type="button"
-                                                                       data-dismiss="modal">
-                                                                        No
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                            
+                                           >Cancelar</a></td>
                                         </tr>
                                     </form>
                                     </table>
                                 </div>
-                               
-                                
                             </div>
-                            <div class="modal fade" id="CancelarRegistro" tabindex="-1"
-                                 role="dialog"
-                                 aria-labelledby="exampleModalLabel"
-                                 aria-hidden="true">
-                                <div class="modal-dialog" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title text-center"
-                                                id="exampleModalCancelarRegistro"
-                                                data-dismiss="modal">¿Desea cancelar el
-                                                registro?</h5>
-                                            <button class="close" type="button"
-                                                    data-dismiss="modal"
-                                                    aria-label="Close">
-                                                <span aria-hidden="true">×</span>
-                                            </button>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <a class="btn btn-primary"
-                                               href="">Sí</a>
-                                            <a class="btn" type="button"
-                                               data-dismiss="modal">
-                                                No
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            </form>
                         </div>
-                        </form>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
@@ -377,6 +311,36 @@
         </div>
     </div>
 </div>
+    <div class="modal fade" id="RegistroExitoso" tabindex="-1"
+         role="dialog"
+         aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-center"
+                        id="exampleModalRegistro">
+                        ¿Está seguro que desea
+                        registrar este producto?</h5>
+                    <button class="close" type="button"
+                            data-dismiss="modal"
+                            aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary"
+                            form="action">
+                        Sí
+                    </button>
+                    <a class="btn" type="button"
+                       data-dismiss="modal">
+                        No
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 <!-- Bootstrap core JavaScript-->
 <script src="../bootstrap/vendor/jquery/jquery.min.js"></script>
 <script src="../bootstrap/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
