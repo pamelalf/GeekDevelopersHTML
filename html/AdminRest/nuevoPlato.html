@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Login</title>
+    <title>NUEVO PLATO</title>
 
     <!-- Custom fonts for this template-->
     <link href="../bootstrap/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -41,7 +41,7 @@
 
         <!-- Nav Item - Dashboard -->
         <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="categorias.html">
                 <i class="fas fa-fw fa-list"></i>
                 <span>Categorias</span></a>
         </li>
@@ -49,7 +49,7 @@
 
         <!-- Nav Item - Pages Collapse Menu -->
         <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="listaPedidos.html" >
                 <i class="fas fa-fw fa-cog"></i>
                 <span>Pedidos</span>
             </a>
@@ -57,7 +57,7 @@
 
         <!-- Nav Item - Utilities Collapse Menu -->
         <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="extras.html">
                 <i class="fas fa-fw fa-laugh-wink"></i>
                 <span>Extras</span>
             </a>
@@ -65,13 +65,13 @@
 
         <!-- Nav Item - Pages Collapse Menu -->
         <li class="nav-item">
-            <a class="nav-link " href="#">
+            <a class="nav-link " href="reportes.html">
                 <i class="fas fa-fw fa-folder"></i>
                 <span>Reportes</span>
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link " href="#">
+            <a class="nav-link " href="listaCupones.html">
                 <i class="fas fa-fw fa-folder"></i>
                 <span>Cupones</span>
             </a>
@@ -216,160 +216,66 @@
                         <div class="text-xl-left">
 
                             <div class="container-fluid">
-                                <form method="POST" action="" enctype="multipart/form-data">
-
-                                    <div class="col-md-5 mb-4">
-                                        <label for="nombre">Nombre</label>
-                                        <input type="text" class="form-control" id="nombre" name="nombre">
-                                    </div>
-
-                                    <div class="col-md-5 mb-4">
-                                        <label>Descripción:</label>
-                                        <input name="descrip" type="text"
-                                               class="form-control">
-
-                                    </div>
-
-                                    <div class="col-md-5 mb-4">
-                                        <label>Precio unitario:</label>
-                                        <div class="input-group">
-                                            <div class="input-group-prepend">
-                                                <span class="input-group-text">S/.</span>
-                                                <input name="cantidad" type="text" class="form-control">
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-10 mb-0">
-                                        <label>Imagen referencial:</label>
-                                        <div class="input-group">
-                                            <input type="file" class="form-control">
-                                        </div>
-                                        <div class="form-row justify-content-center">
-                                            <div class="col-md-2 mb-4">
-                                                <img id="image_preview"
-                                                     src="https://images.squarespace-cdn.com/content/v1/504fafcf84ae1835d7e5c807/1481053836481-1P6LXZV7W56MFQ3XTRYF/ke17ZwdGBToddI8pDm48kEPi1-yrhDrzLshLxN3QC8RZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpwpHDH2dI8XKnmDPhhL-Z4ihJCPIeRMB9aDS9L0YuCpaVeHjzKGTX-CN79Cq4zdtLU/upload-arrow_318-26670.jpg?format=750w"
-                                                     width="165">
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <label>Extras: </label>
-                                    <div class="form-row justify-content-center">
-                                        <div class="col-md-5 mb-4">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                <label class="form-check-label" for="flexCheckDefault">
-                                                    Cubiertos
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-5 mb-4">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                                                <label class="form-check-label" for="flexCheckChecked">
-                                                    Ensaladas
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-5 mb-4">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
-                                                <label class="form-check-label" for="flexCheckDefault2">
-                                                    Bebidas
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-5 mb-4">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
-                                                <label class="form-check-label" for="flexCheckDefault3">
-                                                    Guarniciones
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-10 mt-2 mb-4 justify-content-center">
-                                        <a class="btn btn-primary mb-4 mr-2 "
-                                           data-toggle="modal"
-                                           data-target="#RegistroExitoso"
-                                           href="#RegistroExitoso">
-                                            Registrar
-                                            plato
-                                        </a>
-                                        <a class="btn btn-danger mb-4"
-                                           href="#CancelarRegistro"
-                                           role="button"
-                                           data-toggle="modal"
-                                           data-target="#CancelarRegistro">Cancelar</a>
-                                    </div>
-
-                                    <div class="modal fade" id="RegistroExitoso" tabindex="-1"
-                                         role="dialog"
-                                         aria-labelledby="exampleModalLabel"
-                                         aria-hidden="true">
-                                        <div class="modal-dialog" role="document">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h5 class="modal-title text-center"
-                                                        id="exampleModalRegistro">
-                                                        ¿Está seguro que desea
-                                                        registrar este producto?</h5>
-                                                    <button class="close" type="button"
-                                                            data-dismiss="modal"
-                                                            aria-label="Close">
-                                                        <span aria-hidden="true">×</span>
-                                                    </button>
+                                <div class="tabel-responsive">
+                                    <table class="table">
+                                        <form method="POST" id="action" action="listaPlatos.html" class="justify-content-left" enctype="multipart/form-data"></form>
+                                        <tr>
+                                            <td><label for="nombre">Nombre:</label></td>
+                                            <td colspan="2"><input type="text" class="form-control" id="nombre" name="nombre"></td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td><label>Descripción:</label></td>
+                                            <td colspan="2"><input class="form-control" name="descrip" type="text"
+                                                class="form-control"></td>
+                                            <td rowspan="3" colspan="3"><img id="image_preview"
+                                                src="https://images.squarespace-cdn.com/content/v1/504fafcf84ae1835d7e5c807/1481053836481-1P6LXZV7W56MFQ3XTRYF/ke17ZwdGBToddI8pDm48kEPi1-yrhDrzLshLxN3QC8RZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpwpHDH2dI8XKnmDPhhL-Z4ihJCPIeRMB9aDS9L0YuCpaVeHjzKGTX-CN79Cq4zdtLU/upload-arrow_318-26670.jpg?format=750w"
+                                                width="300"></td>
+                                        </tr>
+                                        <tr>
+                                            <td> <label>Precio unitario:</label></td>
+                                            <td colspan="2"><div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">S/.</span>
+                                                    <input name="cantidad" type="text" class="form-control">
                                                 </div>
-                                                <div class="modal-footer">
-                                                    <button type="submit" class="btn btn-primary"
-                                                            href="">
-                                                        Sí
-                                                    </button>
-                                                    <a class="btn" type="button"
-                                                       data-dismiss="modal">
-                                                        No
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="modal fade" id="CancelarRegistro" tabindex="-1"
-                                 role="dialog"
-                                 aria-labelledby="exampleModalLabel"
-                                 aria-hidden="true">
-                                <div class="modal-dialog" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title text-center"
-                                                id="exampleModalCancelarRegistro"
-                                                data-dismiss="modal">¿Desea cancelar el
-                                                registro?</h5>
-                                            <button class="close" type="button"
-                                                    data-dismiss="modal"
-                                                    aria-label="Close">
-                                                <span aria-hidden="true">×</span>
-                                            </button>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <a class="btn btn-primary"
-                                               href="">Sí</a>
-                                            <a class="btn" type="button"
-                                               data-dismiss="modal">
-                                                No
-                                            </a>
-                                        </div>
-                                    </div>
+                                            </div></td>
+                                        </tr>
+                                        <tr>
+                                            <td><label>Imagen referencial:</label></td>
+                                            <td colspan="2"> <input type="file" class="form-control"></td>
+                                        </tr>
+                                        <tr>
+                                            <td> <label>Extras: </label></td>
+                                            <td colspan="2">
+                                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                                <label for="vehicle1"> Cubiertos</label>
+                                                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                                                <label for="vehicle2"> Ensaladas</label><br>
+                                                <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                                                <label for="vehicle3"> Bebidas</label>
+                                                <input type="checkbox" id="vehie3" name="fdf" value="rf">
+                                                <label for="vehie3"> Guarniciones</label><br></td>
+                                        </tr>
+                                        <tr>
+
+                                            <td colspan="2"><a class="btn btn-primary mb-4 mr-2 "
+                                                data-toggle="modal"
+                                                data-target="#RegistroExitoso"
+                                                href="#RegistroExitoso">
+                                                 Registrar
+                                                 plato
+                                             </a>
+                                           <a class="btn btn-danger mb-4"
+                                                href="listaPlatos.html"
+                                                role="button"
+                                           >Cancelar</a></td>
+                                        </tr>
+                                    </form>
+                                    </table>
                                 </div>
                             </div>
-                            </form>
                         </div>
-                        </form>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
@@ -394,7 +300,7 @@
                 </button>
             </div>
             <div class="modal-footer">
-                <a class="btn btn-primary"
+                <a class="btn btn-primary" style="background-color: #701111; color: #FFFFFF; border: #701111"
                    href="">Cerrar
                     Sesión</a>
                 <a class="btn" type="button"
@@ -405,6 +311,36 @@
         </div>
     </div>
 </div>
+    <div class="modal fade" id="RegistroExitoso" tabindex="-1"
+         role="dialog"
+         aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-center"
+                        id="exampleModalRegistro">
+                        ¿Está seguro que desea
+                        registrar este producto?</h5>
+                    <button class="close" type="button"
+                            data-dismiss="modal"
+                            aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary"
+                            form="action">
+                        Sí
+                    </button>
+                    <a class="btn" type="button"
+                       data-dismiss="modal">
+                        No
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 <!-- Bootstrap core JavaScript-->
 <script src="../bootstrap/vendor/jquery/jquery.min.js"></script>
 <script src="../bootstrap/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
