@@ -213,29 +213,49 @@
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
+                    <form>
 
+                        <div class="form-group row">
+                            <div class="col-sm-2 mb-2">
+                                <input placeholder="Desde" class="form-control" type="text"
+                                       onfocus="(this.type='date')" onblur="(this.type='text')" id="date1">
+                            </div>
+                            <div class="col-sm-2 mb-2">
+                                <input placeholder="Hasta" class="form-control" type="text"
+                                       onfocus="(this.type='date')" onblur="(this.type='text')" id="date2">
+                            </div>
+                            <div class="col-sm-2 mb-2">
+                                <select class="form-control">
+                                    <option value="">Categorias</option>
+                                    <option value="">Criollo</option>
+                                    <option value="">Oriental</option>
+                                    <option value="">Marino</option>
+                                    <option value="">Tropical</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-2 mb-2">
+                                <select class="form-control">
+                                    <option value="">Cantidad Vendida</option>
+                                    <option value="">0 uni. hasta 25 uni.</option>
+                                    <option value="">25 uni. hasta 50 uni.</option>
+                                    <option value="">50 uni. hasta 100 uni.</option>
+                                    <option value="">100 uni. a más</option>
+                                </select>
+                            </div>
+                                <div class="col-sm-2 mb-2  " style="margin-right: 10px" >
+                                    <a class="btn btn-secondary " >Quitar filtros</a>
+                                </div>
+                        </div>
+                    </form>
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3 " style="background-color: #701111;">
                             
                             <div class="d-sm-flex align-items-center justify-content-between">
-                                <div class="col-sm-1">
-                                    <input placeholder="Filtro Fecha" class="form-control" type="text"
-                                           onfocus="(this.type='date')" onblur="(this.type='text')" id="date">
-                                </div>
-                                <div></div>
-                                <div></div>
+                               
                                 <div></div>
                                 <h5 class="font-weight-bold text-white  text-center">REPORTES DE PLATOS</h5>
-                                <div class="col-sm-2 mb-2">
-                                    <select class="form-control">
-                                        <option value="">Categorias</option>
-                                        <option value="">Criollo</option>
-                                        <option value="">Oriental</option>
-                                        <option value="">Marino</option>
-                                        <option value="">Tropical</option>
-                                    </select>
-                                </div>
+                               
                                 <a href="#" class=" d-sm-inline-block btn btn-sm bontondate"><i
                                         class="fas fa-download fa-sm"></i> Generate Report</a>
                             </div>
