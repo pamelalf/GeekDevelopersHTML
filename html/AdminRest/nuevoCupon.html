@@ -221,10 +221,9 @@
                                         <form method="POST" action="" class="justify-content-left" enctype="multipart/form-data"></form>
                                         <tr>
                                             <td><label for="nombre">Nombre:</label></td>
-                                            <td colspan="2">
-                                                
-                                            <input type="text" class="form-control" id="nombre" name="nombre"></td>
-                                            
+                                            <td colspan="2"><br><input type="text" class="form-control" id="nombre" name="nombre">
+                                                <h1 style="color: red; font-size: small; text-align: left">Debes insertar como máximo 30 caracteres</h1>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td><label for="nombre">Política:</label></td>
@@ -236,7 +235,8 @@
                                                 </option>
                                                 <option value="">Monto en pedidos de S/.100.00
                                                 </option>
-                                            </select></td>
+                                            </select>
+                                            <h1 style="color: red; font-size: small; text-align: left">Debes escoger una política</h1></td>
                                             
                                             <td rowspan="4" colspan="3"><img id="image_preview"
                                                 src="https://image.flaticon.com/icons/png/512/39/39887.png"
@@ -245,7 +245,9 @@
                                         <tr>
                                             <td><label>Descripción:</label></td>
                                             <td colspan="2"><input class="form-control" name="descrip" type="text"
-                                                class="form-control"></td>
+                                                class="form-control">
+                                                <h1 style="color: red; font-size: small; text-align: left">Debes insertar como máximo 40 caracteres</h1>
+                                            </td>
                                             
                                         </tr>
                                         <tr>
@@ -254,6 +256,8 @@
                                                 <div class="input-group-prepend">
                                                     <input name="cantidad" type="date" class="form-control">
                                                 </div>
+                                                <h1 style="color: red; font-size: small; text-align: left">Fecha inválida</h1>
+
                                             </div></td>
                                         </tr>
                                         
@@ -264,7 +268,9 @@
                                                     <span class="input-group-text">S/.</span>
                                                     <input name="cantidad" type="text" class="form-control">
                                                 </div>
-                                            </div></td>
+                                            </div>
+                                            <h1 style="color: red; font-size: small; text-align: left">Valor ingresado inválido</h1>
+                                        </td>
                                         </tr>
                                         <tr>
                                             
@@ -298,10 +304,10 @@
                                                                     </button>
                                                                 </div>
                                                                 <div class="modal-footer">
-                                                                    <button type="submit" class="btn btn-primary"
-                                                                            href="">
+                                                                    <a type="submit" class="btn btn-primary"
+                                                                            href="listaCupones.html">
                                                                         Sí
-                                                                    </button>
+                                                                    </a>
                                                                     <a class="btn" type="button"
                                                                        data-dismiss="modal">
                                                                         No
@@ -337,7 +343,7 @@
                                         </div>
                                         <div class="modal-footer">
                                             <a class="btn btn-primary"
-                                               href="">Sí</a>
+                                               href="listaCupones.html">Sí</a>
                                             <a class="btn" type="button"
                                                data-dismiss="modal">
                                                 No
