@@ -12,13 +12,13 @@
     <title>DETALLES DEL PEDIDO</title>
 
     <!-- Custom fonts for this template/BASE-COPIAR-NOBORRAR/bootstrap/vendor/fontawesome-free/css/all.min.css -->
-    <link href="../bootstrap/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="../bootstrap/vendor/fontawesome-free/css/all.css" rel="stylesheet" type="text/css">
     <link
             href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
             rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="../bootstrap/css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="../bootstrap/css/sb-admin-2.css" rel="stylesheet">
 
 
     <link href="cssAR/estilosAdminRest.css" rel="stylesheet" type="text/css">
@@ -48,7 +48,7 @@
 
         <!-- Nav Item - Dashboard -->
         <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="categorias.html">
                 <i class="fas fa-fw fa-list"></i>
                 <span>Categorias</span></a>
         </li>
@@ -56,7 +56,7 @@
 
         <!-- Nav Item - Pages Collapse Menu -->
         <li class="nav-item">
-            <a class="nav-link" href="#" >
+            <a class="nav-link" href="listaPedidos.html" >
                 <i class="fas fa-fw fa-cog"></i>
                 <span>Pedidos</span>
             </a>
@@ -64,7 +64,7 @@
 
         <!-- Nav Item - Utilities Collapse Menu -->
         <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="extras.html">
                 <i class="fas fa-fw fa-laugh-wink"></i>
                 <span>Extras</span>
             </a>
@@ -72,13 +72,13 @@
 
         <!-- Nav Item - Pages Collapse Menu -->
         <li class="nav-item">
-            <a class="nav-link " href="#">
+            <a class="nav-link " href="reportes.html">
                 <i class="fas fa-fw fa-folder"></i>
                 <span>Reportes</span>
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link " href="#">
+            <a class="nav-link " href="listaCupones.html">
                 <i class="fas fa-fw fa-folder"></i>
                 <span>Cupones</span>
             </a>
@@ -112,18 +112,7 @@
                 </form>
 
                 <!-- Topbar Search -->
-                <form
-                        class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-                    <div class="input-group">
-                        <input type="text" class="form-control bg-light border-0 small" placeholder="Buscar..."
-                               aria-label="Search" aria-describedby="basic-addon2">
-                        <div class="input-group-append">
-                            <button class="btn botonbusca" type="button">
-                                <i class="fas fa-search fa-sm"></i>
-                            </button>
-                        </div>
-                    </div>
-                </form>
+
 
                 <!-- Topbar Navbar -->
                 <ul class="navbar-nav ml-auto">
@@ -327,17 +316,17 @@
                                     <thead>
                                     <div style="text-align: center">
                                         <form id="eliminar" method="POST"
-                                              action="">
+                                              action="listaPedidos.html">
                                             <a class="btn btn-success mb-1" role="button"
                                                data-toggle="modal"
-                                               href="#logoutModal" >
+                                               href="#Modal-Entregar" >
                                                 Aceptar Pedido
                                             </a>
 
                                         </form>
 
                                         <form id="cancelar" method="POST"
-                                              action="">
+                                              action="listaPedidos.html">
                                             <!--<button type="submit" class="btn btn-outline-danger"><a  class="btn-outline-danger" style="text-decoration: none" data-toggle="modal" href="#Modal-Cancelar-Pedido" role="button" >Cancelar Pedido</a></button>-->
                                             <a class="btn btn-danger mb-1"
                                                data-toggle="modal" href="#Modal-Cancelar-Pedido">
@@ -346,7 +335,7 @@
                                         </form>
                                         <div class="btn-group" style="text-align: left" role="group" aria-label="Basic example">
                                             <a style="text-decoration: none" class="btn btn-primary mb-1"
-                                               href=""
+                                               href="listaPedidos.html"
                                                role="button">
                                                 Regresar
                                             </a>
@@ -379,24 +368,67 @@
     <i class="fas fa-angle-up"></i>
 </a>
 
-<!-- Logout Modal-->
+<!-- Alerta cierre sesion-->
 <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
      aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">¿Desea Salir?</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Usted está a punto de salir ¿Desea continuar?</h5>
+                <button class="close" type="button" data-dismiss="modal" aria-label="Cerrar">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-footer">
+                <a class="btn btn-primary" style="background-color: #701111; color: #FFFFFF; border: #701111" href="../login.html">Cerrar
+                    Sesión</a>
+                <a class="btn" type="button"
+                   data-dismiss="modal">
+                    Cancelar
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal1-->
+<div class="modal fade" id="Modal-Entregar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel2">El pedido será aceptado</h5>
                 <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">×</span>
                 </button>
             </div>
-            <div class="modal-body">Al seleecionar el boton salir, usted cerrará su sesión.</div>
             <div class="modal-footer">
-                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                <a class="btn btn-primary" href="/html/login.html">Cerrar Sesión</a>
+                <button type="submit" form="eliminar" class="btn btn-primary">Aceptar</button>
             </div>
         </div>
     </div>
+</div>
+<!-- Modal2-->
+<!-- Modal3-->
+<div class="modal fade" id="Modal-Cancelar-Pedido" tabindex="-1" role="dialog"
+     aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel4">¿Desea rechazar el pedido?</h5>
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" type="button" data-dismiss="modal">No</button>
+                <button class="btn btn-primary" type="submit" form="cancelar">Sí</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 </div>
 
 <!-- Bootstrap core JavaScript-->

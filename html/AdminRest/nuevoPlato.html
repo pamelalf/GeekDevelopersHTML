@@ -41,7 +41,7 @@
 
         <!-- Nav Item - Dashboard -->
         <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="categorias.html">
                 <i class="fas fa-fw fa-list"></i>
                 <span>Categorias</span></a>
         </li>
@@ -49,7 +49,7 @@
 
         <!-- Nav Item - Pages Collapse Menu -->
         <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="listaPedidos.html" >
                 <i class="fas fa-fw fa-cog"></i>
                 <span>Pedidos</span>
             </a>
@@ -57,7 +57,7 @@
 
         <!-- Nav Item - Utilities Collapse Menu -->
         <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="extras.html">
                 <i class="fas fa-fw fa-laugh-wink"></i>
                 <span>Extras</span>
             </a>
@@ -65,13 +65,13 @@
 
         <!-- Nav Item - Pages Collapse Menu -->
         <li class="nav-item">
-            <a class="nav-link " href="#">
+            <a class="nav-link " href="reportes.html">
                 <i class="fas fa-fw fa-folder"></i>
                 <span>Reportes</span>
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link " href="#">
+            <a class="nav-link " href="listaCupones.html">
                 <i class="fas fa-fw fa-folder"></i>
                 <span>Cupones</span>
             </a>
@@ -218,16 +218,18 @@
                             <div class="container-fluid">
                                 <div class="tabel-responsive">
                                     <table class="table">
-                                        <form method="POST" action="" class="justify-content-left" enctype="multipart/form-data"></form>
+                                        <form method="POST" id="action" action="listaPlatos.html" class="justify-content-left" enctype="multipart/form-data"></form>
                                         <tr>
                                             <td><label for="nombre">Nombre:</label></td>
-                                            <td colspan="2"><input type="text" class="form-control" id="nombre" name="nombre"></td>
-                                            
+                                            <td colspan="2"><br><input type="text" class="form-control" id="nombre" name="nombre">
+                                                <h1 style="color: red; font-size: small; text-align: left">Debes insertar como máximo 30 caracteres</h1>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td><label>Descripción:</label></td>
-                                            <td colspan="2"><input class="form-control" name="descrip" type="text"
-                                                class="form-control"></td>
+                                            <td colspan="2"><br><input class="form-control" name="descrip" type="text"
+                                                class="form-control">
+                                                <h1 style="color: red; font-size: small; text-align: left">Debes insertar como máximo 40 caracteres</h1></td>
                                             <td rowspan="3" colspan="3"><img id="image_preview"
                                                 src="https://images.squarespace-cdn.com/content/v1/504fafcf84ae1835d7e5c807/1481053836481-1P6LXZV7W56MFQ3XTRYF/ke17ZwdGBToddI8pDm48kEPi1-yrhDrzLshLxN3QC8RZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpwpHDH2dI8XKnmDPhhL-Z4ihJCPIeRMB9aDS9L0YuCpaVeHjzKGTX-CN79Cq4zdtLU/upload-arrow_318-26670.jpg?format=750w"
                                                 width="300"></td>
@@ -237,13 +239,15 @@
                                             <td colspan="2"><div class="input-group">
                                                 <div class="input-group-prepend">
                                                     <span class="input-group-text">S/.</span>
-                                                    <input name="cantidad" type="text" class="form-control">
+                                                   <br> <input name="cantidad" type="text" class="form-control">
+                                                    <h1 style="color: red; font-size: small; text-align: left">Debes insertar un número positivo</h1>
                                                 </div>
                                             </div></td>
                                         </tr>
                                         <tr>
                                             <td><label>Imagen referencial:</label></td>
-                                            <td colspan="2"> <input type="file" class="form-control"></td>
+                                            <td colspan="2"> <br><input type="file" class="form-control"><h1 style="color: red; font-size: small; text-align: left">Ingresar imágenes con extensión jpg</h1></td>
+
                                         </tr>
                                         <tr>
                                             <td> <label>Extras: </label></td>
@@ -255,10 +259,9 @@
                                                 <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
                                                 <label for="vehicle3"> Bebidas</label>
                                                 <input type="checkbox" id="vehie3" name="fdf" value="rf">
-                                                <label for="vehiclssse3"> Guarniciones</label><br></td>
+                                                <label for="vehie3"> Guarniciones</label><br></td>
                                         </tr>
                                         <tr>
-                                            
                                             <td colspan="2"><a class="btn btn-primary mb-4 mr-2 "
                                                 data-toggle="modal"
                                                 data-target="#RegistroExitoso"
@@ -267,81 +270,15 @@
                                                  plato
                                              </a>
                                            <a class="btn btn-danger mb-4"
-                                                href="#CancelarRegistro"
+                                                href="listaPlatos.html"
                                                 role="button"
-                                                data-toggle="modal"
-                                                data-target="#CancelarRegistro">Cancelar</a></td>
-                                                <div class="modal fade" id="RegistroExitoso" tabindex="-1"
-                                                         role="dialog"
-                                                         aria-labelledby="exampleModalLabel"
-                                                         aria-hidden="true">
-                                                        <div class="modal-dialog" role="document">
-                                                            <div class="modal-content">
-                                                                <div class="modal-header">
-                                                                    <h5 class="modal-title text-center"
-                                                                        id="exampleModalRegistro">
-                                                                        ¿Está seguro que desea
-                                                                        registrar este producto?</h5>
-                                                                    <button class="close" type="button"
-                                                                            data-dismiss="modal"
-                                                                            aria-label="Close">
-                                                                        <span aria-hidden="true">×</span>
-                                                                    </button>
-                                                                </div>
-                                                                <div class="modal-footer">
-                                                                    <button type="submit" class="btn btn-primary"
-                                                                            href="">
-                                                                        Sí
-                                                                    </button>
-                                                                    <a class="btn" type="button"
-                                                                       data-dismiss="modal">
-                                                                        No
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                            
+                                           >Cancelar</a></td>
                                         </tr>
                                     </form>
                                     </table>
                                 </div>
-                               
-                                
                             </div>
-                            <div class="modal fade" id="CancelarRegistro" tabindex="-1"
-                                 role="dialog"
-                                 aria-labelledby="exampleModalLabel"
-                                 aria-hidden="true">
-                                <div class="modal-dialog" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title text-center"
-                                                id="exampleModalCancelarRegistro"
-                                                data-dismiss="modal">¿Desea cancelar el
-                                                registro?</h5>
-                                            <button class="close" type="button"
-                                                    data-dismiss="modal"
-                                                    aria-label="Close">
-                                                <span aria-hidden="true">×</span>
-                                            </button>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <a class="btn btn-primary"
-                                               href="">Sí</a>
-                                            <a class="btn" type="button"
-                                               data-dismiss="modal">
-                                                No
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            </form>
                         </div>
-                        </form>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
@@ -366,7 +303,7 @@
                 </button>
             </div>
             <div class="modal-footer">
-                <a class="btn btn-primary"
+                <a class="btn btn-primary" style="background-color: #701111; color: #FFFFFF; border: #701111"
                    href="">Cerrar
                     Sesión</a>
                 <a class="btn" type="button"
@@ -377,6 +314,36 @@
         </div>
     </div>
 </div>
+    <div class="modal fade" id="RegistroExitoso" tabindex="-1"
+         role="dialog"
+         aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-center"
+                        id="exampleModalRegistro">
+                        ¿Está seguro que desea
+                        registrar este producto?</h5>
+                    <button class="close" type="button"
+                            data-dismiss="modal"
+                            aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary"
+                            form="action">
+                        Sí
+                    </button>
+                    <a class="btn" type="button"
+                       data-dismiss="modal">
+                        No
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 <!-- Bootstrap core JavaScript-->
 <script src="../bootstrap/vendor/jquery/jquery.min.js"></script>
 <script src="../bootstrap/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

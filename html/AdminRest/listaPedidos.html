@@ -213,25 +213,42 @@
 
           <!-- Begin Page Content -->
           <div class="container-fluid">
+            <form>
+
+              <div class="form-group row">
+                <div class="col-sm-3 mb-2 mb-sm-0">
+                  <select class="form-control  ">
+                    <option value="" disabled selected>Buscar por estado</option>
+                    <option value="Entregado">Entregado</option>
+                    <option value="Pendiente">Pendiente</option>
+                    <option value="Cancelado">Cancelado</option>
+                  </select>
+                </div>
+                <div class="col-sm-3 mb-2 mb-sm-0">
+                  <input type="busquedaRestaurante" class="form-control"
+                         id="exampleRestaurante"
+                         placeholder="Búsqueda por cliente">
+                </div>
+                <div class=" form-group row" >
+                  <div class="col-sm-12 mb-2  " style="margin-right: 10px" >
+                    <a class="btn btn-secondary">Quitar filtros</a>
+                  </div>
+
+
+                </div>
+              </div>
+
+
+            </form>
 
             <!-- DataTales Example -->
             <div class="card shadow mb-4">
               <div class="card-header py-3 " style="background-color: #701111;">
 
                 <div class="d-sm-flex align-items-center justify-content-between">
-                  <div class="col-sm-4">
-                    <select class="form-control" style="width: 130px">
-                      <option value="" selected>--Estado--</option>
-                      <option value="">Entregado</option>
-                      <option value="">Pendiente</option>
-                      <option value="">Cancelado</option>
-                    </select>
-                  </div>
-                  <h5 class="font-weight-bold text-white text-lg-center">LISTA DE PEDIDOS</h5>
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                  <div></div>
+
+                  <h5 class="font-weight-bold text-white text-lg-center mx-auto ">LISTA DE PEDIDOS</h5>
+
                 </div>
 
               </div>
@@ -255,6 +272,9 @@
                         <th class="text-center">
                           Rechazar
                         </th>
+                        <th class="text-center">
+                          Editar
+                        </th>
                       </tr>
                     </thead>
                     <tbody>
@@ -268,17 +288,9 @@
                         <td style="width: 160px"><a style="color: #dce3f9" class="btn btn-danger btn-circle align">
                           <i class="fas fa-times"></i>
                         </a></td>
-
-                      </tr>
-                      <tr>
-                        <td style="width: 300px">Pendiente</td>
-                        <td style="width: 700px">Lopez Garcia, Joham Stuard</td>
-                        <td style="width: 250px">S/. 18.00</td>
-                        <td style="width: 160px"><a style="color: #dce3f9" class="btn btn-success btn-circle align">
-                          <i class="fas fa-check"></i>
-                        </a></td>
-                        <td style="width: 160px"><a style="color: #dce3f9" class="btn btn-danger btn-circle align">
-                          <i class="fas fa-times"></i>
+                        <td style="width: 160px"><a style="color: #dce3f9"
+                                                    class="btn btn-warning btn-circle align" href="detallePedido.html">
+                          <i class="fas fa-pen"></i>
                         </a></td>
 
                       </tr>
@@ -292,6 +304,26 @@
                         <td style="width: 160px"><a style="color: #dce3f9" class="btn btn-danger btn-circle align">
                           <i class="fas fa-times"></i>
                         </a></td>
+                        <td style="width: 160px"><a style="color: #dce3f9"
+                                                    class="btn btn-warning btn-circle align" href="detallePedido.html">
+                          <i class="fas fa-pen"></i>
+                        </a></td>
+
+                      </tr>
+                      <tr>
+                        <td style="width: 300px">Pendiente</td>
+                        <td style="width: 700px">Lopez Garcia, Joham Stuard</td>
+                        <td style="width: 250px">S/. 18.00</td>
+                        <td style="width: 160px"><a style="color: #dce3f9" class="btn btn-success btn-circle align">
+                          <i class="fas fa-check"></i>
+                        </a></td>
+                        <td style="width: 160px"><a style="color: #dce3f9" class="btn btn-danger btn-circle align">
+                          <i class="fas fa-times"></i>
+                        </a></td>
+                        <td style="width: 160px"><a style="color: #dce3f9"
+                                                    class="btn btn-warning btn-circle align" href="detallePedido.html">
+                          <i class="fas fa-pen"></i>
+                        </a></td>
 
                       </tr>
                       <tr>
@@ -303,6 +335,10 @@
                         </a></td>
                         <td style="width: 160px"><a style="color: #dce3f9" class="btn btn-danger btn-circle align">
                           <i class="fas fa-times"></i>
+                        </a></td>
+                        <td style="width: 160px"><a style="color: #dce3f9"
+                                                    class="btn btn-warning btn-circle align" href="detallePedido.html">
+                          <i class="fas fa-pen"></i>
                         </a></td>
 
                       </tr>
@@ -316,17 +352,9 @@
                         <td style="width: 160px"><a style="color: #dce3f9" class="btn btn-danger btn-circle align">
                           <i class="fas fa-times"></i>
                         </a></td>
-
-                      </tr>
-                      <tr>
-                        <td style="width: 300px">Entregado</td>
-                        <td style="width: 700px">Lopez Garcia, Joham Stuard</td>
-                        <td style="width: 250px">S/. 18.00</td>
-                        <td style="width: 160px"><a style="color: #dce3f9" class="btn btn-success btn-circle align">
-                          <i class="fas fa-check"></i>
-                        </a></td>
-                        <td style="width: 160px"><a style="color: #dce3f9" class="btn btn-danger btn-circle align">
-                          <i class="fas fa-times"></i>
+                        <td style="width: 160px"><a style="color: #dce3f9"
+                                                    class="btn btn-warning btn-circle align" href="detallePedido.html">
+                          <i class="fas fa-pen"></i>
                         </a></td>
 
                       </tr>
@@ -339,6 +367,26 @@
                         </a></td>
                         <td style="width: 160px"><a style="color: #dce3f9" class="btn btn-danger btn-circle align">
                           <i class="fas fa-times"></i>
+                        </a></td>
+                        <td style="width: 160px"><a style="color: #dce3f9"
+                                                    class="btn btn-warning btn-circle align" href="detallePedido.html">
+                          <i class="fas fa-pen"></i>
+                        </a></td>
+
+                      </tr>
+                      <tr>
+                        <td style="width: 300px">Entregado</td>
+                        <td style="width: 700px">Lopez Garcia, Joham Stuard</td>
+                        <td style="width: 250px">S/. 18.00</td>
+                        <td style="width: 160px"><a style="color: #dce3f9" class="btn btn-success btn-circle align">
+                          <i class="fas fa-check"></i>
+                        </a></td>
+                        <td style="width: 160px"><a style="color: #dce3f9" class="btn btn-danger btn-circle align">
+                          <i class="fas fa-times"></i>
+                        </a></td>
+                        <td style="width: 160px"><a style="color: #dce3f9"
+                                                    class="btn btn-warning btn-circle align" href="detallePedido.html">
+                          <i class="fas fa-pen"></i>
                         </a></td>
 
                       </tr>
@@ -351,6 +399,10 @@
                         </a></td>
                         <td style="width: 160px"><a style="color: #dce3f9" class="btn btn-danger btn-circle align">
                           <i class="fas fa-times"></i>
+                        </a></td>
+                        <td style="width: 160px"><a style="color: #dce3f9"
+                                                    class="btn btn-warning btn-circle align" href="detallePedido.html">
+                          <i class="fas fa-pen"></i>
                         </a></td>
 
                       </tr>
@@ -414,7 +466,7 @@
           <div class="modal-body">Al seleecionar el boton salir, usted cerrará su sesión.</div>
           <div class="modal-footer">
             <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-            <a class="btn btn-primary" href="/html/login.html">Cerrar Sesión</a>
+            <a class="btn btn-primary" style="background-color: #701111; color: #FFFFFF; border: #701111" href="/html/login.html">Cerrar Sesión</a>
           </div>
         </div>
       </div>
