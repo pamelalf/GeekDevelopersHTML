@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Pedido Actual</title>
+    <title>Reporte de Tiempo</title>
 
     <!-- Custom fonts for this template -->
     <link href="../bootstrap/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -274,193 +274,145 @@
 
                 </nav>
                 <!-- End of Topbar -->
-
-                <!-- Begin Page Content -->
+				<!-- Begin Page Content -->
                 <div class="container-fluid">
 
                     <!-- DataTales Example -->
-					<form>
-                    <div class=" form-group row" >
-                        <div class="col-sm-12 mb-2 " style="margin-right: 10px; margin-top: 20px" >
-                            <a class="btn btn-secondary" href="listaPedidoActual.html" >Quitar filtros</a>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="col-sm-3 mb-2 mb-sm-0">
-                            <select class="form-control  ">
-                                <option value="" disabled selected>Estado</option>
-                                <option value="Confirmado">Confirmado</option>
-                                <option value="En camino">En camino</option>
-                            </select>
-                        </div>
-						<div class="col-sm-3 mb-2">
-                            <input type="busquedaRestaurante" class="form-control"
-                                   id="exampleRestaurante"
-                                   placeholder="Búsqueda por restaurante">
-							
-                        </div>
-						<div class="input-group-append col-sm-3 mb-2 ">
-                                <button class="btn" style="background-color:#701111; color:white; border:#701111" type="button">
-                                   <i class="fas fa-filter"></i>
-                                </button>
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3 " style="background-color: #701111;">
+                            
+                            <div class="d-sm-flex align-items-center justify-content-between">
+                                <div class="col-sm-1">
+                                    <input placeholder="Filtro Fecha" class="form-control" type="text"
+                                           onfocus="(this.type='date')" onblur="(this.type='text')" id="date">
+                                </div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <h5 class="font-weight-bold text-white  text-center">REPORTES DE TIEMPO</h5>
+                                <div class="col-sm-2 mb-2">
+                                    <select class="form-control">
+                                        <option value="">Categorias</option>
+                                        <option value="">Criollo</option>
+                                        <option value="">Oriental</option>
+                                        <option value="">Marino</option>
+                                        <option value="">Tropical</option>
+                                    </select>
+                                </div>
+                                <a href="#" class=" d-sm-inline-block btn btn-sm bontondate"><i
+                                        class="fas fa-download fa-sm"></i> Generate Report</a>
                             </div>
-                    </div>
-                </form>
-                    <div class="card-header py-3 " style="background-color: #701111;">
-
-                        <div class="d-sm-flex align-items-center justify-content-between">
-
-                            <h5 class="font-weight-bold text-white text-lg-center mx-auto ">Pedidos Actuales</h5>
+        
                         </div>
-                    </div>
                         <div class="card-body">
                             <div class="table-responsive">
-                                <table class="table" id="dataTable" width="100%" style="background-color:gray">
-                                    <tbody>
-                                        <tr >
-											<div class="row" style="margin-bottom:10px">
-												<div class="col-3" >
-													<img width="100%" height="100%" src="img/rosaNautica.jpg">
-												</div>
-												<div class="col-6">
-													<div class="row mb-2" >
-														<input class="form-control ph-center" type="text" placeholder="Rosa Náutica" aria-label="Disabled input example" disabled>
-													</div>
-													<div class="row mb-2" >
-														<input class="form-control ph-center" type="text" placeholder="Fecha de entrega: 05-03-2021" aria-label="Disabled input example" disabled>
-													</div>	
-													<div class="row mb-2">
-															<input class="form-control col-6" type="text" placeholder="Tiempo de entrega: 30-45 min" aria-label="Disabled input example" disabled>
-															<input width="" class="form-control col-5 ml-4" type="text" placeholder="En camino" aria-label="Disabled input example" disabled>
-													</div>
-												</div>
-												<div class="col-3">
-													<a href="detallePedido.html"><div class="text-center"><i style="font-size:9em; color:#2C8287" class="fas fa-eye"></i></div></a>
-													<a href="detallePedido.html"><div class="text-center" style="color:#2C8287">Detalle de Pedido</div></a>
-												</div>
-											</div>
-										</tr>
-										<div class="dropdown-divider" style="border-color:#701111;" ></div>
-										<tr >
-											<div class="row">
-												<div class="col-3">
-													<img width="100%" height="100%" src="img/rosaNautica.jpg">
-												</div>
-												<div class="col-6">
-													<div class="row mb-2" >
-														<input class="form-control ph-center" type="text" placeholder="Rosa Náutica" aria-label="Disabled input example" disabled>
-													</div>
-													<div class="row mb-2" >
-														<input class="form-control ph-center" type="text" placeholder="Fecha de entrega: 05-03-2021" aria-label="Disabled input example" disabled>
-													</div>	
-													<div class="row mb-2">
-															<input class="form-control col-6" type="text" placeholder="Tiempo de entrega: 30-45 min" aria-label="Disabled input example" disabled>
-															<input width="" class="form-control col-5 ml-4" type="text" placeholder="En camino" aria-label="Disabled input example" disabled>
-													</div>
-												</div>
-												<div class="col-3">
-													<a href="detallePedido.html"><div class="text-center"><i style="font-size:9em; color:#2C8287" class="fas fa-eye"></i></div></a>
-													<a href="detallePedido.html"><div class="text-center" style="color:#2C8287">Detalle de Pedido</div></a>
-												</div>
-											</div>
-										</tr>
-										<div class="dropdown-divider" style="border-color:#701111;" ></div>
-										<tr >
-											<div class="row">
-												<div class="col-3">
-													<img width="100%" height="100%" src="img/rosaNautica.jpg">
-												</div>
-												<div class="col-6">
-													<div class="row mb-2" >
-														<input class="form-control ph-center" type="text" placeholder="Rosa Náutica" aria-label="Disabled input example" disabled>
-													</div>
-													<div class="row mb-2" >
-														<input class="form-control ph-center" type="text" placeholder="Fecha de entrega: 05-03-2021" aria-label="Disabled input example" disabled>
-													</div>	
-													<div class="row mb-2">
-															<input class="form-control col-6" type="text" placeholder="Tiempo de entrega: 30-45 min" aria-label="Disabled input example" disabled>
-															<input width="" class="form-control col-5 ml-4" type="text" placeholder="En camino" aria-label="Disabled input example" disabled>
-													</div>
-												</div>
-												<div class="col-3">
-													<a href="detallePedido.html"><div class="text-center"><i style="font-size:9em; color:#2C8287" class="fas fa-eye"></i></div></a>
-													<a href="detallePedido.html"><div class="text-center" style="color:#2C8287">Detalle de Pedido</div></a>
-												</div>
-											</div>
-										</tr>
-										<div class="dropdown-divider" style="border-color:#701111;" ></div>
-										<tr >
-											<div class="row">
-												<div class="col-3">
-													<img width="100%" height="100%" src="img/rosaNautica.jpg">
-												</div>
-												<div class="col-6">
-													<div class="row mb-2" >
-														<input class="form-control ph-center" type="text" placeholder="Rosa Náutica" aria-label="Disabled input example" disabled>
-													</div>
-													<div class="row mb-2" >
-														<input class="form-control ph-center" type="text" placeholder="Fecha de entrega: 05-03-2021" aria-label="Disabled input example" disabled>
-													</div>	
-													<div class="row mb-2">
-															<input class="form-control col-6" type="text" placeholder="Tiempo de entrega: 30-45 min" aria-label="Disabled input example" disabled>
-															<input width="" class="form-control col-5 ml-4" type="text" placeholder="En camino" aria-label="Disabled input example" disabled>
-													</div>
-												</div>
-												<div class="col-3">
-													<a href="detallePedido.html"><div class="text-center"><i style="font-size:9em; color:#2C8287" class="fas fa-eye"></i></div></a>
-													<a href="detallePedido.html"><div class="text-center" style="color:#2C8287">Detalle de Pedido</div></a>
-												</div>
-											</div>
-										</tr>
-										<div class="dropdown-divider" style="border-color:#701111;" ></div>
-										<tr >
-											<div class="row">
-												<div class="col-3">
-													<img width="100%" height="100%" src="img/rosaNautica.jpg">
-												</div>
-												<div class="col-6">
-													<div class="row mb-2" >
-														<input class="form-control ph-center" type="text" placeholder="Rosa Náutica" aria-label="Disabled input example" disabled>
-													</div>
-													<div class="row mb-2" >
-														<input class="form-control ph-center" type="text" placeholder="Fecha de entrega: 05-03-2021" aria-label="Disabled input example" disabled>
-													</div>	
-													<div class="row mb-2">
-															<input class="form-control col-6" type="text" placeholder="Tiempo de entrega: 30-45 min" aria-label="Disabled input example" disabled>
-															<input width="" class="form-control col-5 ml-4" type="text" placeholder="En camino" aria-label="Disabled input example" disabled>
-													</div>
-												</div>
-												<div class="col-3">
-													<a href="detallePedido.html"><div class="text-center"><i style="font-size:9em; color:#2C8287" class="fas fa-eye"></i></div></a>
-													<a href="detallePedido.html"><div class="text-center" style="color:#2C8287">Detalle de Pedido</div></a>
-												</div>
-											</div>
-										</tr>	
-									</tbody>
-								</table>
-							</div>
-							<div class="pagination topnav">
-								<a href="#">«</a>
-								<a href="#" class="active">1</a>
-								<a href="#">2</a>
-								<a href="#">3</a>
-								<a href="#">4</a>
-								<a href="#">5</a>
-								<a href="#">6</a>
-								<a href="#">»</a>
-							</div>
+                             <table class="table table-bordered">
+                                 <thead>
+                                 <tr>
+                                     <th>
+                                         N°
+                                     </th>
+                                     <th>
+                                         Nombre del Plato
+                                     </th>
+                                     <th>
+                                         Categoria
+                                     </th>
+                                     <th>
+                                         Fecha
+                                     </th>
+                                     <th>
+                                        Cantidad Vendida
+                                    </th>
+                                 </tr>
+                                </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Arroz con pollo</td>
+                                    <td>Criollo</td>
+                                    <td>08/01/2021</td>
+                                    <td>25 uni.</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Arroz con pollo</td>
+                                    <td>Criollo</td>
+                                    <td>08/01/2021</td>
+                                    <td>25 uni.</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Arroz con pollo</td>
+                                    <td>Criollo</td>
+                                    <td>08/01/2021</td>
+                                    <td>25 uni.</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Arroz con pollo</td>
+                                    <td>Criollo</td>
+                                    <td>08/01/2021</td>
+                                    <td>25 uni.</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Arroz con pollo</td>
+                                    <td>Criollo</td>
+                                    <td>08/01/2021</td>
+                                    <td>25 uni.</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>Arroz con pollo</td>
+                                    <td>Criollo</td>
+                                    <td>08/01/2021</td>
+                                    <td>25 uni.</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>Arroz con pollo</td>
+                                    <td>Criollo</td>
+                                    <td>08/01/2021</td>
+                                    <td>25 uni.</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>Arroz con pollo</td>
+                                    <td>Criollo</td>
+                                    <td>08/01/2021</td>
+                                    <td>25 uni.</td>
+                                </tr>
+
+                            </tbody>
+                            
+                             </table>
+                            
+                            </div>
+                            <div class="pagination" style=" margin-left: 630px ;align-content: center">
+                                <a  href="#">&laquo;</a>
+                                <a  href="#" class="active">1</a>
+                                <a href="#">2</a>
+                                <a href="#">3</a>
+                                <a href="#">4</a>
+                                <a href="#">5</a>                               
+                                <a href="#">6</a>
+                                <a href="#">&raquo;</a>
+                             </div>
                         </div>
-				
+                    </div>
+
+                </div>
                 <!-- /.container-fluid -->
 
-    </div>
+            </div>
             <!-- End of Main Content -->
 
             <!-- Footer -->
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2020</span>
+                        <span>Geek Developers &copy; 2021-1</span>
                     </div>
                 </div>
             </footer>
@@ -470,7 +422,6 @@
         <!-- End of Content Wrapper -->
 
     </div>
-	
     <!-- End of Page Wrapper -->
 
     <!-- Scroll to Top Button-->
@@ -480,22 +431,22 @@
 
     <!-- Logout Modal-->
     <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-         aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">¿Desea Salir?</h5>
-            <button class="close" type="button"  data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">×</span>
-            </button>
-          </div>
-          <div class="modal-body">Al seleccionar el boton salir, usted cerrará su sesión.</div>
-          <div class="modal-footer">
-            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-            <a class="btn" style="background-color:#701111; color:white" href="/html/login.html">Cerrar Sesión</a>
-          </div>
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">¿Desea Salir?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Al seleecionar el boton salir, usted cerrará su sesión.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-primary" style="background-color: #701111; color: #FFFFFF; border: #701111" href="/html/login.html">Cerrar Sesión</a>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
 
     <!-- Bootstrap core JavaScript-->

@@ -19,10 +19,16 @@
 
 
 
-
-
-
-
+.btn-cerrito {
+    color: #701111;
+    background-color: #701111;
+    border-color: #701111;
+}
+.btn-cielito{
+    color: #2d4a8d;
+    background-color: #2d4a8d;
+    border-color: #2d4a8d;
+}
 
 button.botonbusca {
 color: #eeeeee;
