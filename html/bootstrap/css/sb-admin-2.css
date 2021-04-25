@@ -11697,6 +11697,11 @@ a:focus {
     opacity: 0.5;
 }
 
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
 .image_box {
     display: inline-block;
     clip-path: polygon(0 0, 100% 57%, 100% 0);
@@ -11765,6 +11770,11 @@ a:focus {
     color: #000000;
     transform: rotateY(180deg);
 }
+
+.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
 
 .container2 {
     position: relative;
