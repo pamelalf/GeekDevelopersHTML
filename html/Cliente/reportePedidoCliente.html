@@ -277,16 +277,70 @@
 				<!-- Begin Page Content -->
                 <div class="container-fluid">
 
+				<form>
+                    <div class=" form-group row" >
+                        <div class="col-sm-12 mb-2 " style="margin-right: 10px; margin-top: 20px" >
+                            <a class="btn btn-secondary" href="listaPedidoActual.html" >Quitar filtros</a>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-3 mb-2 mb-sm-0">
+                            <select class="form-control  ">
+                                <option value="" disabled selected>Estado</option>
+                                <option value="Entregado">Entregado</option>
+                                <option value="Cancelado">Cancelado</option>
+                            </select>
+                        </div>
+						<div class="col-sm-3 mb-2">
+                            <input type="busquedaRestaurante" class="form-control"
+                                   id="exampleRestaurante"
+                                   placeholder="Restaurante">
+							
+                        </div>
+						<div class="col-sm-3 mb-2">
+                            <input type="busquedaNumeroPedidos" class="form-control"
+                                   id="exampleRestaurante"
+                                   placeholder="N° de pedidos">
+							
+                        </div>
+                    </div>
+                </form>
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3 " style="background-color: #701111;">
-                            
-                            <div class="d-sm-flex align-items-center justify-content-between">
-                                <h5 class="font-weight-bold text-white  text-center">REPORTES DE PEDIDOS</h5>
-                                <a class="btn btn-warning mr-1">Exportar</a>
+						<div class="row">
+                            <div class="col-11 d-sm-flex justify-content-center">
+                                <h5 class="font-weight-bold text-white">REPORTES DE PEDIDOS</h5>
                             </div>
-        
+							<div class="col-1 d-sm-flex justify-content-center">
+							<a class="btn btn-warning mr-1 ">Exportar</a>
+							</div>	
+						</div>
                         </div>
+						<br>
+						<div class="justify-content-center row">
+							 <img width="4%" height="4%"src="img/top-tres.svg">
+							 <span><h2 style="color:black">Top 3</h2> 
+						</div>
+						<br>
+						<div class="justify-content-center row">
+							<div class="col-3" style="background-color:#F2E2AA">
+								<div style="color:black; text-align:center">Restaurantes</div>
+								<div style="color:black">- Rosa Náutica</div>
+								<div style="color:black">- KFC</div>
+								<div style="color:black">- Dunkin Donuts</div>
+							</div>
+							<div class="col-3  offset-md-1" style="background-color:#F2E2AA">
+								<div style="color:black; text-align:center">Platos mas pedidos</div>
+								<div style="color:black">- Ceviche</div>
+								<div style="color:black">- Pollo a la Brasa</div>
+								<div style="color:black">- Donas</div>
+							</div>
+						</div>
+						<br>
+						<div class="text-center">
+							<h3 style="color:black">Consumo Total: S/ 500</h3>
+						</div>
                         <div class="card-body">
                             <div class="table-responsive">
                              <table class="table table-bordered">
@@ -296,77 +350,91 @@
                                          N°
                                      </th>
                                      <th>
-                                         Nombre del Plato
+                                         Restaurantes
                                      </th>
                                      <th>
-                                         Categoria
+                                         N° Pedidos
                                      </th>
                                      <th>
-                                         Fecha
+                                         Consumo Total
                                      </th>
-                                     <th>
-                                        Cantidad Vendida
-                                    </th>
+									 <th>
+										Mes
+									 </th>
                                  </tr>
                                 </thead>
                             <tbody>
                                 <tr>
                                     <td>1</td>
-                                    <td>Arroz con pollo</td>
-                                    <td>Criollo</td>
-                                    <td>08/01/2021</td>
-                                    <td>25 uni.</td>
+                                    <td>Rosa Náutica</td>
+                                    <td>10</td>
+                                    <td>S/. 30</td>
+                                    <td>Abril</td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
-                                    <td>Arroz con pollo</td>
-                                    <td>Criollo</td>
-                                    <td>08/01/2021</td>
-                                    <td>25 uni.</td>
+                                    <td>Rosa Náutica</td>
+                                    <td>10</td>
+                                    <td>S/. 30</td>
+                                    <td>Abril</td>
                                 </tr>
-                                <tr>
+								<tr>
                                     <td>3</td>
-                                    <td>Arroz con pollo</td>
-                                    <td>Criollo</td>
-                                    <td>08/01/2021</td>
-                                    <td>25 uni.</td>
+                                    <td>Rosa Náutica</td>
+                                    <td>10</td>
+                                    <td>S/. 30</td>
+                                    <td>Abril</td>
                                 </tr>
-                                <tr>
+								<tr>
                                     <td>4</td>
-                                    <td>Arroz con pollo</td>
-                                    <td>Criollo</td>
-                                    <td>08/01/2021</td>
-                                    <td>25 uni.</td>
+                                    <td>Rosa Náutica</td>
+                                    <td>10</td>
+                                    <td>S/. 30</td>
+                                    <td>Abril</td>
                                 </tr>
-                                <tr>
+								<tr>
                                     <td>5</td>
-                                    <td>Arroz con pollo</td>
-                                    <td>Criollo</td>
-                                    <td>08/01/2021</td>
-                                    <td>25 uni.</td>
+                                    <td>Rosa Náutica</td>
+                                    <td>10</td>
+                                    <td>S/. 30</td>
+                                    <td>Abril</td>
                                 </tr>
-                                <tr>
+								<tr>
                                     <td>6</td>
-                                    <td>Arroz con pollo</td>
-                                    <td>Criollo</td>
-                                    <td>08/01/2021</td>
-                                    <td>25 uni.</td>
+                                    <td>Rosa Náutica</td>
+                                    <td>10</td>
+                                    <td>S/. 30</td>
+                                    <td>Abril</td>
                                 </tr>
-                                <tr>
+								<tr>
                                     <td>7</td>
-                                    <td>Arroz con pollo</td>
-                                    <td>Criollo</td>
-                                    <td>08/01/2021</td>
-                                    <td>25 uni.</td>
+                                    <td>Rosa Náutica</td>
+                                    <td>10</td>
+                                    <td>S/. 30</td>
+                                    <td>Marzo</td>
                                 </tr>
-                                <tr>
+								<tr>
                                     <td>8</td>
-                                    <td>Arroz con pollo</td>
-                                    <td>Criollo</td>
-                                    <td>08/01/2021</td>
-                                    <td>25 uni.</td>
+                                    <td>Rosa Náutica</td>
+                                    <td>10</td>
+                                    <td>S/. 30</td>
+                                    <td>Marzo</td>
                                 </tr>
-
+								<tr>
+                                    <td>9</td>
+                                    <td>Rosa Náutica</td>
+                                    <td>10</td>
+                                    <td>S/. 30</td>
+                                    <td>Marzo</td>
+                                </tr>
+								<tr>
+                                    <td>10</td>
+                                    <td>Rosa Náutica</td>
+                                    <td>10</td>
+                                    <td>S/. 30</td>
+                                    <td>Marzo</td>
+                                </tr>
+								
                             </tbody>
                             
                              </table>
