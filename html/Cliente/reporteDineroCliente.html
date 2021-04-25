@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Reporte de Dinero</title>
+    <title>Reporte de Pedidos</title>
 
     <!-- Custom fonts for this template -->
     <link href="../bootstrap/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -19,7 +19,7 @@
 
     <!-- Custom styles for this template -->
     <link href="../bootstrap/css/sb-admin-2.min.css" rel="stylesheet">
-
+  <link href="../AdminRest/cssAR/estilosAdminRest.css" rel="stylesheet" type="text/css">
     <!-- Custom styles for this page -->
     <link href="../bootstrap/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 
@@ -277,33 +277,71 @@
 				<!-- Begin Page Content -->
                 <div class="container-fluid">
 
+				<form>
+                    <div class=" form-group row" >
+                        <div class="col-sm-12 mb-2 " style="margin-right: 10px; margin-top: 20px" >
+                            <a class="btn btn-secondary" href="listaPedidoActual.html" >Quitar filtros</a>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                       
+						<div class="col-sm-2 mb-2">
+                            <input type="busquedaRestaurante" class="form-control"
+                                   id="exampleRestaurante"
+                                   placeholder="Restaurante">
+							
+                        </div>
+						<div class="col-sm-2 mb-2">
+                            <input type="busquedaNumeroPedidos" class="form-control"
+                                   id="exampleCupon"
+                                   placeholder="Cupón">
+							
+                        </div>
+						<div class="col-sm-2 mb-2">
+                                    <input placeholder="Fecha" class="form-control" type="text"
+                                           onfocus="(this.type='date')" onblur="(this.type='text')" id="date1">
+                                </div>
+						 <div class="col-sm-2 mb-2 mb-sm-0">
+                            <select class="form-control  ">
+                                <option value="" disabled selected>Mes</option>
+                                <option value="Enero">Enero</option>
+                                <option value="Febrero">Febrero</option>
+								<option value="Marzo">Marzo</option>
+								<option value="Abril">Abril</option>
+								<option value="Mayo">Mayo</option>
+								<option value="Junio">Junio</option>
+								<option value="Julio">Julio</option>
+								<option value="Agosot">Agosot</option>
+								<option value="Septiembre">Septiembre</option>
+								<option value="Octubre">Octubre</option>
+								<option value="Noviembre">Noviembre</option>
+								<option value="Diciembre">Diciembre</option>
+                            </select>
+                        </div>
+						<div class="input-group-append col-sm-3 mb-2 ">
+                                <button class="btn" style="background-color:#701111; color:white; border:#701111" type="button">
+                                   <i class=" fas fa-filter"></i>
+                                </button>
+                            </div>
+                    </div>
+                </form>
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3 " style="background-color: #701111;">
-                            
-                            <div class="d-sm-flex align-items-center justify-content-between">
-                                <div class="col-sm-1">
-                                    <input placeholder="Filtro Fecha" class="form-control" type="text"
-                                           onfocus="(this.type='date')" onblur="(this.type='text')" id="date">
-                                </div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <h5 class="font-weight-bold text-white  text-center">REPORTES DE DINERO</h5>
-                                <div class="col-sm-2 mb-2">
-                                    <select class="form-control">
-                                        <option value="">Categorias</option>
-                                        <option value="">Criollo</option>
-                                        <option value="">Oriental</option>
-                                        <option value="">Marino</option>
-                                        <option value="">Tropical</option>
-                                    </select>
-                                </div>
-                                <a href="#" class=" d-sm-inline-block btn btn-sm bontondate"><i
-                                        class="fas fa-download fa-sm"></i> Generate Report</a>
+						<div class="row">
+                            <div class="col-11 d-sm-flex justify-content-center">
+                                <h5 class="font-weight-bold text-white">REPORTES DE PEDIDOS</h5>
                             </div>
-        
+							<div class="col-1 d-sm-flex justify-content-center">
+							<a class="btn btn-warning mr-1 ">Exportar</a>
+							</div>	
+						</div>
                         </div>
+						<br>
+						
+						<div class="text-center">
+							<h3 style="color:black">Total dinero ahorrado: S/. 150</h3>
+						</div>
                         <div class="card-body">
                             <div class="table-responsive">
                              <table class="table table-bordered">
@@ -312,78 +350,83 @@
                                      <th>
                                          N°
                                      </th>
-                                     <th>
-                                         Nombre del Plato
+									 <th>
+                                         Cupones
                                      </th>
                                      <th>
-                                         Categoria
+                                         Restaurantes
                                      </th>
                                      <th>
                                          Fecha
                                      </th>
                                      <th>
-                                        Cantidad Vendida
-                                    </th>
+                                         Monto
+                                     </th>
                                  </tr>
                                 </thead>
                             <tbody>
                                 <tr>
                                     <td>1</td>
-                                    <td>Arroz con pollo</td>
-                                    <td>Criollo</td>
-                                    <td>08/01/2021</td>
-                                    <td>25 uni.</td>
-                                </tr>
-                                <tr>
+                                    <td>FD01022021</td>
+                                    <td>Rosa Náutica</td>
+                                    <td>10/03/2021</td>
+                                    <td>S/. 3</td>
+                                </tr><tr>
                                     <td>2</td>
-                                    <td>Arroz con pollo</td>
-                                    <td>Criollo</td>
-                                    <td>08/01/2021</td>
-                                    <td>25 uni.</td>
-                                </tr>
-                                <tr>
+                                    <td>FD01022021</td>
+                                    <td>Rosa Náutica</td>
+                                    <td>10/03/2021</td>
+                                    <td>S/. 3</td>
+                                </tr><tr>
                                     <td>3</td>
-                                    <td>Arroz con pollo</td>
-                                    <td>Criollo</td>
-                                    <td>08/01/2021</td>
-                                    <td>25 uni.</td>
-                                </tr>
-                                <tr>
+                                    <td>FD01022021</td>
+                                    <td>Rosa Náutica</td>
+                                    <td>10/03/2021</td>
+                                    <td>S/. 3</td>
+                                </tr><tr>
                                     <td>4</td>
-                                    <td>Arroz con pollo</td>
-                                    <td>Criollo</td>
-                                    <td>08/01/2021</td>
-                                    <td>25 uni.</td>
-                                </tr>
-                                <tr>
+                                    <td>FD01022021</td>
+                                    <td>Rosa Náutica</td>
+                                    <td>10/03/2021</td>
+                                    <td>S/. 3</td>
+                                </tr><tr>
                                     <td>5</td>
-                                    <td>Arroz con pollo</td>
-                                    <td>Criollo</td>
-                                    <td>08/01/2021</td>
-                                    <td>25 uni.</td>
-                                </tr>
-                                <tr>
+                                    <td>FD01022021</td>
+                                    <td>Rosa Náutica</td>
+                                    <td>10/03/2021</td>
+                                    <td>S/. 3</td>
+                                </tr><tr>
                                     <td>6</td>
-                                    <td>Arroz con pollo</td>
-                                    <td>Criollo</td>
-                                    <td>08/01/2021</td>
-                                    <td>25 uni.</td>
-                                </tr>
-                                <tr>
+                                    <td>FD01022021</td>
+                                    <td>Rosa Náutica</td>
+                                    <td>10/03/2021</td>
+                                    <td>S/. 3</td>
+                                </tr><tr>
                                     <td>7</td>
-                                    <td>Arroz con pollo</td>
-                                    <td>Criollo</td>
-                                    <td>08/01/2021</td>
-                                    <td>25 uni.</td>
-                                </tr>
-                                <tr>
+                                    <td>FD01022021</td>
+                                    <td>Rosa Náutica</td>
+                                    <td>10/03/2021</td>
+                                    <td>S/. 3</td>
+                                </tr><tr>
                                     <td>8</td>
-                                    <td>Arroz con pollo</td>
-                                    <td>Criollo</td>
-                                    <td>08/01/2021</td>
-                                    <td>25 uni.</td>
+                                    <td>FD01022021</td>
+                                    <td>Rosa Náutica</td>
+                                    <td>10/03/2021</td>
+                                    <td>S/. 3</td>
+                                </tr><tr>
+                                    <td>9</td>
+                                    <td>FD01022021</td>
+                                    <td>Rosa Náutica</td>
+                                    <td>10/03/2021</td>
+                                    <td>S/. 3</td>
+                                </tr><tr>
+                                    <td>10</td>
+                                    <td>FD01022021</td>
+                                    <td>Rosa Náutica</td>
+                                    <td>10/03/2021</td>
+                                    <td>S/. 3</td>
                                 </tr>
-
+                                
                             </tbody>
                             
                              </table>
@@ -401,7 +444,9 @@
                              </div>
                         </div>
                     </div>
-
+					<div style="text-align:center">
+					<a  class="btn btn-primary" href="listaReportes.html" type="submit">Regresar</a>
+					</div>
                 </div>
                 <!-- /.container-fluid -->
 

@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Reporte de Pedidos</title>
+    <title>Detalle de Pedido</title>
 
     <!-- Custom fonts for this template -->
     <link href="../bootstrap/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -274,196 +274,132 @@
 
                 </nav>
                 <!-- End of Topbar -->
-				<!-- Begin Page Content -->
+
+                <!-- Begin Page Content -->
                 <div class="container-fluid">
 
-				<form>
-                    <div class=" form-group row" >
-                        <div class="col-sm-12 mb-2 " style="margin-right: 10px; margin-top: 20px" >
-                            <a class="btn btn-secondary" href="listaPedidoActual.html" >Quitar filtros</a>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                       
-						<div class="col-sm-3 mb-2">
-                            <input type="busquedaRestaurante" class="form-control"
-                                   id="exampleRestaurante"
-                                   placeholder="Restaurante">
-							
-                        </div>
-						<div class="col-sm-3 mb-2">
-                            <input type="busquedaNumeroPedidos" class="form-control"
-                                   id="exampleRestaurante"
-                                   placeholder="N° de pedidos">
-							
-                        </div>
-						
-						 <div class="col-sm-3 mb-2 mb-sm-0">
-                            <select class="form-control  ">
-                                <option value="" disabled selected>Mes</option>
-                                <option value="Enero">Enero</option>
-                                <option value="Febrero">Febrero</option>
-								<option value="Marzo">Marzo</option>
-								<option value="Abril">Abril</option>
-								<option value="Mayo">Mayo</option>
-								<option value="Junio">Junio</option>
-								<option value="Julio">Julio</option>
-								<option value="Agosot">Agosot</option>
-								<option value="Septiembre">Septiembre</option>
-								<option value="Octubre">Octubre</option>
-								<option value="Noviembre">Noviembre</option>
-								<option value="Diciembre">Diciembre</option>
-                            </select>
-                        </div>
-						<div class="input-group-append col-sm-3 mb-2 ">
-                                <button class="btn" style="background-color:#701111; color:white; border:#701111" type="button">
-                                   <i class=" fas fa-filter"></i>
-                                </button>
-                            </div>
-                    </div>
-                </form>
                     <!-- DataTales Example -->
-                    <div class="card shadow mb-4">
-                        <div class="card-header py-3 " style="background-color: #701111;">
-						<div class="row">
-                            <div class="col-11 d-sm-flex justify-content-center">
-                                <h5 class="font-weight-bold text-white">REPORTES DE TIEMPO</h5>
-                            </div>
-							<div class="col-1 d-sm-flex justify-content-center">
-							<a class="btn btn-warning mr-1 ">Exportar</a>
-							</div>	
-						</div>
+					<br>
+                    <div class="card-header py-3 ">
+						<div class="d-sm-flex align-items-left">
+							<h5 class="font-weight-bold text-lg-left mx-auto" style="color:#701111">DETALLE DE PEDIDO</h5>
                         </div>
-						
-						<br>
-						<div class="text-center">
-							<h3 style="color:black">Promedio tiempo delivery: 35  minutos</h3>
+						<div class="row justify-content-center">
+							<h6 class="col-3" style="color:black">Código: 0000001</h6>
+							<h6 class="col-3 offset-md-3" style="color:black">Restaurante: La Choza Náutica</h6>
 						</div>
-                        <div class="card-body">
-                            <div class="table-responsive">
-                             <table class="table table-bordered">
-                                 <thead>
-                                 <tr>
-                                     <th>
-                                         N°
-                                     </th>
-                                     <th>
-                                         Restaurantes
-                                     </th>
-                                     <th>
-                                         N° Pedidos
-                                     </th>
-                                     <th>
-                                         Tiempor Promedio
-                                     </th>
-									 <th>
-										Mes
-									 </th>
-                                 </tr>
-                                </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Rosa Náutica</td>
-                                    <td>10</td>
-                                    <td>30 minutos</td>
-                                    <td>Abril</td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>Rosa Náutica</td>
-                                    <td>10</td >
-                                    <td>30 minutos</td>
-                                    <td>Abril</td>
-                                </tr>
-								<tr>
-                                    <td>3</td>
-                                    <td>Rosa Náutica</td>
-                                    <td>10</td>
-                                    <td>30 minutos</td>
-                                    <td>Abril</td>
-                                </tr>
-								<tr>
-                                    <td>4</td>
-                                    <td>Rosa Náutica</td>
-                                    <td>10</td>
-                                    <td>30 minutos</td>
-                                    <td>Abril</td>
-                                </tr>
-								<tr>
-                                    <td>5</td>
-                                    <td>Rosa Náutica</td>
-                                    <td>10</td>
-                                    <td>30 minutos</td>
-                                    <td>Abril</td>
-                                </tr>
-								<tr>
-                                    <td>6</td>
-                                    <td>Rosa Náutica</td>
-                                    <td>10</td>
-                                    <td>30 minutos</td>
-                                    <td>Abril</td>
-                                </tr>
-								<tr>
-                                    <td>7</td>
-                                    <td>Rosa Náutica</td>
-                                    <td>10</td>
-                                    <td>30 minutos</td>
-                                    <td>Marzo</td>
-                                </tr>
-								<tr>
-                                    <td>8</td>
-                                    <td>Rosa Náutica</td>
-                                    <td>10</td>
-                                    <td>30 minutos</td>
-                                    <td>Marzo</td>
-                                </tr>
-								<tr>
-                                    <td>9</td>
-                                    <td>Rosa Náutica</td>
-                                    <td>10</td>
-                                    <td>30 minutos</td>
-                                    <td>Marzo</td>
-                                </tr>
-								<tr>
-                                    <td>10</td>
-                                    <td>Rosa Náutica</td>
-                                    <td>10</td>
-                                    <td>30 minutos</td>
-                                    <td>Marzo</td>
-                                </tr>
-								
-                            </tbody>
-                            
-                             </table>
-                            
-                            </div>
-                            <div class="pagination" style=" margin-left: 630px ;align-content: center">
-                                <a  href="#">&laquo;</a>
-                                <a  href="#" class="active">1</a>
-                                <a href="#">2</a>
-                                <a href="#">3</a>
-                                <a href="#">4</a>
-                                <a href="#">5</a>                               
-                                <a href="#">6</a>
-                                <a href="#">&raquo;</a>
-                             </div>
-                        </div>
                     </div>
-					<div style="text-align:center">
-					<a  class="btn btn-primary" href="listaReportes.html" type="submit">Regresar</a>
-					</div>
-                </div>
+					<div class="dropdown-divider" style="border-color:#701111;" ></div>
+                        <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered">
+                                        <thead  style="background-color:#701111;">
+                                            <tr>
+                                                <th style="color:white">
+                                                    N°
+                                                </th>
+                                                <th style="color:white">
+                                                    Producto
+                                                </th>
+                                                <th style="color:white">
+                                                    Cantidad
+                                                </th>
+                                                <th style="color:white">
+                                                    Precio Unitario
+                                                </th>
+												<th style="color:white">
+                                                    Precio
+                                                </th>
+												<th style="color:white">
+                                                    Comentario
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="justify-content-center">
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Arroz con pollo</td>
+                                                <td>1</td>
+                                                <td>S/. 18.00</td>
+                                                <td>S/. 18.00</td>
+												<td><i class="fas fa-comments"></i></td>
+
+                                            </tr><tr>
+                                                <td>1</td>
+                                                <td>Arroz con pollo</td>
+                                                <td>1</td>
+                                                <td>S/. 18.00</td>
+                                                <td>S/. 18.00</td>
+												<td><i class="fas fa-comments"></i></td>
+
+                                            </tr>
+
+                                        </tbody>
+
+                                    </table>
+
+                                </div>
+                                <div class="pagination  justify-content-center" style=" align-items-center">
+                                    <a  href="#">&laquo;</a>
+                                    <a  href="#" class="active">1</a>
+                                    <a href="#">2</a>
+                                    <a href="#">3</a>
+                                    <a href="#">4</a>
+                                    <a href="#">5</a>
+                                    <a href="#">6</a>
+                                    <a href="#">&raquo;</a>
+                                </div>
+							<br>
+                            <div class="row justify-content-center">
+							<h6 class="col-3" style="color:black">Costo</h6>
+							<h6 class="col-3 offset-md-3" style="color:black">S/. 36.00</h6>
+						</div>
+				<div class="dropdown-divider" style="border-color:#701111;" ></div>
+				<div class="row justify-content-center">
+							<h6 class="col-3" style="color:black">Delivery</h6>
+							<h6 class="col-3 offset-md-3" style="color:black">S/. 6.00</h6>
+						</div>	
+						<div class="row justify-content-center">
+							<h6 class="col-3" style="color:black">Cupones</h6>
+							<h6 class="col-3 offset-md-3" style="color:black">No</h6>
+						</div>	
+				<div class="dropdown-divider" style="border-color:#701111;" ></div>
+				<div class="row justify-content-center">
+							<h6 class="col-3" style="color:black"></h6>
+							<h6 class="col-3 offset-md-3" style="color:black">S/. 50</h6>
+						</div>	
+				<div class="dropdown-divider" style="border-color:#701111;" ></div>
+				<div class="row justify-content-center">
+							<h6 class="col-3" style="color:black">Estado</h6>
+							<h6 class="col-3 offset-md-3" style="color:black">En camino</h6>
+						</div>	
+						<div class="row justify-content-center">
+							<h6 class="col-3" style="color:black">Método de Pago</h6>
+							<h6 class="col-3 offset-md-3" style="color:black">Online</h6>
+						</div>	
+						<div class="row justify-content-center">
+							<h6 class="col-3" style="color:black">Fecha de entrega</h6>
+							<h6 class="col-3 offset-md-3" style="color:black">03/04/2021</h6>
+						</div>	
+						<div class="row justify-content-center">
+							<h6 class="col-3" style="color:black">Hora estimada de entrega</h6>
+							<h6 class="col-3 offset-md-3" style="color:black">30-45 min</h6>
+						</div>
+
+				<div style="text-align:center">
+					<a  class="btn btn-primary" href="listaPedidoActual.html" type="submit">Regresar</a>
+					<a  class="btn btn-danger" href="#" data-toggle="modal" data-target="#cancelarPedido" >Cancelar Pedido</a>
+					</div>			
                 <!-- /.container-fluid -->
 
-            </div>
+    </div>
             <!-- End of Main Content -->
 
             <!-- Footer -->
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Geek Developers &copy; 2021-1</span>
+                        <span>Copyright &copy; Your Website 2020</span>
                     </div>
                 </div>
             </footer>
@@ -473,6 +409,7 @@
         <!-- End of Content Wrapper -->
 
     </div>
+	
     <!-- End of Page Wrapper -->
 
     <!-- Scroll to Top Button-->
@@ -482,22 +419,42 @@
 
     <!-- Logout Modal-->
     <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">¿Desea Salir?</h5>
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">×</span>
-                    </button>
-                </div>
-                <div class="modal-body">Al seleecionar el boton salir, usted cerrará su sesión.</div>
-                <div class="modal-footer">
-                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" style="background-color: #701111; color: #FFFFFF; border: #701111" href="/html/login.html">Cerrar Sesión</a>
-                </div>
-            </div>
+         aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">¿Desea Salir?</h5>
+            <button class="close" type="button"  data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">Al seleccionar el boton salir, usted cerrará su sesión.</div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+            <a class="btn" style="background-color:#701111; color:white" href="../login.html">Cerrar Sesión</a>
+          </div>
         </div>
+      </div>
+    </div>
+	
+	<!-- Cancelar Pedido-->
+    <div class="modal fade" id="cancelarPedido" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">¿Desea cancelar su pedido?</h5>
+            <button class="close" type="button"  data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">¿Está seguro de cancelar su pedido</div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" type="button" data-dismiss="modal">No</button>
+            <a class="btn" style="background-color:#701111; color:white" href="listaPedidoActual.html">Cancelar</a>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Bootstrap core JavaScript-->
