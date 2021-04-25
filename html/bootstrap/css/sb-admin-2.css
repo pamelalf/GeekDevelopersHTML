@@ -11699,7 +11699,8 @@ a:focus {
 
 .grid-container {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
 }
 
 .image_box {
@@ -11778,13 +11779,12 @@ a:focus {
 
 .container2 {
     position: relative;
-    width: 50%;
+    width: 100%;
     border-radius: 0.35rem;
 }
 
 .image2 {
     display: block;
-    width: 100%;
     object-fit: cover;
     border-radius: 0.35rem;
 }
