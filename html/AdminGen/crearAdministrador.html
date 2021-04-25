@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Pedido actual</title>
+    <title>Crear administrador</title>
 
     <!-- Custom fonts for this template/BASE-COPIAR-NOBORRAR/bootstrap/vendor/fontawesome-free/css/all.min.css -->
     <link href="../bootstrap/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -18,7 +18,7 @@
             rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="../bootstrap/css/sb-admin-2.css" rel="stylesheet">
+    <link href="../bootstrap/css/sb-admin-2.min.css" rel="stylesheet">
 
 
     <link href="estilosAdminRest.css" rel="stylesheet" type="text/css">
@@ -33,56 +33,53 @@
 <div id="wrapper">
 
     <!-- Sidebar -->
-    <ul class="navbar-nav  sidebar sidebar-dark accordion" style="background-color:#701111;position: static"
-        id="accordionSidebar">
-
+    <ul class="navbar-nav  sidebar sidebar-dark accordion" style="background-color:#701111       ;" id="accordionSidebar">
+        <div class="">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
+                <div class="sidebar-brand-icon rotate-n-15">
+                    <i class="fas fa-shopping-basket"></i>
+                </div>
+                <div class="sidebar-brand-text mx-3">Food Delivery </div>
+            </a>
+        </div>
         <!-- Sidebar - Brand -->
-        <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
-            <div class="sidebar-brand-icon rotate-n-15">
-                <i class="fas fa-truck-loading"></i>
-            </div>
-            <div class="sidebar-brand-text mx-3">Food Delivery</div>
-        </a>
+
 
         <!-- Divider -->
         <hr class="sidebar-divider my-0">
 
+        <!-- Nav Item - Dashboard -->
         <li class="nav-item">
-            <a class="nav-link" href="pedidoActual.html">
-                <i class="fas fa-motorcycle"></i>
-                <span>Entrega actual</span></a>
+            <a class="nav-link" href="#">
+                <i class="fas fa-fw fa-list"></i>
+                <span>Listas</span></a>
         </li>
 
-        <li class="nav-item">
-            <a class="nav-link" href="solicitudPedidos.html">
-                <i class="fas fa-exclamation-circle"></i>
-                <span>Solicitudes de pedidos</span></a>
-        </li>
 
+        <!-- Nav Item - Pages Collapse Menu -->
         <li class="nav-item">
-            <a class="nav-link" href="estadísticas.html">
-                <i class="fas fa-chart-bar"></i>
-                <span>Estadisticas</span>
+            <a class="nav-link" href="#" >
+                <i class="fas fa-fw fa-cog"></i>
+                <span>Solicitudes</span>
             </a>
         </li>
 
+        <!-- Nav Item - Utilities Collapse Menu -->
         <li class="nav-item">
-            <a class="nav-link nav-link collapsed text-truncate" href="#submenu1" data-toggle="collapse" >
-                <i class="fas fa-fw fa-folder"></i>
+            <a class="nav-link" href="#">
+                <i class="fas fa-fw fa-user-edit"></i>
+                <span>Crear Administrador</span>
+            </a>
+        </li>
+
+        <!-- Nav Item - Pages Collapse Menu -->
+        <li class="nav-item">
+            <a class="nav-link " href="#">
+                <i class="fas fa-fw fa-file"></i>
                 <span>Reportes</span>
-
             </a>
-            <div class="collapse" id="submenu1" aria-expanded="false">
-                <ul class="flex-column pl-2 nav">
-                    <li class="nav-item"><a class="nav-link py-0" href="reporteDeliverys.html"><span>Reporte de deliberys</span></a></li>
-                </ul>
-                <ul class="flex-column pl-2 nav">
-                    <li class="nav-item"><a class="nav-link py-0" href="reporteIngresos.html"><span>Reporte de ingresos</span></a></li>
-                </ul>
-
-            </div>
         </li>
-        <hr class="sidebar-divider my-0">
+
 
         <!-- Divider -->
         <hr class="sidebar-divider d-none d-md-block">
@@ -111,6 +108,7 @@
                     </button>
                 </form>
 
+                <!-- Topbar Search -->
 
 
                 <!-- Topbar Navbar -->
@@ -130,13 +128,13 @@
                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="fas fa-bell fa-fw"></i>
                             <!-- Counter - Alerts -->
-                            <span class="badge badge-danger badge-counter">2+</span>
+                            <span class="badge badge-danger badge-counter">3+</span>
                         </a>
                         <!-- Dropdown - Alerts -->
                         <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in "
                              aria-labelledby="alertsDropdown">
                             <h6 class="notificacion">
-                                Nuevos Pedidos
+                                Nuevas Solicitudes
                             </h6>
                             <a class="dropdown-item d-flex align-items-center" href="#">
                                 <div class="mr-3">
@@ -145,8 +143,8 @@
                                     </div>
                                 </div>
                                 <div>
-                                    <div class="small text-gray-500">Los Olivos - 12:45 pm</div>
-                                    <span class="font-weight-bold">Arroz con pollo</span>
+                                    <div class="small text-gray-500">Nuevo Repartidor - 12:45 pm</div>
+                                    <span class="font-weight-bold">Carlos Martinez</span>
                                 </div>
                             </a>
                             <a class="dropdown-item d-flex align-items-center" href="#">
@@ -156,8 +154,8 @@
                                     </div>
                                 </div>
                                 <div>
-                                    <div class="small text-gray-500">Los Olivos - 12:45 pm</div>
-                                    <span class="font-weight-bold">Arroz con pollo</span>
+                                    <div class="small text-gray-500">Nuevo Restaurante - 12:45 pm</div>
+                                    <span class="font-weight-bold">La mas brasa</span>
                                 </div>
                             </a>
                             <a class="dropdown-item d-flex align-items-center" href="#">
@@ -167,12 +165,11 @@
                                     </div>
                                 </div>
                                 <div>
-                                    <div class="small text-gray-500">Los Olivos - 12:45 pm</div>
-                                    <span class="font-weight-bold">Arroz con pollo</span>
+                                    <div class="small text-gray-500">Nuevo administrador de restaurante - 12:45 pm</div>
+                                    <span class="font-weight-bold">KArla Avellana</span>
                                 </div>
                             </a>
-                            <a class="dropdown-item text-center small text-gray-500" href="#">Ver todos los
-                                pedidos</a>
+                            <a class="dropdown-item text-center small text-gray-500" href="#">Ver todas las solicitudes</a>
                         </div>
                     </li>
 
@@ -182,22 +179,16 @@
                     <li class="nav-item dropdown no-arrow">
                         <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span class="mr-2 d-none d-lg-inline text-gray-600 small">Repartidor X</span>
+                            <span class="mr-2 d-none d-lg-inline text-gray-600 small">Administrador</span>
                             <i class="fas fa-user"></i>
                         </a>
                         <!-- Dropdown - User Information -->
                         <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                              aria-labelledby="userDropdown">
-                            <a class="dropdown-item" href="editarPerfil.html">
-                                <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                                Editar Perfil
-                            </a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="../login.html" data-toggle="modal" data-target="#logoutModal">
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
                                 <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                                 Cerrar Sesión
                             </a>
-
                         </div>
                     </li>
 
@@ -209,99 +200,114 @@
             <!-- Begin Page Content -->
             <div class="container-fluid">
 
+
                 <!-- DataTales Example -->
                 <div class="card shadow mb-4">
                     <div class="card-header py-3 " style="background-color: #701111;">
 
                         <div class="d-sm-flex align-items-center justify-content-between">
 
-                            <h5 class="font-weight-bold text-white text-lg-center mx-auto">EDITAR PERFIL</h5>
+                            <h2 class="font-weight-bold text-white text-lg-center mx-auto ">Crear Administrador</h2>
 
                         </div>
 
                     </div>
                     <div class="card-body">
-                        <div class="container-fluid">
-                            <div class="container-fluid">
-                                <form method="POST" action="">
-                                    <div class="form-row">
+                        <form class="user">
 
-                                        <div class="col-md-6 mb-3">
-                                            <label for="nombre">Nombres </label>
-                                            <input type="text" class="form-control " name="dniC"  id="nombre" value="" placeholder="Repartidor " disabled >
-
-                                        </div>
-                                        <div class="col-md-6 mb-3">
-                                            <label for="apellido">Apellido </label>
-                                            <input type="text" class="form-control " name="apellido"  id="apellido" value="" placeholder="x" disabled >
-
-                                        </div>
-
-                                        <div class="col-md-6 mb-3">
-                                            <label for="correo">Correo </label>
-                                            <input type="text" class="form-control " id="correo" placeholder="repatridorx@gmail.com" disabled>
-                                        </div>
-
-                                        <div class="col-md-6 mb-3">
-                                            <label for="fecha">Fecha de Nacimiento</label>
-                                            <input type="text" class="form-control " id="fecha" placeholder="06/12/1991" disabled>
-
-                                        </div>
-
-                                        <div class="col-md-6 mb-3">
-                                            <label for="celular">N° de celular</label>
-                                            <input type="text" class="form-control " id="celular"  placeholder="Celular" >
-
-                                        </div>
-
-                                        <div class="col-md-6 mb-3">
-                                            <label for="contrasena">Contraseña (Confirmación)</label>
-                                            <input type="password" class="form-control " id="contrasena">
-
-                                        </div>
-
-
-                                        <div class="col-md-12 mb-3">
-                                            <div style=text-align:center>
-                                                <button type="submit" href="" class="btn btn-primary" > Guardar  </button>
-                                                <a  class="btn btn-danger" href="" type="submit">Cancelar</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
+                            <div class="form-group row">
+                                <div class="col-sm-6 mb-2 mb-sm-0">
+                                    <input type="text" class="form-control"
+                                           id="exampleNombre"
+                                           placeholder="Nombres">
+                                </div>
+                                <div class="col-sm-6 mb-2">
+                                    <input type="text" class="form-control"
+                                           id="exampleApellido"
+                                           placeholder="Apellidos">
+                                </div>
                             </div>
+                            <div class="form-group row">
+                                <div class="col-sm-6 mb-2 mb-sm-0">
+                                    <input type="email" class="form-control"
+                                           id="exampleCorreo"
+                                           placeholder="Correo electrónico">
+                                </div>
+                                <div class="col-sm-6 mb-2">
+                                    <input placeholder="Fecha de nacimiento" class="form-control" type="text"
+                                           onfocus="(this.type='date')" onblur="(this.type='text')" id="date">
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <div class="col-sm-6 mb-2 mb-sm-0">
+                                    <select class="form-control">
+                                        <option value="" disabled selected>Sexo</option>
+                                        <option value="Femenino">Femenino</option>
+                                        <option value="Masculino">Masculino</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-6  mb-2 mb-sm-0">
+                                    <input type="number" class="form-control"
+                                           id="exampleTelefono" placeholder="Teléfono">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-sm-6 mb-2 mt-2 mb-sm-0">
+                                    <input type="number" class="form-control"
+                                           id="exampleDNI" placeholder="DNI">
+                                </div>
+
+                            </div>
+
+
+                            <div class="form-group row">
+                                <div class="col-sm-6 mb-2 mb-sm-0">
+                                    <h4 style="color: black">Foto de perfil</h4>
+                                    <p>Adjunte una foto de perfil para su cuenta. Esta debe ser una fotografía en la que se visualice claramente su rostro</p>
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" id="inputGroupFile03">
+                                        <label class="custom-file-label" for="inputGroupFile03">Adjuntar archivo</label>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <div class="form-group row">
+
+                            </div>
+                            <hr>
+                            <a href="#" class="btn btn-warning   text-md-center"  data-toggle="modal" data-target="#registrarModal">
+                                Registrar
+                            </a>
+                            <a href="#" class="btn btn-danger   text-md-center"  data-toggle="modal" data-target="#registrarModal">
+                                Cancelar
+                            </a>
+                        </form>
                         </div>
+
                     </div>
 
-                </div>
 
             </div>
-            <!-- Footer -->
-            <footer class="sticky-footer bg-white">
-                <div class="container my-auto">
-                    <div class="copyright text-center my-auto">
-                        <span>Geek Developers &copy; 2021-1</span>
-                    </div>
-                </div>
-            </footer>
-            <!-- End of Footer -->
-        </div>
+            <!-- /.container-fluid -->
 
+        </div>
+        <!-- End of Main Content -->
+
+        <!-- Footer -->
+        <footer class="sticky-footer bg-white">
+            <div class="containerta my-auto">
+                <div class="copyright text-center my-auto">
+                    <span>Geek Developers &copy; 2021-1</span>
+                </div>
+            </div>
+        </footer>
+        <!-- End of Footer -->
 
     </div>
-    <!-- /.container-fluid -->
-
-    <!-- /.container-fluid -->
-
-
-</div>
-<!-- End of Main Content -->
-
-
-
-
-</div>
-<!-- End of Content Wrapper -->
+    <!-- End of Content Wrapper -->
 
 </div>
 <!-- End of Page Wrapper -->
@@ -325,7 +331,7 @@
             <div class="modal-body">Al seleecionar el boton salir, usted cerrará su sesión.</div>
             <div class="modal-footer">
                 <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                <a class="btn btn-primary" href="/html/login.html">Cerrar Sesión</a>
+                <a class="btn btn-primary" href="/html/Login.html">Cerrar Sesión</a>
             </div>
         </div>
     </div>
@@ -351,3 +357,4 @@
 </body>
 
 </html>
+
