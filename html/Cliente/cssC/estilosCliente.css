@@ -17,17 +17,60 @@
 
 
 
-
-
 .btn-cerrito {
-    color: #701111;
+    color: white;
     background-color: #701111;
-    border-color: #701111;
+    border-color: white;
 }
 .btn-cielito{
-    color: #2d4a8d;
+    color: white;
     background-color: #2d4a8d;
-    border-color: #2d4a8d;
+    border-color: white;
+}
+
+.btn-back{
+    color: white;
+    background-color: #d6bd1d;
+    border-color: white;
+}
+.btn-pay{
+    color: white;
+    background-color: #64a94d;
+    border-color: white;
+}
+.btn-trash {
+    color: white;
+    background-color: #701111;
+    border-color: white;
+}
+.btn-eliminar {
+    color: white;
+    background-color: #e08a3d;
+    border-color: white;
+}
+
+
+.card-background{
+    position: center;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #ece7e7;
+    background-clip: border-box;
+    border: 1px solid #e3e6f0;
+    border-radius: 0.35rem;
+}
+.card-background-tab{
+    position: center;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #ece7e7;
+    background-clip: border-box;
+    border: 1px solid #e3e6f0;
+    border-radius: 0.35rem;
 }
 
 button.botonbusca {
