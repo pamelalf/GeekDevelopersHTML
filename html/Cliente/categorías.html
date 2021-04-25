@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
     <link href="../bootstrap/vendor/fontawesome-free/css/all.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
           rel="stylesheet">
@@ -20,10 +20,10 @@
     <!-- Custom styles for this page -->
     <link href="../bootstrap/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 
-    <title>Carrito de Compras</title>
+    <title>Categorías de Restaurante</title>
 </head>
-<body id="page-top">
 
+<body id="page-top">
 <!-- Page Wrapper -->
 <div id="wrapper">
 
@@ -283,220 +283,85 @@
             <!-- Begin Page Content -->
             <div class="container-fluid">
 
-                <!-- DataTales Example -->
-                <div class="card shadow mb-4">
-                    <div class="card-header py-3 " style="background-color: #701111;">
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
 
-                        <h5 class="font-weight-bold text-white text-lg-center" align="center">CARRITO DE COMPRAS</h5>
-                    </div>
-                    <div class="card-body">
-                        <div class="table-responsive">
-                            <table class="table table-bordered">
-                                <thead>
-                                <tr>
-                                    <th class="text-center">
-                                        <input class="form-check-input" type="checkbox" value="">
-                                        Producto
-                                    </th>
-                                    <th class="text-center">
-                                        Precio
-                                    </th>
-                                    <th class="text-center">
-                                        Cantidad
-                                    </th>
-                                    <th class="text-center">
-                                        Subtotal
-                                    </th>
-                                    <th class="text-center">
-                                        Observación
-                                    </th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td style="width: 500px">
-                                        <form>
-                                            <div class="form-check-inline">
-                                                <div class="form-check-inline">
-                                                    <input class="form-check-input" type="checkbox" value="">
-                                                    <img class="img-profile rounded-circle" alt="list-style-image"
-                                                         style="width: 35px; height: 35px"
-                                                         src="../bootstrap/img/undraw_profile.svg">
-                                                </div>
-                                                <div> Pizza a la italiana</div>
-                                            </div>
-                                        </form>
-                                    </td>
-                                    <td style="width: 250px">S/. 56.00</td>
-                                    <td style="width: 250px">
-                                        <div class="form-check-inline">
-                                            <input class="form-control ml-3 mr-3 mb-3 mt-3" type="text" size="5%"
-                                                   id="precio1" style="background: #ededed">
-                                            <button class="btn btn-cerrito mr-3" style="color: #ffffff"><i class="fas fa-plus"></i></button>
-                                            <button class="btn btn-cielito " style="color: #FFFFFF"><i class="fas fa-minus"></i></button>
-                                        </div>
-                                    </td>
-                                    <td style="width: 250px">S/. 85.00</td>
-                                    <td style="width: 700px"><textarea class="form-control" aria-label="With textarea"
-                                                                       style="background: #ededed"></textarea></td>
-                                </tr>
-                                <tr>
-                                    <td style="width: 500px">
-                                        <form>
-                                            <div class="form-check-inline">
-                                                <div class="form-check-inline">
-                                                    <input class="form-check-input" type="checkbox" value="">
-                                                    <img class="img-profile rounded-circle" alt="list-style-image"
-                                                         style="width: 35px; height: 35px"
-                                                         src="../bootstrap/img/undraw_profile.svg">
-                                                </div>
-                                                <div> Pizza a la italiana</div>
-                                            </div>
-                                        </form>
-                                    </td>
-                                    <td style="width: 250px">S/. 56.00</td>
-                                    <td style="width: 250px">
-                                        <div class="form-check-inline">
-                                            <input class="form-control ml-3 mr-3 mb-3 mt-3" type="text" size="5%"
-                                                   id="precio2" style="background: #ededed">
-                                            <button class="btn btn-cerrito mr-3" style="color: #ffffff"><i class="fas fa-plus"></i></button>
-                                            <button class="btn btn-cielito " style="color: #FFFFFF"><i class="fas fa-minus"></i></button>
-                                        </div>
-                                    </td>
-                                    <td style="width: 250px">S/. 85.00</td>
-                                    <td style="width: 700px"><textarea class="form-control" aria-label="With textarea"
-                                                                       style="background: #ededed"></textarea></td>
-                                </tr>
-                                <tr>
-                                    <td style="width: 500px">
-                                        <form>
-                                            <div class="form-check-inline">
-                                                <div class="form-check-inline">
-                                                    <input class="form-check-input" type="checkbox" value="">
-                                                    <img class="img-profile rounded-circle" alt="list-style-image"
-                                                         style="width: 35px; height: 35px"
-                                                         src="../bootstrap/img/undraw_profile.svg">
-                                                </div>
-                                                <div> Pizza a la italiana</div>
-                                            </div>
-                                        </form>
-                                    </td>
-                                    <td style="width: 250px">S/. 56.00</td>
-                                    <td style="width: 250px">
-                                        <div class="form-check-inline">
-                                            <input class="form-control ml-3 mr-3 mb-3 mt-3" type="text" size="5%"
-                                                   id="precio3" style="background: #ededed">
-                                            <button class="btn btn-cerrito mr-3" style="color: #ffffff"><i class="fas fa-plus"></i></button>
-                                            <button class="btn btn-cielito " style="color: #FFFFFF"><i class="fas fa-minus"></i></button>
-                                        </div>
-                                    </td>
-                                    <td style="width: 250px">S/. 85.00</td>
-                                    <td style="width: 700px"><textarea class="form-control" aria-label="With textarea"
-                                                                       style="background: #ededed"></textarea></td>
-                                </tr>
-                                <tr>
-                                    <td style="width: 500px">
-                                        <form>
-                                            <div class="form-check-inline">
-                                                <div class="form-check-inline">
-                                                    <input class="form-check-input" type="checkbox" value="">
-                                                    <img class="img-profile rounded-circle" alt="list-style-image"
-                                                         style="width: 35px; height: 35px"
-                                                         src="../bootstrap/img/undraw_profile.svg">
-                                                </div>
-                                                <div> Pizza a la italiana</div>
-                                            </div>
-                                        </form>
-                                    </td>
-                                    <td style="width: 250px">S/. 56.00</td>
-                                    <td style="width: 250px">
-                                        <div class="form-check-inline">
-                                            <input class="form-control ml-3 mr-3 mb-3 mt-3" type="text" size="5%"
-                                                   id="precio4" style="background: #ededed">
-                                            <button class="btn btn-cerrito mr-3" style="color: #ffffff"><i class="fas fa-plus"></i></button>
-                                            <button class="btn btn-cielito " style="color: #FFFFFF"><i class="fas fa-minus"></i></button>
-                                        </div>
-                                    </td>
-                                    <td style="width: 250px">S/. 85.00</td>
-                                    <td style="width: 700px"><textarea class="form-control" aria-label="With textarea"
-                                                                       style="background: #ededed"></textarea></td>
-                                </tr>
-                                <tr>
-                                    <td style="width: 500px">
-                                        <form>
-                                            <div class="form-check-inline">
-                                                <div class="form-check-inline">
-                                                    <input class="form-check-input" type="checkbox" value="">
-                                                    <img class="img-profile rounded-circle" alt="list-style-image"
-                                                         style="width: 35px; height: 35px"
-                                                         src="../bootstrap/img/undraw_profile.svg">
-                                                </div>
-                                                <div> Pizza a la italiana</div>
-                                            </div>
-                                        </form>
-                                    </td>
-                                    <td style="width: 250px">S/. 56.00</td>
-                                    <td style="width: 250px">
-                                        <div class="form-check-inline">
-                                            <input class="form-control ml-3 mr-3 mb-3 mt-3" type="text" size="5%"
-                                                   id="precio5" style="background: #ededed">
-                                            <button class="btn btn-cerrito mr-3" style="color: #ffffff"><i class="fas fa-plus"></i></button>
-                                            <button class="btn btn-cielito " style="color: #FFFFFF"><i class="fas fa-minus"></i></button>
-                                        </div>
-                                    </td>
-                                    <td style="width: 250px">S/. 85.00</td>
-                                    <td style="width: 700px"><textarea class="form-control" aria-label="With textarea"
-                                                                       style="background: #ededed"></textarea></td>
-                                </tr>
-                                <tr>
-                                    <td style="width: 500px">
-                                        <form>
-                                            <div class="form-check-inline">
-                                                <div class="form-check-inline">
-                                                    <input class="form-check-input" type="checkbox" value="">
-                                                    <img class="img-profile rounded-circle" alt="list-style-image"
-                                                         style="width: 35px; height: 35px"
-                                                         src="../bootstrap/img/undraw_profile.svg">
-                                                </div>
-                                                <div> Pizza a la italiana</div>
-                                            </div>
-                                        </form>
-                                    </td>
-                                    <td style="width: 250px">S/. 56.00</td>
-                                    <td style="width: 250px">
-                                        <div class="form-check-inline">
-                                            <input class="form-control ml-3 mr-3 mb-3 mt-3" type="text" size="5%"
-                                                   id="precio6" style="background: #ededed">
-                                            <button class="btn btn-cerrito mr-3" style="color: #ffffff"><i class="fas fa-plus"></i></button>
-                                            <button class="btn btn-cielito " style="color: #FFFFFF"><i class="fas fa-minus"></i></button>
-                                        </div>
-                                    </td>
-                                    <td style="width: 250px">S/. 85.00</td>
-                                    <td style="width: 700px"><textarea class="form-control" aria-label="With textarea"
-                                                                       style="background: #ededed"></textarea></td>
-                                </tr>
-
-                                </tbody>
-
-                            </table>
-
+                    <!-- DataTales Example -->
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3" style="background-color: #701111;">
+                            <h5 class="font-weight-bold text-white text-center mb-0">Categorias</h5>
                         </div>
-                        <div class="pagination" style=" margin-left: 30% ;align-content: center">
-                            <a href="#">&laquo;</a>
-                            <a href="#" class="active">1</a>
-                            <a href="#">2</a>
-                            <a href="#">3</a>
-                            <a href="#">4</a>
-                            <a href="#">5</a>
-                            <a href="#">6</a>
-                            <a href="#">&raquo;</a>
+                        <div class="row">
+                            <div class="column">
+                                <div class="col-sm-6">
+                                    <div class="col-sm-6 mb-4 mt-4"
+                                         style="margin-left: 50%; margin-top: 30px">
+                                        <div class="container2">
+                                            <img src="img/amazonicas.jpg" alt="Avatar"
+                                                 class="image2 shadow"
+                                                 style="height: 300px; width: 400px">
+                                            <a class="overlay2" style="height: 300px; width: 400px" href="#">
+                                                <H1 class="text2 font-weight-bolder">AMAZONAS</H1>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="col-sm-6">
+                                    <div class="col-sm-6 mb-4 mt-4" style="margin-left: 50%">
+                                        <div class="container2">
+                                            <img src="img/oriental.jpg" alt="Avatar"
+                                                 class="image2 shadow"
+                                                 style="height: 300px; width: 400px">
+                                            <a class="overlay2" style="height: 300px; width: 400px">
+                                                <H1 class="text2 font-weight-bolder">ORIENTALS</H1>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column" style="height: 370px">
+                                <div class="col-sm-6">
+                                    <div class="col-sm-6 mb-4 mt-4"
+                                         style="margin-left: 50%; margin-top: 10px; margin-bottom: 200px">
+                                        <div class="container2">
+                                            <img src="img/marina.jpg" alt="Avatar"
+                                                 class="image2 shadow"
+                                                 style="height: 300px; width: 400px">
+                                            <a class="overlay2" style="height: 300px; width: 400px">
+                                                <H1 class="text2 font-weight-bolder">MARINO</H1>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="col-sm-6">
+                                    <div class="col-sm-6 mb-4 mt-4"
+                                         style="margin-left: 50%; margin-top: 10px; margin-bottom: 70px">
+                                        <div class="container2">
+                                            <img src="img/postres.jpg" alt="Avatar"
+                                                 class="image2 shadow"
+                                                 style="height: 300px; width: 400px">
+                                            <a class="overlay2" style="height: 300px; width: 400px">
+                                                <H1 class="text2 font-weight-bolder">POSTRES</H1>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <!-- /.container-fluid -->
 
             </div>
             <!-- /.container-fluid -->
-
         </div>
         <!-- End of Main Content -->
 
@@ -535,7 +400,7 @@
             <div class="modal-body">Al seleecionar el boton salir, usted cerrará su sesión.</div>
             <div class="modal-footer">
                 <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                <a class="btn btn-primary" href="/html/login.html">Cerrar Sesión</a>
+                <a class="btn btn-primary" style="background-color: #701111; color: #FFFFFF; border: #701111" href="/html/login.html">Cerrar Sesión</a>
             </div>
         </div>
     </div>
