@@ -49,7 +49,7 @@
 
                 <!-- Nav Item - Dashboard -->
                 <li class="nav-item">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="categorias.html">
                         <i class="fas fa-fw fa-list"></i>
                         <span>Categorias</span></a>
                 </li>
@@ -57,7 +57,7 @@
 
                 <!-- Nav Item - Pages Collapse Menu -->
                 <li class="nav-item">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="listaPedidos.html">
                         <i class="fas fa-fw fa-cog"></i>
                         <span>Pedidos</span>
                     </a>
@@ -65,7 +65,7 @@
 
                 <!-- Nav Item - Utilities Collapse Menu -->
                 <li class="nav-item">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="extras.html">
                         <i class="fas fa-fw fa-laugh-wink"></i>
                         <span>Extras</span>
                     </a>
@@ -73,13 +73,13 @@
 
                 <!-- Nav Item - Pages Collapse Menu -->
                 <li class="nav-item">
-                    <a class="nav-link " href="#">
+                    <a class="nav-link " href="eleccionReporte.html">
                         <i class="fas fa-fw fa-folder"></i>
                         <span>Reportes</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="#">
+                    <a class="nav-link " href="listaCupones.html">
                         <i class="fas fa-fw fa-folder"></i>
                         <span>Cupones</span>
                     </a>
@@ -215,6 +215,32 @@
 
                     <!-- Begin Page Content -->
                     <div class="container-fluid">
+                        <form>
+
+                            <div class="form-group row">
+                                <div class="col-sm-3 mb-1">
+                                    <input placeholder="Caducidad" class="form-control" type="text"
+                                           onfocus="(this.type='date')" onblur="(this.type='text')" id="date1">
+                                </div>
+                                <div class="col-sm-3 mb-1">
+                                    <select class="form-control">
+                                        <option value="">Descuento</option>
+                                        <option value="">S./00.00 hasta S./5.00</option>
+                                        <option value="">S./5.00 hasta S./10.00</option>
+                                        <option value="">S./10.00 hasta S./15.00</option>
+                                        <option value="">S./15.00 hasta S./20.00</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-3 mb-1 ">
+                                    <input type="text" class="form-control"
+                                           id="exampleCupon"
+                                           placeholder="Búsqueda por nombre">
+                                </div>
+                                <div class="col-sm-3 mb-1  ">
+                                    <a class="btn btn-secondary ">Quitar filtros</a>
+                                </div>
+                            </div>
+                        </form>
 
                         <!-- DataTales Example -->
                         <div class="card shadow mb-4">
@@ -222,18 +248,9 @@
 
                                 <div class="d-sm-flex align-items-center justify-content-between">
                                     <a href="#" class=" d-sm-inline-block btn btn-sm bontondate"><i
-                                            class="fas fa-plus fa-sm"></i>&nbspNuevo Extra</a>
+                                            class="fas fa-plus fa-sm"></i>Nuevo Extra</a>
 
                                     <h5 class="font-weight-bold text-white text-lg-center">EXTRAS</h5>
-                                    <div class="col-sm-1" style="margin-right: 10px">
-                                        <select class="form-control" style="width: 130px">
-                                            <option value="">Precios</option>
-                                            <option value="">S/.00.00 hasta S/.5.00</option>
-                                            <option value="">S/.5.00 hasta S/.10.00</option>
-                                            <option value="">S/.10.00 hasta S/.15.00</option>
-                                            <option value="">S/.15.00 a más</option>
-                                        </select>
-                                    </div>
 
                                 </div>
 
@@ -253,7 +270,7 @@
                                                     Precio
                                                 </th>
                                                 <th>
-                                                    Cantidad
+                                                    Editar
                                                 </th>
                                                 <th>
                                                     Eliminar
@@ -265,7 +282,10 @@
                                                 <td style="width: 250px">00001</td>
                                                 <td style="width: 700px">Inca Kola 500 ml</td>
                                                 <td style="width: 250px">S/. 15.00</td>
-                                                <td style="width: 250px">56 uni.</td>
+                                                <td style="width: 250px">
+                                                    <a style="color: #dce3f9"
+                                                    class="btn btn-danger btn-circle align">
+                                                     <i class="fas fa-bell"></i></td>
                                                 <td style="width: 160px"><a style="color: #dce3f9"
                                                                             class="btn btn-danger btn-circle align">
                                                     <i class="fas fa-times"></i>
@@ -273,76 +293,103 @@
 
                                             </tr>
                                             <tr>
-                                                <td style="width: 250px">00002</td>
+                                                <td style="width: 250px">00001</td>
                                                 <td style="width: 700px">Inca Kola 500 ml</td>
                                                 <td style="width: 250px">S/. 15.00</td>
-                                                <td style="width: 250px">56 uni.</td>
+                                                <td style="width: 250px">
+                                                    <a style="color: #dce3f9"
+                                                    class="btn btn-danger btn-circle align">
+                                                     <i class="fas fa-bell"></i></td>
                                                 <td style="width: 160px"><a style="color: #dce3f9"
                                                                             class="btn btn-danger btn-circle align">
                                                     <i class="fas fa-times"></i>
                                                 </a></td>
 
                                             </tr>
+
                                             <tr>
-                                                <td style="width: 250px">00003</td>
+                                                <td style="width: 250px">00001</td>
                                                 <td style="width: 700px">Inca Kola 500 ml</td>
                                                 <td style="width: 250px">S/. 15.00</td>
-                                                <td style="width: 250px">56 uni.</td>
+                                                <td style="width: 250px">
+                                                    <a style="color: #dce3f9"
+                                                    class="btn btn-danger btn-circle align">
+                                                     <i class="fas fa-bell"></i></td>
                                                 <td style="width: 160px"><a style="color: #dce3f9"
                                                                             class="btn btn-danger btn-circle align">
                                                     <i class="fas fa-times"></i>
                                                 </a></td>
 
                                             </tr>
+
                                             <tr>
-                                                <td style="width: 250px">00004</td>
+                                                <td style="width: 250px">00001</td>
                                                 <td style="width: 700px">Inca Kola 500 ml</td>
                                                 <td style="width: 250px">S/. 15.00</td>
-                                                <td style="width: 250px">56 uni.</td>
+                                                <td style="width: 250px">
+                                                    <a style="color: #dce3f9"
+                                                    class="btn btn-danger btn-circle align">
+                                                     <i class="fas fa-bell"></i></td>
                                                 <td style="width: 160px"><a style="color: #dce3f9"
                                                                             class="btn btn-danger btn-circle align">
                                                     <i class="fas fa-times"></i>
                                                 </a></td>
 
                                             </tr>
+
                                             <tr>
-                                                <td style="width: 250px">00005</td>
+                                                <td style="width: 250px">00001</td>
                                                 <td style="width: 700px">Inca Kola 500 ml</td>
                                                 <td style="width: 250px">S/. 15.00</td>
-                                                <td style="width: 250px">56 uni.</td>
+                                                <td style="width: 250px">
+                                                    <a style="color: #dce3f9"
+                                                    class="btn btn-danger btn-circle align">
+                                                     <i class="fas fa-bell"></i></td>
                                                 <td style="width: 160px"><a style="color: #dce3f9"
                                                                             class="btn btn-danger btn-circle align">
                                                     <i class="fas fa-times"></i>
                                                 </a></td>
 
                                             </tr>
+
                                             <tr>
-                                                <td style="width: 250px">00006</td>
+                                                <td style="width: 250px">00001</td>
                                                 <td style="width: 700px">Inca Kola 500 ml</td>
                                                 <td style="width: 250px">S/. 15.00</td>
-                                                <td style="width: 250px">56 uni.</td>
+                                                <td style="width: 250px">
+                                                    <a style="color: #dce3f9"
+                                                    class="btn btn-danger btn-circle align">
+                                                     <i class="fas fa-bell"></i></td>
                                                 <td style="width: 160px"><a style="color: #dce3f9"
                                                                             class="btn btn-danger btn-circle align">
                                                     <i class="fas fa-times"></i>
                                                 </a></td>
 
                                             </tr>
+
                                             <tr>
-                                                <td style="width: 250px">00007</td>
+                                                <td style="width: 250px">00001</td>
                                                 <td style="width: 700px">Inca Kola 500 ml</td>
                                                 <td style="width: 250px">S/. 15.00</td>
-                                                <td style="width: 250px">56 uni.</td>
+                                                <td style="width: 250px">
+                                                    <a style="color: #dce3f9"
+                                                    class="btn btn-danger btn-circle align">
+                                                     <i class="fas fa-bell"></i></td>
                                                 <td style="width: 160px"><a style="color: #dce3f9"
                                                                             class="btn btn-danger btn-circle align">
                                                     <i class="fas fa-times"></i>
                                                 </a></td>
 
                                             </tr>
+
                                             <tr>
-                                                <td style="width: 250px">00008</td>
+                                                <td style="width: 250px">00001</td>
                                                 <td style="width: 700px">Inca Kola 500 ml</td>
                                                 <td style="width: 250px">S/. 15.00</td>
-                                                <td style="width: 250px">56 uni.</td>
+                                                <td style="width: 250px">
+                                                    <a style="color: #dce3f9"
+                                                    class="btn btn-danger btn-circle align">
+                                                     <i class="fas fa-bell"></i></td>
                                                 <td style="width: 160px"><a style="color: #dce3f9"
                                                                             class="btn btn-danger btn-circle align">
                                                     <i class="fas fa-times"></i>
@@ -350,7 +397,37 @@
 
                                             </tr>
 
-                                        </tbody>
+                                            <tr>
+                                                <td style="width: 250px">00001</td>
+                                                <td style="width: 700px">Inca Kola 500 ml</td>
+                                                <td style="width: 250px">S/. 15.00</td>
+                                                <td style="width: 250px">
+                                                    <a style="color: #dce3f9"
+                                                    class="btn btn-danger btn-circle align">
+                                                     <i class="fas fa-bell"></i></td>
+                                                <td style="width: 160px"><a style="color: #dce3f9"
+                                                                            class="btn btn-danger btn-circle align">
+                                                    <i class="fas fa-times"></i>
+                                                </a></td>
+
+                                            </tr>
+
+                                            <tr>
+                                                <td style="width: 250px">00001</td>
+                                                <td style="width: 700px">Inca Kola 500 ml</td>
+                                                <td style="width: 250px">S/. 15.00</td>
+                                                <td style="width: 250px">
+                                                    <a style="color: #dce3f9"
+                                                    class="btn btn-danger btn-circle align">
+                                                     <i class="fas fa-bell"></i></td>
+                                                <td style="width: 160px"><a style="color: #dce3f9"
+                                                                            class="btn btn-danger btn-circle align">
+                                                    <i class="fas fa-times"></i>
+                                                </a></td>
+
+                                            </tr>
+
+                                            </tbody>
 
                                     </table>
 
