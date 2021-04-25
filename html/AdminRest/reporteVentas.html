@@ -112,19 +112,7 @@
                             </button>
                         </form>
 
-                        <!-- Topbar Search -->
-                        <form
-                                class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-                            <div class="input-group">
-                                <input type="text" class="form-control bg-light border-0 small" placeholder="Buscar..."
-                                       aria-label="Search" aria-describedby="basic-addon2">
-                                <div class="input-group-append">
-                                    <button class="btn botonbusca" type="button">
-                                        <i class="fas fa-search fa-sm"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </form>
+                        
 
                         <!-- Topbar Navbar -->
                         <ul class="navbar-nav ml-auto">
@@ -218,15 +206,16 @@
                         <form>
 
                             <div class="form-group row">
-                                <div class="col-sm-2 mb-2">
-                                    <input placeholder="Fecha" class="form-control" type="text"
-                                           onfocus="(this.type='date')" onblur="(this.type='text')" id="date1">
-                                </div>
                                 <div class="col-sm-3 mb-1 ">
                                     <input type="text" class="form-control"
                                            id="exampleVentas"
                                            placeholder="Búsqueda por código">
                                 </div>
+                                <div class="col-sm-2 mb-2">
+                                    <input placeholder="Fecha" class="form-control" type="text"
+                                           onfocus="(this.type='date')" onblur="(this.type='text')" id="date1">
+                                </div>
+
                                 <div class="col-sm-2 mb-2">
                                     <select class="form-control">
                                         <option value="">Monto total</option>
@@ -246,12 +235,10 @@
                             <div class="card-header py-3 " style="background-color: #701111;">
 
                                 <div class="d-sm-flex align-items-center justify-content-between">
-                                    <div>
 
-                                    </div>
-                                    <h5 class="font-weight-bold text-white  text-center">REPORTES DE VENTAS</h5>
-                                    <a href="#" class=" d-sm-inline-block btn btn-sm bontondate"><i
-                                            class="fas fa-download fa-sm"></i> Generate Report</a>
+                                    <h5 class="font-weight-bold text-white text-lg-center mx-auto ">REPORTE DE
+                                        VENTAS</h5>
+                                    <a class="btn btn-warning mr-1">Exportar</a>
                                 </div>
 
                             </div>
