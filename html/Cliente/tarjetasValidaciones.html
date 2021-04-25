@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Direcciones</title>
+    <title>Pedido Actual</title>
 
     <!-- Custom fonts for this template -->
     <link href="../bootstrap/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -19,7 +19,6 @@
 
     <!-- Custom styles for this template -->
     <link href="../bootstrap/css/sb-admin-2.min.css" rel="stylesheet">
-
 
     <!-- Custom styles for this page -->
     <link href="../bootstrap/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
@@ -166,7 +165,7 @@
 
                     <li class="nav-item dropdown no-arrow mx-1">
                         <a class="nav-link dropdown-toggle" href="listaDirecciones.html">
-                            Av. Carloz Izaguirre
+                            Av. Carlos Izaguirre
                         </a>
                     </li>
                     <li class="nav-item dropdown no-arrow mx-1">
@@ -283,12 +282,12 @@
                 <!-- CONTENT -->
                 <div class="row">
 
-                    <div class="col-xl-12 col-lg-7">
+                    <div class="col-xl-8 col-lg-7">
 
                         <!-- Area Chart -->
                         <div class="card shadow mb-4">
                             <div class="card-header py-3 " style="background-color: #701111;">
-                                <h6 class="m-0 font-weight-bold text-gray-400 text-center">REGISTRE UNA DIRECCIÓN</h6>
+                                <h6 class="m-0 font-weight-bold text-gray-400 text-center">AGREGAR TARJETA</h6>
                             </div>
                             <div class="card-header py-3">
 
@@ -296,117 +295,139 @@
                                     <div class="form-row">
 
                                         <div class="col-md-6 mb-3">
-                                            <div style=text-align:center>
-                                            <label for="direcc">Ingrese una dirección</label>
-                                            <input type="text" class="form-control " name="direcc"  id="direcc" value="" placeholder="" >
-                                            </div>
-                                            <h2>   </h2>
-                                            <div class="col-md-12 mb-3"  style=text-align:center>
-                                                <a  class="btn btn-primary" href="listaDireccionesVal.html" type="submit">Agregar</a>
-
-
-                                                <a  class="btn btn-danger" href="listaRestaurantes.html" type="submit">Cancelar</a>
-
-                                            </div>
-                        <!-- ------------------------------------------------------------------------------------------------------------------------------ -->
-                                            <div class="card-body">
-                                            <div class="table-responsive">
-                                                <table class="table table-bordered">
-                                                    <thead>
-                                                    <tr>
-                                                        <th>
-                                                            N°
-                                                        </th>
-                                                        <th>
-                                                            Direcciones
-                                                        </th>
-                                                        <th>
-
-                                                        </th>
-
-                                                    </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                    <tr>
-                                                        <td>1</td>
-                                                        <td>Av.1</td>
-                                                        <td> <input type="checkbox"> </td>
-
-                                                    </tr>
-                                                    <tr>
-                                                        <td>2</td>
-                                                        <td>Av. 2</td>
-                                                        <td><input type="checkbox">  </td>
-
-                                                    </tr>
-                                                    <tr>
-                                                        <td>3</td>
-                                                        <td>Av. 3</td>
-                                                        <td> <input type="checkbox"> </td>
-
-                                                    </tr>
-                                                    <tr>
-                                                        <td>4</td>
-                                                        <td>Av .4</td>
-                                                        <td> <input type="checkbox"> </td>
-
-                                                    </tr>
-
-                                                    </tbody>
-
-                                                </table>
-
-                                                <div class="col-md-12 mb-4"  >
-                                                    <a type="button" class="btn btn-dark" >
-                                                         <i class="fas fa-trash"></i>
-                                                    </a>
-
-                                                </div>
-
-                                            </div>
-                                        </div>
-
-
+                                            <label for="dniC">Numero de Tarjeta</label>
+                                            <input type="text" class="form-control " name="dniC"  id="dniC" value="" placeholder="xxxxxxxxxx" >
+                                            <h6 style="color:hsla(0,100%,50%,1);">Dígitos incorrectos || Recuadro vacío</h6>
 
                                         </div>
                                         <div class="col-md-6 mb-3">
+                                            <label for="idTipoTarjeta">Tarjeta</label>
+                                            <select class="form-control " id="idTipoTarjeta">
+                                                <option selected disabled value="0">Tipo de Tarjeta</option>
+                                                <option  value="1">VISA</option>
+                                                <option  value="2">MASTERCARD</option>
 
-                                                <div class="card shadow mb-4">
-                                                    <!-- Card Body -->
-                                                    <div class="card-body">
-                                                        <div style=text-align:center>
-                                                            <label for="direc">Dirección Actual</label>
-                                                            <input type="text" class="form-control ph-center" placeholder="Av. Carlos Izaguirre, Los Olivos"  id="direc" aria-label="Disabled input example" disabled>
-                                                        </div>
-                                                        <h1>       </h1>
-                                                        <div style=text-align:center>
-                                                            <img
-                                                                    src="images.jfif" width="200" height="150">
-                                                        </div>
 
-                                                    </div>
-
-                                                </div>
+                                            </select>
+                                            <h6 style="color:hsla(0,100%,50%,1);">Seleccione un opción</h6>
 
                                         </div>
 
+                                        <div class="col-md-6 mb-3">
+                                            <label for="nombreC">Nombre </label>
+                                            <input type="text" class="form-control " id="nombreC">
+                                            <h6 style="color:hsla(0,100%,50%,1);">Ingrese solo letras || Recuadro vacío</h6>
+                                        </div>
+
+                                        <div class="col-md-6 mb-3">
+                                            <label for="apellidoC">Apellidos</label>
+                                            <input type="text" class="form-control " id="apellidoC">
+                                            <h6 style="color:hsla(0,100%,50%,1);">Ingrese solo letras || Recuadro vacío</h6>
+                                        </div>
+
+
+                                        <div class="col-md-6 mb-3">
+                                            <label for="apellidoC">Fecha de Caducación</label>
+                                            <div class="row">
+
+                                                <div class="col">
+                                                    <input type="text" class="form-control" placeholder="Mes" aria-label="First name">
+                                                </div>
+                                                <div class="col">
+                                                    <input type="text" class="form-control" placeholder="Año" aria-label="Last name">
+                                                </div>
+                                            </div>
+                                            <h6 style="color:hsla(0,100%,50%,1);">Fecha incorrecta || Recuadro vacío</h6>
+
+
+                                        </div>
+
+                                        <div class="col-md-6 mb-3">
+                                            <label for="idcvv">CVV</label>
+                                            <input type="text" class="form-control " placeholder="3 dígitos" id="idcvv">
+                                            <h6 style="color:hsla(0,100%,50%,1);">Dígitos incorrectos</h6>
+
+                                        </div>
+
+                                        <div class="col-md-6 mb-3" >
+
+                                            <a  class="btn btn-primary" href="tarjetas.html" type="submit">Agregar</a>
+                                            <a  class="btn btn-danger" href="listaRestaurantes.html" type="submit">Cancelar</a>
+
+                                        </div>
                                     </div>
                                 </form>
                             </div>
 
                         </div>
 
+
                     </div>
 
+                    <!-- IMAGEN -->
+                    <div class="col-xl-4 col-lg-5">
+                        <h3 >                    </h3>
+                        <img
+                                src="tj1.PNG" width="300" height=" 150">
 
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered">
+                                    <thead>
+                                    <tr>
+                                        <th>
+                                            N°
+                                        </th>
+                                        <th>
+                                            Tarjeta
+                                        </th>
+                                        <th>
 
+                                        </th>
 
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>xxxxxxxxxxxxxxxx</td>
+                                        <td> <input type="checkbox"> </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>xxxxxxxxxxxxxxxx</td>
+                                        <td><input type="checkbox"> </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>xxxxxxxxxxxxxxxx</td>
+                                        <td> <input type="checkbox"> </td>
+
+                                    </tr>
+
+                                    </tbody>
+
+                                </table>
+                                <div class="col-md-12 mb-4"  >
+                                    <a type="button" class="btn btn-dark" >
+                                        <i class="fas fa-trash"></i>
+                                    </a>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
+            </div>
             <!-- /.container-fluid -->
 
         </div>
         <!-- End of Main Content -->
-        </div>
+
         <!-- Footer -->
         <footer class="sticky-footer bg-white">
             <div class="container my-auto">
@@ -447,6 +468,7 @@
         </div>
     </div>
 </div>
+
 
 <!-- Bootstrap core JavaScript-->
 <script src="../bootstrap/vendor/jquery/jquery.min.js"></script>

@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Direcciones</title>
+    <title>Pedido Actual</title>
 
     <!-- Custom fonts for this template -->
     <link href="../bootstrap/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -20,10 +20,8 @@
     <!-- Custom styles for this template -->
     <link href="../bootstrap/css/sb-admin-2.min.css" rel="stylesheet">
 
-
     <!-- Custom styles for this page -->
     <link href="../bootstrap/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
-    <link href="cssC/estilosCliente.css" rel="stylesheet" type="text/css">
 
 </head>
 
@@ -166,7 +164,7 @@
 
                     <li class="nav-item dropdown no-arrow mx-1">
                         <a class="nav-link dropdown-toggle" href="listaDirecciones.html">
-                            Av. Carloz Izaguirre
+                            Los Eneldos 204
                         </a>
                     </li>
                     <li class="nav-item dropdown no-arrow mx-1">
@@ -288,7 +286,7 @@
                         <!-- Area Chart -->
                         <div class="card shadow mb-4">
                             <div class="card-header py-3 " style="background-color: #701111;">
-                                <h6 class="m-0 font-weight-bold text-gray-400 text-center">REGISTRE UNA DIRECCIÓN</h6>
+                                <h6 class="m-0 font-weight-bold text-gray-400 text-center">EDITAR PERFIL</h6>
                             </div>
                             <div class="card-header py-3">
 
@@ -296,117 +294,67 @@
                                     <div class="form-row">
 
                                         <div class="col-md-6 mb-3">
-                                            <div style=text-align:center>
-                                            <label for="direcc">Ingrese una dirección</label>
-                                            <input type="text" class="form-control " name="direcc"  id="direcc" value="" placeholder="" >
-                                            </div>
-                                            <h2>   </h2>
-                                            <div class="col-md-12 mb-3"  style=text-align:center>
-                                                <a  class="btn btn-primary" href="listaDireccionesVal.html" type="submit">Agregar</a>
-
-
-                                                <a  class="btn btn-danger" href="listaRestaurantes.html" type="submit">Cancelar</a>
-
-                                            </div>
-                        <!-- ------------------------------------------------------------------------------------------------------------------------------ -->
-                                            <div class="card-body">
-                                            <div class="table-responsive">
-                                                <table class="table table-bordered">
-                                                    <thead>
-                                                    <tr>
-                                                        <th>
-                                                            N°
-                                                        </th>
-                                                        <th>
-                                                            Direcciones
-                                                        </th>
-                                                        <th>
-
-                                                        </th>
-
-                                                    </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                    <tr>
-                                                        <td>1</td>
-                                                        <td>Av.1</td>
-                                                        <td> <input type="checkbox"> </td>
-
-                                                    </tr>
-                                                    <tr>
-                                                        <td>2</td>
-                                                        <td>Av. 2</td>
-                                                        <td><input type="checkbox">  </td>
-
-                                                    </tr>
-                                                    <tr>
-                                                        <td>3</td>
-                                                        <td>Av. 3</td>
-                                                        <td> <input type="checkbox"> </td>
-
-                                                    </tr>
-                                                    <tr>
-                                                        <td>4</td>
-                                                        <td>Av .4</td>
-                                                        <td> <input type="checkbox"> </td>
-
-                                                    </tr>
-
-                                                    </tbody>
-
-                                                </table>
-
-                                                <div class="col-md-12 mb-4"  >
-                                                    <a type="button" class="btn btn-dark" >
-                                                         <i class="fas fa-trash"></i>
-                                                    </a>
-
-                                                </div>
-
-                                            </div>
-                                        </div>
-
+                                            <label for="nombre">Nombres</label>
+                                            <input type="text" class="form-control " name="dniC"  id="nombre" value="" placeholder="Joham Hector" disabled >
 
 
                                         </div>
                                         <div class="col-md-6 mb-3">
-
-                                                <div class="card shadow mb-4">
-                                                    <!-- Card Body -->
-                                                    <div class="card-body">
-                                                        <div style=text-align:center>
-                                                            <label for="direc">Dirección Actual</label>
-                                                            <input type="text" class="form-control ph-center" placeholder="Av. Carlos Izaguirre, Los Olivos"  id="direc" aria-label="Disabled input example" disabled>
-                                                        </div>
-                                                        <h1>       </h1>
-                                                        <div style=text-align:center>
-                                                            <img
-                                                                    src="images.jfif" width="200" height="150">
-                                                        </div>
-
-                                                    </div>
-
-                                                </div>
+                                            <label for="apellido">Apellido</label>
+                                            <input type="text" class="form-control " name="apellido"  id="apellido" value="" placeholder="Romucho Ventura" disabled >
 
                                         </div>
 
+                                        <div class="col-md-6 mb-3">
+                                            <label for="correo">Correo </label>
+                                            <input type="text" class="form-control " id="correo" placeholder="johamhector@gmail.com" disabled>
+                                        </div>
+
+                                        <div class="col-md-6 mb-3">
+                                            <label for="fecha">Fecha de Nacimiento</label>
+                                            <input type="text" class="form-control " id="fecha" placeholder="06/06/1995" disabled>
+
+
+                                        </div>
+
+                                        <div class="col-md-6 mb-3">
+                                            <label for="celular">N° de celular</label>
+                                            <input type="text" class="form-control " id="celular"  placeholder="Celular" >
+                                            <h7 style="color:hsla(0,100%,50%,1);">El número ya está regitsrado || Dígitos incorrectos</h7>
+                                        </div>
+
+                                        <div class="col-md-6 mb-3">
+                                            <label for="contrasena">Contraseña (Confirmación)</label>
+                                            <input type="password" class="form-control " id="contrasena">
+                                            <h7 style="color:hsla(0,100%,50%,1);">Contraseña incorrecta || Recuadro vacío</h7>
+
+                                        </div>
+
+
+                                        <div class="col-md-12 mb-3">
+                                            <div style=text-align:center>
+                                                <a  class="btn btn-primary" href="editarPerfil.html" type="submit">Guardar</a>
+                                                <a  class="btn btn-danger" href="listaRestaurantes.html" type="submit">Cancelar</a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </form>
                             </div>
 
                         </div>
 
+
                     </div>
 
-
-
-
+                    <!-- IMAGEN -->
                 </div>
+
+            </div>
             <!-- /.container-fluid -->
 
         </div>
         <!-- End of Main Content -->
-        </div>
+
         <!-- Footer -->
         <footer class="sticky-footer bg-white">
             <div class="container my-auto">
