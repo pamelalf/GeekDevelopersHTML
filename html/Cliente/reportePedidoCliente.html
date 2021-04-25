@@ -21,6 +21,7 @@
     <link href="../bootstrap/css/sb-admin-2.min.css" rel="stylesheet">
 
     <!-- Custom styles for this page -->
+	  <link href="../AdminRest/cssAR/estilosAdminRest.css" rel="stylesheet" type="text/css">
     <link href="../bootstrap/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 
 </head>
@@ -284,13 +285,7 @@
                         </div>
                     </div>
                     <div class="form-group row">
-                        <div class="col-sm-3 mb-2 mb-sm-0">
-                            <select class="form-control  ">
-                                <option value="" disabled selected>Estado</option>
-                                <option value="Entregado">Entregado</option>
-                                <option value="Cancelado">Cancelado</option>
-                            </select>
-                        </div>
+                       
 						<div class="col-sm-3 mb-2">
                             <input type="busquedaRestaurante" class="form-control"
                                    id="exampleRestaurante"
@@ -303,6 +298,29 @@
                                    placeholder="N° de pedidos">
 							
                         </div>
+						
+						 <div class="col-sm-3 mb-2 mb-sm-0">
+                            <select class="form-control  ">
+                                <option value="" disabled selected>Mes</option>
+                                <option value="Enero">Enero</option>
+                                <option value="Febrero">Febrero</option>
+								<option value="Marzo">Marzo</option>
+								<option value="Abril">Abril</option>
+								<option value="Mayo">Mayo</option>
+								<option value="Junio">Junio</option>
+								<option value="Julio">Julio</option>
+								<option value="Agosot">Agosot</option>
+								<option value="Septiembre">Septiembre</option>
+								<option value="Octubre">Octubre</option>
+								<option value="Noviembre">Noviembre</option>
+								<option value="Diciembre">Diciembre</option>
+                            </select>
+                        </div>
+						<div class="input-group-append col-sm-3 mb-2 ">
+                                <button class="btn" style="background-color:#701111; color:white; border:#701111" type="button">
+                                   <i class=" fas fa-filter"></i>
+                                </button>
+                            </div>
                     </div>
                 </form>
                     <!-- DataTales Example -->
@@ -452,7 +470,9 @@
                              </div>
                         </div>
                     </div>
-
+					<div style="text-align:center">
+					<a  class="btn btn-primary" href="listaReportes.html" type="submit">Regresar</a>
+					</div>
                 </div>
                 <!-- /.container-fluid -->
 
