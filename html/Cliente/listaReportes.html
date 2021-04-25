@@ -9,20 +9,21 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Pedido Actual</title>
+    <title>Generar Reportes</title>
 
-    <!-- Custom fonts for this template -->
-    <link href="../bootstrap/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link
-        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
-        rel="stylesheet">
+    <!-- Custom fonts for this template/BASE-COPIAR-NOBORRAR/bootstrap/vendor/fontawesome-free/css/all.min.css -->
+        <link href="../bootstrap/vendor/fontawesome-free/css/all.css" rel="stylesheet" type="text/css">
+        <link
+                href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+                rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="../bootstrap/css/sb-admin-2.min.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="../bootstrap/css/sb-admin-2.css" rel="stylesheet">
 
-    <!-- Custom styles for this page -->
-    <link href="../bootstrap/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 
+        <link href="cssAR/estilosAdminRest.css" rel="stylesheet" type="text/css">
+        <!-- Custom styles for this page -->
+        <link href="../bootstrap/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 </head>
 
 <body id="page-top">
@@ -276,186 +277,64 @@
                 <!-- End of Topbar -->
 
                 <!-- Begin Page Content -->
-                <div class="container-fluid">
+                <div class="container-fluid ">
 
-                    <!-- DataTales Example -->
-					<form>
-                    <div class=" form-group row" >
-                        <div class="col-sm-12 mb-2 " style="margin-right: 10px; margin-top: 20px" >
-                            <a class="btn btn-secondary" href="listaPedidoActual.html" >Quitar filtros</a>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="col-sm-3 mb-2 mb-sm-0">
-                            <select class="form-control  ">
-                                <option value="" disabled selected>Estado</option>
-                                <option value="Confirmado">Confirmado</option>
-                                <option value="En camino">En camino</option>
-                            </select>
-                        </div>
-						<div class="col-sm-3 mb-2">
-                            <input type="busquedaRestaurante" class="form-control"
-                                   id="exampleRestaurante"
-                                   placeholder="Búsqueda por restaurante">
-							
-                        </div>
-						<div class="input-group-append col-sm-3 mb-2 ">
-                                <button class="btn" style="background-color:#701111; color:white; border:#701111" type="button">
-                                   <i class="fas fa-filter"></i>
-                                </button>
+                        <!-- DataTales Example -->
+                        <div class="card shadow mb-4" >
+                            <div class="card-header py-3" style="background-color: #701111;">
+                                <h5 class="font-weight-bold text-white text-center mb-0">REPORTES</h5>
                             </div>
-                    </div>
-                </form>
-                    <div class="card-header py-3 " style="background-color: #701111;">
-
-                        <div class="d-sm-flex align-items-center justify-content-between">
-
-                            <h5 class="font-weight-bold text-white text-lg-center mx-auto ">Pedidos Actuales</h5>
+                            <div class="row mb-2">
+                                <div class="col-sm-6" style="padding-left:28em; padding-top:2em">
+                                    <div class="col-sm-6 mb-4" >
+                                        <div class="container2">
+											<img src="img/time.svg" alt="Avatar" class="image2 shadow" style="height: 200px; width: 200px">
+                                                <a class="overlay2" style="height: 200px; width: 200px" href="reporteTiempoCliente.html">
+                                                    <H1 class="text2 font-weight-bolder">TIEMPO</H1>
+                                                </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-2" style="padding-left:20em;">
+                                <div class="padre">
+                                    <div class="hijo">
+                                        <div class="container2">
+                                            <img src="img/dinero.svg" alt="Avatar" class="image2 shadow" style="height: 200px; width: 200px">
+                                            <a class="overlay2" style="height: 200px; width: 200px" href="reporteDineroCliente.html">
+                                                <h1 class="text2 font-weight-bolder">DINERO</h1>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="hijo">
+                                        <div class="container2">
+                                            <img src="img/fast-food.svg" alt="Avatar" class="image2 shadow" style="height: 200px; width: 200px">
+											<a class="overlay2" style="height: 200px; width: 200px" href="reportePedidoCliente.html">
+													<H1 class="text2 font-weight-bolder">PEDIDOS</H1>
+											</a>
+										</div>
+									</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                        <div class="card-body">
-                            <div class="table-responsive">
-                                <table class="table" id="dataTable" width="100%" style="background-color:gray">
-                                    <tbody>
-                                        <tr >
-											<div class="row" style="margin-bottom:10px">
-												<div class="col-3" >
-													<img width="100%" height="100%" src="img/rosaNautica.jpg">
-												</div>
-												<div class="col-6">
-													<div class="row mb-2" >
-														<input class="form-control ph-center" type="text" placeholder="Rosa Náutica" aria-label="Disabled input example" disabled>
-													</div>
-													<div class="row mb-2" >
-														<input class="form-control ph-center" type="text" placeholder="Fecha de entrega: 05-03-2021" aria-label="Disabled input example" disabled>
-													</div>	
-													<div class="row mb-2">
-															<input class="form-control col-6" type="text" placeholder="Tiempo de entrega: 30-45 min" aria-label="Disabled input example" disabled>
-															<input width="" class="form-control col-5 ml-4" type="text" placeholder="En camino" aria-label="Disabled input example" disabled>
-													</div>
-												</div>
-												<div class="col-3">
-													<a href="detallePedido.html"><div class="text-center"><i style="font-size:9em; color:#2C8287" class="fas fa-eye"></i></div></a>
-													<a href="detallePedido.html"><div class="text-center" style="color:#2C8287">Detalle de Pedido</div></a>
-												</div>
-											</div>
-										</tr>
-										<div class="dropdown-divider" style="border-color:#701111;" ></div>
-										<tr >
-											<div class="row">
-												<div class="col-3">
-													<img width="100%" height="100%" src="img/rosaNautica.jpg">
-												</div>
-												<div class="col-6">
-													<div class="row mb-2" >
-														<input class="form-control ph-center" type="text" placeholder="Rosa Náutica" aria-label="Disabled input example" disabled>
-													</div>
-													<div class="row mb-2" >
-														<input class="form-control ph-center" type="text" placeholder="Fecha de entrega: 05-03-2021" aria-label="Disabled input example" disabled>
-													</div>	
-													<div class="row mb-2">
-															<input class="form-control col-6" type="text" placeholder="Tiempo de entrega: 30-45 min" aria-label="Disabled input example" disabled>
-															<input width="" class="form-control col-5 ml-4" type="text" placeholder="En camino" aria-label="Disabled input example" disabled>
-													</div>
-												</div>
-												<div class="col-3">
-													<a href="detallePedido.html"><div class="text-center"><i style="font-size:9em; color:#2C8287" class="fas fa-eye"></i></div></a>
-													<a href="detallePedido.html"><div class="text-center" style="color:#2C8287">Detalle de Pedido</div></a>
-												</div>
-											</div>
-										</tr>
-										<div class="dropdown-divider" style="border-color:#701111;" ></div>
-										<tr >
-											<div class="row">
-												<div class="col-3">
-													<img width="100%" height="100%" src="img/rosaNautica.jpg">
-												</div>
-												<div class="col-6">
-													<div class="row mb-2" >
-														<input class="form-control ph-center" type="text" placeholder="Rosa Náutica" aria-label="Disabled input example" disabled>
-													</div>
-													<div class="row mb-2" >
-														<input class="form-control ph-center" type="text" placeholder="Fecha de entrega: 05-03-2021" aria-label="Disabled input example" disabled>
-													</div>	
-													<div class="row mb-2">
-															<input class="form-control col-6" type="text" placeholder="Tiempo de entrega: 30-45 min" aria-label="Disabled input example" disabled>
-															<input width="" class="form-control col-5 ml-4" type="text" placeholder="En camino" aria-label="Disabled input example" disabled>
-													</div>
-												</div>
-												<div class="col-3">
-													<a href="detallePedido.html"><div class="text-center"><i style="font-size:9em; color:#2C8287" class="fas fa-eye"></i></div></a>
-													<a href="detallePedido.html"><div class="text-center" style="color:#2C8287">Detalle de Pedido</div></a>
-												</div>
-											</div>
-										</tr>
-										<div class="dropdown-divider" style="border-color:#701111;" ></div>
-										<tr >
-											<div class="row">
-												<div class="col-3">
-													<img width="100%" height="100%" src="img/rosaNautica.jpg">
-												</div>
-												<div class="col-6">
-													<div class="row mb-2" >
-														<input class="form-control ph-center" type="text" placeholder="Rosa Náutica" aria-label="Disabled input example" disabled>
-													</div>
-													<div class="row mb-2" >
-														<input class="form-control ph-center" type="text" placeholder="Fecha de entrega: 05-03-2021" aria-label="Disabled input example" disabled>
-													</div>	
-													<div class="row mb-2">
-															<input class="form-control col-6" type="text" placeholder="Tiempo de entrega: 30-45 min" aria-label="Disabled input example" disabled>
-															<input width="" class="form-control col-5 ml-4" type="text" placeholder="En camino" aria-label="Disabled input example" disabled>
-													</div>
-												</div>
-												<div class="col-3">
-													<a href="detallePedido.html"><div class="text-center"><i style="font-size:9em; color:#2C8287" class="fas fa-eye"></i></div></a>
-													<a href="detallePedido.html"><div class="text-center" style="color:#2C8287">Detalle de Pedido</div></a>
-												</div>
-											</div>
-										</tr>
-										<div class="dropdown-divider" style="border-color:#701111;" ></div>
-										<tr >
-											<div class="row">
-												<div class="col-3">
-													<img width="100%" height="100%" src="img/rosaNautica.jpg">
-												</div>
-												<div class="col-6">
-													<div class="row mb-2" >
-														<input class="form-control ph-center" type="text" placeholder="Rosa Náutica" aria-label="Disabled input example" disabled>
-													</div>
-													<div class="row mb-2" >
-														<input class="form-control ph-center" type="text" placeholder="Fecha de entrega: 05-03-2021" aria-label="Disabled input example" disabled>
-													</div>	
-													<div class="row mb-2">
-															<input class="form-control col-6" type="text" placeholder="Tiempo de entrega: 30-45 min" aria-label="Disabled input example" disabled>
-															<input width="" class="form-control col-5 ml-4" type="text" placeholder="En camino" aria-label="Disabled input example" disabled>
-													</div>
-												</div>
-												<div class="col-3">
-													<a href="detallePedido.html"><div class="text-center"><i style="font-size:9em; color:#2C8287" class="fas fa-eye"></i></div></a>
-													<a href="detallePedido.html"><div class="text-center" style="color:#2C8287">Detalle de Pedido</div></a>
-												</div>
-											</div>
-										</tr>	
-									</tbody>
-								</table>
-							</div>
-							<div class="pagination topnav">
-								<a href="#">«</a>
-								<a href="#" class="active">1</a>
-								<a href="#">2</a>
-								<a href="#">3</a>
-								<a href="#">4</a>
-								<a href="#">5</a>
-								<a href="#">6</a>
-								<a href="#">»</a>
-							</div>
-                        </div>
-				
-                <!-- /.container-fluid -->
-
-    </div>
+                    <!-- /.container-fluid -->
+                </div>
             <!-- End of Main Content -->
+<style>
+.padre {
+  /* IMPORTANTE */
+  text-align: center;
+}
 
+.hijo {
+  padding: 10px;
+  margin: 10px;
+  
+  /* IMPORTANTE */
+  display: inline-block;
+}
+</style>
             <!-- Footer -->
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
@@ -497,7 +376,8 @@
         </div>
       </div>
     </div>
-
+	
+	
     <!-- Bootstrap core JavaScript-->
     <script src="../bootstrap/vendor/jquery/jquery.min.js"></script>
     <script src="../bootstrap/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

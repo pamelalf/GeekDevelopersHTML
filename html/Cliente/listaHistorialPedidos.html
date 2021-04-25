@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Pedido Actual</title>
+    <title>Historial de Pedidos</title>
 
     <!-- Custom fonts for this template -->
     <link href="../bootstrap/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -289,8 +289,8 @@
                         <div class="col-sm-3 mb-2 mb-sm-0">
                             <select class="form-control  ">
                                 <option value="" disabled selected>Estado</option>
-                                <option value="Confirmado">Confirmado</option>
-                                <option value="En camino">En camino</option>
+                                <option value="Entregado">Entregado</option>
+                                <option value="Cancelado">Cancelado</option>
                             </select>
                         </div>
 						<div class="col-sm-3 mb-2">
@@ -310,14 +310,14 @@
 
                         <div class="d-sm-flex align-items-center justify-content-between">
 
-                            <h5 class="font-weight-bold text-white text-lg-center mx-auto ">Pedidos Actuales</h5>
+                            <h5 class="font-weight-bold text-white text-lg-center mx-auto ">Pedidos Finalizados</h5>
                         </div>
                     </div>
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table" id="dataTable" width="100%" style="background-color:gray">
                                     <tbody>
-                                        <tr >
+                                        <tr>
 											<div class="row" style="margin-bottom:10px">
 												<div class="col-3" >
 													<img width="100%" height="100%" src="img/rosaNautica.jpg">
@@ -331,7 +331,21 @@
 													</div>	
 													<div class="row mb-2">
 															<input class="form-control col-6" type="text" placeholder="Tiempo de entrega: 30-45 min" aria-label="Disabled input example" disabled>
-															<input width="" class="form-control col-5 ml-4" type="text" placeholder="En camino" aria-label="Disabled input example" disabled>
+															<input  class="form-control col-5 ml-4" type="text" placeholder="Entregado" aria-label="Disabled input example" disabled>
+													</div>
+													<div class="row mb-2" >
+														<div class="col-6">
+																<h6 class="mb-2" style="color:black">Valora a tu restaurante</h6>
+																<a href="#" data-toggle="modal" data-target="#valoraRest">
+																	<i class="fas fa-utensils ml-2" style="font-size:2em; color:#F2EE61"></i>
+																</a>
+														</div>
+														<div class="col-6">
+																<h6 class=""mb-2" style="color:black">Valora a tu repartidor</h6>
+																<a href="#" data-toggle="modal" data-target="#valoraRepar">
+																	<i class="fas fa-motorcycle ml-2" style="font-size:2em; color:#2C8287"></i>
+																</a>
+														</div>
 													</div>
 												</div>
 												<div class="col-3">
@@ -341,9 +355,9 @@
 											</div>
 										</tr>
 										<div class="dropdown-divider" style="border-color:#701111;" ></div>
-										<tr >
-											<div class="row">
-												<div class="col-3">
+										<tr>
+											<div class="row" style="margin-bottom:10px">
+												<div class="col-3" >
 													<img width="100%" height="100%" src="img/rosaNautica.jpg">
 												</div>
 												<div class="col-6">
@@ -355,7 +369,21 @@
 													</div>	
 													<div class="row mb-2">
 															<input class="form-control col-6" type="text" placeholder="Tiempo de entrega: 30-45 min" aria-label="Disabled input example" disabled>
-															<input width="" class="form-control col-5 ml-4" type="text" placeholder="En camino" aria-label="Disabled input example" disabled>
+															<input  class="form-control col-5 ml-4" type="text" placeholder="Cancelado" aria-label="Disabled input example" disabled>
+													</div>
+													<div class="row mb-2" >
+														<div class="col-6">
+																<h6 class="mb-2" style="color:black">Valora a tu restaurante</h6>
+																<a href="#" data-toggle="modal" data-target="#valoraRest">
+																	<i class="fas fa-utensils ml-2" style="font-size:2em; color:#F2EE61"></i>
+																</a>
+														</div>
+														<div class="col-6">
+																<h6 class="mb-2" style="color:black">Valora a tu repartidor</h6>
+																<a href="#" data-toggle="modal" data-target="#valoraRepar">
+																	<i class="fas fa-motorcycle ml-2" style="font-size:2em; color:#2C8287"></i>
+																</a>
+														</div>
 													</div>
 												</div>
 												<div class="col-3">
@@ -365,9 +393,9 @@
 											</div>
 										</tr>
 										<div class="dropdown-divider" style="border-color:#701111;" ></div>
-										<tr >
-											<div class="row">
-												<div class="col-3">
+										<tr>
+											<div class="row" style="margin-bottom:10px">
+												<div class="col-3" >
 													<img width="100%" height="100%" src="img/rosaNautica.jpg">
 												</div>
 												<div class="col-6">
@@ -379,7 +407,21 @@
 													</div>	
 													<div class="row mb-2">
 															<input class="form-control col-6" type="text" placeholder="Tiempo de entrega: 30-45 min" aria-label="Disabled input example" disabled>
-															<input width="" class="form-control col-5 ml-4" type="text" placeholder="En camino" aria-label="Disabled input example" disabled>
+															<input  class="form-control col-5 ml-4" type="text" placeholder="Cancelado" aria-label="Disabled input example" disabled>
+													</div>
+													<div class="row mb-2" >
+														<div class="col-6">
+																<h6 class="mb-2" style="color:black">Restaurante: 2</h6>
+																<a href="#" data-toggle="modal" data-target="#restauranteEvaluacion">
+																	<i class="fas fa-user-check"  style="font-size:2em; color:#F2EE61"></i>
+																</a>
+														</div>
+														<div class="col-6">
+																<h6 class="mb-2" style="color:black">Repartidor: 2</h6>
+																<a href="#" data-toggle="modal" data-target="#repartidorEvaluacion">
+																	<i class="fas fa-user-check" style="font-size:2em; color:#2C8287"></i>
+																</a>
+														</div>
 													</div>
 												</div>
 												<div class="col-3">
@@ -389,9 +431,9 @@
 											</div>
 										</tr>
 										<div class="dropdown-divider" style="border-color:#701111;" ></div>
-										<tr >
-											<div class="row">
-												<div class="col-3">
+										<tr>
+											<div class="row" style="margin-bottom:10px">
+												<div class="col-3" >
 													<img width="100%" height="100%" src="img/rosaNautica.jpg">
 												</div>
 												<div class="col-6">
@@ -403,7 +445,21 @@
 													</div>	
 													<div class="row mb-2">
 															<input class="form-control col-6" type="text" placeholder="Tiempo de entrega: 30-45 min" aria-label="Disabled input example" disabled>
-															<input width="" class="form-control col-5 ml-4" type="text" placeholder="En camino" aria-label="Disabled input example" disabled>
+															<input  class="form-control col-5 ml-4" type="text" placeholder="Cancelado" aria-label="Disabled input example" disabled>
+													</div>
+													<div class="row mb-2" >
+														<div class="col-6">
+																<h6 class="mb-2" style="color:black">Restaurante: 2</h6>
+																<a href="#" data-toggle="modal" data-target="#restauranteEvaluacion">
+																	<i class="fas fa-user-check"  style="font-size:2em; color:#F2EE61"></i>
+																</a>
+														</div>
+														<div class="col-6">
+																<h6 class="mb-2" style="color:black">Repartidor: 2</h6>
+																<a href="#" data-toggle="modal" data-target="#repartidorEvaluacion">
+																	<i class="fas fa-user-check" style="font-size:2em; color:#2C8287"></i>
+																</a>
+														</div>
 													</div>
 												</div>
 												<div class="col-3">
@@ -413,9 +469,9 @@
 											</div>
 										</tr>
 										<div class="dropdown-divider" style="border-color:#701111;" ></div>
-										<tr >
-											<div class="row">
-												<div class="col-3">
+										<tr>
+											<div class="row" style="margin-bottom:10px">
+												<div class="col-3" >
 													<img width="100%" height="100%" src="img/rosaNautica.jpg">
 												</div>
 												<div class="col-6">
@@ -427,7 +483,21 @@
 													</div>	
 													<div class="row mb-2">
 															<input class="form-control col-6" type="text" placeholder="Tiempo de entrega: 30-45 min" aria-label="Disabled input example" disabled>
-															<input width="" class="form-control col-5 ml-4" type="text" placeholder="En camino" aria-label="Disabled input example" disabled>
+															<input  class="form-control col-5 ml-4" type="text" placeholder="Cancelado" aria-label="Disabled input example" disabled>
+													</div>
+													<div class="row mb-2" >
+														<div class="col-6">
+																<h6 class="mb-2" style="color:black">Restaurante: 2</h6>
+																<a href="#" data-toggle="modal" data-target="#restauranteEvaluacion">
+																	<i class="fas fa-user-check"  style="font-size:2em; color:#F2EE61"></i>
+																</a>
+														</div>
+														<div class="col-6">
+																<h6 class="mb-2" style="color:black" >Repartidor: 2</h6>
+																<a href="#" data-toggle="modal" data-target="#repartidorEvaluacion">
+																	<i class="fas fa-user-check" style="font-size:2em; color:#2C8287"></i>
+																</a>
+														</div>
 													</div>
 												</div>
 												<div class="col-3">
@@ -435,20 +505,20 @@
 													<a href="detallePedido.html"><div class="text-center" style="color:#2C8287">Detalle de Pedido</div></a>
 												</div>
 											</div>
-										</tr>	
+										</tr>
 									</tbody>
 								</table>
 							</div>
-							<div class="pagination topnav">
-								<a href="#">«</a>
-								<a href="#" class="active">1</a>
-								<a href="#">2</a>
-								<a href="#">3</a>
-								<a href="#">4</a>
-								<a href="#">5</a>
-								<a href="#">6</a>
-								<a href="#">»</a>
-							</div>
+							<div class="pagination" style=" margin-left: 630px ;align-content: center">
+                                <a  href="#">&laquo;</a>
+                                <a  href="#" class="active">1</a>
+                                <a href="#">2</a>
+                                <a href="#">3</a>
+                                <a href="#">4</a>
+                                <a href="#">5</a>                               
+                                <a href="#">6</a>
+                                <a href="#">&raquo;</a>
+                             </div>
                         </div>
 				
                 <!-- /.container-fluid -->
@@ -497,7 +567,145 @@
         </div>
       </div>
     </div>
-
+	
+	<!-- Evaluar Restaurante , Comentar Restaurante-->
+    <div class="modal fade" id="valoraRest" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Valora a tu restaurante</h5>
+            <button class="close" type="button"  data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+		<div class="modal-body">
+			<form>
+			  <div class="form-group ">
+				<label for="recipient-name " class="col-form-label text-center">Valora:</label>
+				<i class="far fa-star"></i>
+				<i class="far fa-star"></i>
+				<i class="far fa-star"></i>
+				<i class="far fa-star"></i>
+				<i class="far fa-star"></i>
+			  </div>
+			  <div class="form-group">
+				<label for="message-text" class="col-form-label">Comentario:</label>
+				<textarea class="form-control" id="message-text"></textarea>
+			  </div>
+			</form>
+		</div>
+		<div class="modal-footer">
+           <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
+           <a class="btn" style="background-color:#701111; color:white" href="listaHistorialPedidos.html">Calificar</a>
+         </div>
+        </div>
+      </div>
+    </div>
+	
+	<!-- Evaluar Repartidor , Comentar Repartidor-->
+	<div class="modal fade" id="valoraRepar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Valora a tu repartidor</h5>
+            <button class="close" type="button"  data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+		<div class="modal-body">
+			<form>
+			  <div class="form-group ">
+				<label for="recipient-name " class="col-form-label text-center">Valora:</label>
+				<i class="far fa-star"></i>
+				<i class="far fa-star"></i>
+				<i class="far fa-star"></i>
+				<i class="far fa-star"></i>
+				<i class="far fa-star"></i>
+			  </div>
+			  <div class="form-group">
+				<label for="message-text" class="col-form-label">Comentario:</label>
+				<textarea class="form-control" id="message-text"></textarea>
+			  </div>
+			</form>
+		</div>
+		<div class="modal-footer">
+           <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
+           <a class="btn" style="background-color:#701111; color:white" href="listaHistorialPedidos.html">Calificar</a>
+         </div>
+        </div>
+      </div>
+    </div>
+	
+	<!-- Repartidor Evaluado , Restaurante Evaluado-->
+	<div class="modal fade" id="restauranteEvaluacion" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Valoración a tu restaurante</h5>
+            <button class="close" type="button"  data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+		<div class="modal-body">
+			<form>
+			  <div class="form-group ">
+				<label for="recipient-name " class="col-form-label text-center">Valoración:</label>
+				<i class="fas fa-star"></i>
+				<i class="fas fa-star"></i>
+				<i class="far fa-star"></i>
+				<i class="far fa-star"></i>
+				<i class="far fa-star"></i>
+			  </div>
+			  <div class="form-group">
+				<label for="message-text" class="col-form-label">Comentario:</label>
+				<textarea class="form-control" id="message-text" placeholder="Vino muy poquito" disabled></textarea>
+			  </div>
+			</form>
+		</div>
+		<div class="modal-footer">
+           <button class="btn btn-secondary" type="button" data-dismiss="modal">Cerrar</button>
+         </div>
+        </div>
+      </div>
+    </div>
+	
+	<div class="modal fade" id="repartidorEvaluacion" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+			  <div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Valoración a tu repartidor</h5>
+				<button class="close" type="button"  data-dismiss="modal" aria-label="Close">
+				  <span aria-hidden="true">×</span>
+				</button>
+			  </div>
+			<div class="modal-body">
+				<form>
+				  <div class="form-group ">
+					<label for="recipient-name " class="col-form-label text-center">Valoración:</label>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="far fa-star"></i>
+					<i class="far fa-star"></i>
+					<i class="far fa-star"></i>
+				  </div>
+				  <div class="form-group">
+					<label for="message-text" class="col-form-label">Comentario:</label>
+					<textarea class="form-control" id="message-text" placeholder="Se demoró más del tiempo que me dieron" disabled></textarea>
+				  </div>
+				</form>
+			</div>
+			<div class="modal-footer">
+			   <button class="btn btn-secondary" type="button" data-dismiss="modal">Cerrar</button>
+			</div>
+        </div>
+      </div>
+    </div>
+	
+	
     <!-- Bootstrap core JavaScript-->
     <script src="../bootstrap/vendor/jquery/jquery.min.js"></script>
     <script src="../bootstrap/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
