@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Solicitudes AR</title>
+    <title>Lista de Usuarios</title>
 
     <!-- Custom fonts for this template/BASE-COPIAR-NOBORRAR/bootstrap/vendor/fontawesome-free/css/all.min.css -->
     <link href="../bootstrap/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -211,166 +211,197 @@
             <!-- Begin Page Content -->
             <div class="container-fluid">
 
+                <form>
+                    <div class=" form-group row" >
+                        <div class="col-sm-12 mb-2  " style="margin-right: 10px" >
+                            <a class="btn btn-secondary " >Quitar filtros</a>
+                        </div>
+
+
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-3 mb-2">
+                            <input placeholder="Desde" class="form-control" type="text"
+                                   onfocus="(this.type='date')" onblur="(this.type='text')" id="date1">
+                        </div>
+                        <div class="col-sm-3 mb-2">
+                            <input placeholder="Hasta" class="form-control" type="text"
+                                   onfocus="(this.type='date')" onblur="(this.type='text')" id="date2">
+                        </div>
+                        <div class="col-sm-3 mb-2 mb-sm-0">
+                            <select class="form-control  ">
+                                <option value="" disabled selected>Buscar por Rol</option>
+                                <option value="Cercado de Lima">Adminstrador</option>
+                                <option value="Bellavista">Cliente</option>
+                                <option value="Carmen de la Legua">Restaurante</option>
+                                <option value="La Perla">Administrador de Restaurante</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-3 mb-2 mb-sm-0">
+                            <select class="form-control  ">
+                                <option value="" disabled selected>Buscar por Estado</option>
+                                <option value="Cercado de Lima">Bloqueados</option>
+                                <option value="Bellavista">Desbloqueados</option>
+                            </select>
+                        </div>
+                    </div>
+
+
+                </form>
+
+
                 <!-- DataTales Example -->
                 <div class="card shadow mb-4">
                     <div class="card-header py-3 " style="background-color: #701111;">
-                            <h5 class="font-weight-bold text-white  text-md-center">LISTA DE SOLICITUDES ADMINISTRADORES DE RESTAURANTES</h5>
 
-                        <style>
-                            .containerta {
-                                padding: 2rem 0rem;
-                            }
+                        <div class="d-sm-flex align-items-center justify-content-between">
 
-                            h4 {
-                                margin: 2rem 0rem 1rem;
-                            }
+                            <h2 class="font-weight-bold text-white text-lg-center mx-auto ">LISTA DE USUARIOS</h2>
+                        </div>
 
-                            .table-image
-                            td, th {
-                                vertical-align: middle;
-                            }
-
-                        </style>
                     </div>
-                    <div class="containerta">
-                        <div class="row">
-                            <div class="col-12">
-                                <table class="table table-image table-responsive">
-                                    <thead>
-                                    <tr>
-                                        <th scope="col">Day</th>
-                                        <th scope="col">Image</th>
-                                        <th scope="col">Datos</th>
-                                        <th> </th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <td scope="row">1</td>
-                                        <td class="w-25">
-                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4nu4ej6fgxyPM8v---fOhOQg7Tw8xPTudfVYqogq6noeuNjCeBIrXhhUsakfeneVNFPI&usqp=CAU" class="img-fluid img-thumbnail" alt="Sheep">
-                                        </td>
-                                        <td><div class="table-responsive">
-                                            <table class="table table-bordered ">
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-image table-responsive">
+                                <thead>
+                                <tr>
+                                    <th class="text-center">
+                                        N°
+                                    </th>
+                                    <th class="text-center">
+                                        Usuario
+                                    </th>
+                                    <th class="text-center">
+                                        Rol
+                                    </th>
+                                    <th class="text-center">
+                                        Última fecha de ingreso
+                                    </th>
+                                    <th class="text-center">
+                                        Des/Bloquear
+                                    </th>
+                                    <th class="text-center">
+                                        Visualizar
+                                    </th>
 
-                                                <tbody>
-                                                <tr>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="text-center" style="width: 150px">1</td>
+                                    <td class="text-center" style="width: 450px">Lopez Martinez Melania</td>
+                                    <td  class="text-center" style="width: 450px">Repartidora</td>
+                                    <td  class="text-center" style="width: 250px">01/05/2021</td>
+                                   <td>  <a href="#" class="btn btn-secondary btn-circle btn-sm">
+                                       <i class="fas fa-lock"></i>
+                                   </a> </td>
+                                    <td>  <a href="#" class="btn btn-warning btn-circle btn-sm" >
+                                        <i class="fas fa-info"></i>
+                                    </a> </td>
 
-                                                    <td>Nombre: Martin Alvaro</td>
-                                                    <td>DNI: 12345678
-                                                    </td>
-                                                </tr>
-                                                <tr>
+                                </tr>
+                                <tr>
+                                    <td class="text-center" style="width: 150px">1</td>
+                                    <td class="text-center" style="width: 450px">Lopez Martinez Melania</td>
+                                    <td  class="text-center" style="width: 450px">Repartidora</td>
+                                    <td  class="text-center" style="width: 250px">01/05/2021</td>
+                                    <td>  <a href="#" class="btn btn-warning btn-circle btn-sm" style="background-color: #701111;">
+                                        <i class="fas fa-lock-open"></i>
+                                    </a> </td>
+                                    <td>  <a href="#" class="btn btn-warning btn-circle btn-sm" >
+                                        <i class="fas fa-info"></i>
+                                    </a> </td>
+                                </tr><tr>
+                                    <td class="text-center" style="width: 150px">1</td>
+                                    <td class="text-center" style="width: 450px">Lopez Martinez Melania</td>
+                                    <td  class="text-center" style="width: 450px">Repartidora</td>
+                                    <td  class="text-center" style="width: 250px">01/05/2021</td>
+                                    <td>  <a href="#" class="btn btn-warning btn-circle btn-sm" style="background-color: #701111;">
+                                        <i class="fas fa-lock-open"></i>
+                                    </a> </td>
+                                    <td>  <a href="#" class="btn btn-warning btn-circle btn-sm" >
+                                        <i class="fas fa-info"></i>
+                                    </a> </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center" style="width: 150px">1</td>
+                                    <td class="text-center" style="width: 450px">Lopez Martinez Melania</td>
+                                    <td  class="text-center" style="width: 450px">Repartidora</td>
+                                    <td  class="text-center" style="width: 250px">01/05/2021</td>
+                                    <td>  <a href="#" class="btn btn-secondary btn-circle btn-sm">
+                                        <i class="fas fa-lock"></i>
+                                    </a> </td>
+                                    <td>  <a href="#" class="btn btn-warning btn-circle btn-sm" >
+                                        <i class="fas fa-info"></i>
+                                    </a> </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center" style="width: 150px">1</td>
+                                    <td class="text-center" style="width: 450px">Lopez Martinez Melania</td>
+                                    <td  class="text-center" style="width: 450px">Cliente</td>
+                                    <td  class="text-center" style="width: 250px">01/05/2021</td>
+                                    <td>  <a href="#" class="btn btn-warning btn-circle btn-sm" style="background-color: #701111;">
+                                        <i class="fas fa-lock-open"></i>
+                                    </a> </td>
+                                    <td>  <a href="#" class="btn btn-warning btn-circle btn-sm" >
+                                        <i class="fas fa-info"></i>
+                                    </a> </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center" style="width: 150px">1</td>
+                                    <td class="text-center" style="width: 450px">Lopez Martinez Melania</td>
+                                    <td  class="text-center" style="width: 450px">Repartidora</td>
+                                    <td  class="text-center" style="width: 250px">01/05/2021</td>
+                                    <td>  <a href="#" class="btn btn-secondary btn-circle btn-sm">
+                                        <i class="fas fa-lock"></i>
+                                    </a> </td>
+                                    <td>  <a href="#" class="btn btn-warning btn-circle btn-sm" >
+                                        <i class="fas fa-info"></i>
+                                    </a> </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center" style="width: 150px">1</td>
+                                    <td class="text-center" style="width: 450px">Lopez Martinez Melania</td>
+                                    <td  class="text-center" style="width: 450px">Repartidora</td>
+                                    <td  class="text-center" style="width: 250px">01/05/2021</td>
+                                    <td>  <a href="#" class="btn btn-secondary btn-circle btn-sm">
+                                        <i class="fas fa-lock"></i>
+                                    </a> </td>
+                                    <td>  <a href="#" class="btn btn-warning btn-circle btn-sm" >
+                                        <i class="fas fa-info"></i>
+                                    </a> </td>
+                                </tr><tr>
+                                    <td class="text-center" style="width: 150px">1</td>
+                                    <td class="text-center" style="width: 450px">Lopez Martinez Melania</td>
+                                    <td  class="text-center" style="width: 450px">CLiente</td>
+                                    <td  class="text-center" style="width: 250px">01/05/2021</td>
+                                    <td>  <a href="#" class="btn btn-secondary btn-circle btn-sm">
+                                        <i class="fas fa-lock"></i>
+                                    </a> </td>
+                                    <td>  <a href="#" class="btn btn-warning btn-circle btn-sm" >
+                                        <i class="fas fa-info"></i>
+                                    </a> </td>
+                                </tr>
 
-                                                    <td>Apellidos: Lopez Flores</td>
-                                                    <td>Sexo: Masculino </td>
-
-                                                </tr>
-                                                <tr>
-
-                                                    <td>Correo: asdddd@gmail.com</td>
-                                                    <td>Teléfono: 32325164564 </td>
-                                                </tr>
-
-                                                <tr>
-
-                                                    <td>Movilidad: Moto</td>
-                                                    <td>
-                                                        <a href="#" class="btn btn-success btn-circle btn-sm">
-                                                            <i class="fas fa-check"></i>
-                                                        </a>
-                                                        <a href="#" class="btn btn-danger btn-circle btn-sm">
-                                                            <i class="fas fa-times"></i>
-                                                        </a>
-                                                        <a href="#" class="btn btn-warning btn-circle btn-sm">
-                                                            <i class="fas fa-info"></i>
-                                                        </a>
-                                                    </td>
-
-                                                </tr>
-                                                </tbody>
-
-                                            </table>
 
 
+                                </tbody>
+                            </table>
+                            <div aria-label="Page navigation example">
+                                <div class="pagination justify-content-center">
+                                    <div class="btn-group" role="group" aria-label="Basic example">
+                                        <button type="button" class="btn btn-light">anterior</button>
+                                        <button type="button" class="btn text-light" style="background-color: #701111;">1</button>
 
+                                        <button type="button" class="btn btn-light" >2</button>
+                                        <button type="button" class="btn btn-light" >3</button>
 
-                                        </div>
-                                        </td>
-
-
-                                        <td> <div class="form-check">
-                                            <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
-                                        </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td scope="row">2</td>
-                                        <td class="w-25">
-                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4nu4ej6fgxyPM8v---fOhOQg7Tw8xPTudfVYqogq6noeuNjCeBIrXhhUsakfeneVNFPI&usqp=CAU" class="img-fluid img-thumbnail" alt="Sheep">
-                                        </td>
-                                        <td><div class="table-responsive">
-                                            <table class="table table-bordered ">
-                                                <tbody>
-                                                <tr>
-                                                    <td>Nombre: Martin Alvaro</td>
-                                                    <td>DNI: 12345678
-                                                    </td>
-                                                </tr>
-                                                <tr>
-
-                                                    <td>Apellidos: Lopez Flores</td>
-                                                    <td>Sexo: Masculino </td>
-
-                                                </tr>
-                                                <tr>
-
-                                                    <td>Correo: asdddd@gmail.com</td>
-                                                    <td>Teléfono: 32325164564 </td>
-                                                </tr>
-
-                                                <tr>
-
-                                                    <td>Movilidad: Moto</td>
-                                                    <td>
-                                                        <a href="#" class="btn btn-success btn-circle btn-sm">
-                                                            <i class="fas fa-check"></i>
-                                                        </a>
-                                                        <a href="#" class="btn btn-danger btn-circle btn-sm">
-                                                            <i class="fas fa-times"></i>
-                                                        </a>
-                                                        <a href="#" class="btn btn-warning btn-circle btn-sm">
-                                                            <i class="fas fa-info"></i>
-                                                        </a>
-                                                    </td>
-                                                </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        </td>
-
-                                        <td> <div class="form-check">
-                                            <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
-                                        </div>
-                                        </td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                                <div aria-label="Page navigation example">
-                                    <div class="pagination justify-content-center">
-                                        <div class="btn-group" role="group" aria-label="Basic example">
-                                            <button type="button" class="btn btn-light">anterior</button>
-                                            <button type="button" class="btn text-light" style="background-color: #701111;">1</button>
-
-                                            <button type="button" class="btn btn-light" >2</button>
-                                            <button type="button" class="btn btn-light" >3</button>
-
-                                            <button type="button" class="btn btn-light">siguiente</button>
-                                        </div>
+                                        <button type="button" class="btn btn-light">siguiente</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
 
@@ -441,3 +472,4 @@
 </body>
 
 </html>
+
