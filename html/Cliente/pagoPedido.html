@@ -6,8 +6,19 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
           rel="stylesheet">
 
-    <!-- Custom styles for this template-->
+    <!-- Custom fonts for this template/BASE-COPIAR-NOBORRAR/bootstrap/vendor/fontawesome-free/css/all.min.css -->
+    <link href="../bootstrap/vendor/fontawesome-free/css/all.css" rel="stylesheet" type="text/css">
+    <link
+            href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+            rel="stylesheet">
+
+    <!-- Custom styles for this template -->
     <link href="../bootstrap/css/sb-admin-2.css" rel="stylesheet">
+
+
+    <link href="../Cliente/cssC/estilosCliente.css" rel="stylesheet" type="text/css">
+    <!-- Custom styles for this page -->
+    <link href="../bootstrap/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 
     <title>Pago de Pedido</title>
 </head>
@@ -138,7 +149,8 @@
                                            placeholder="Buscar..." aria-label="Search"
                                            aria-describedby="basic-addon2">
                                     <div class="input-group-append">
-                                        <button class="btn" style="background-color:#701111; color:white;" type="button">
+                                        <button class="btn" style="background-color:#701111; color:white;"
+                                                type="button">
                                             <i class="fas fa-search fa-sm"></i>
                                         </button>
                                     </div>
@@ -199,7 +211,8 @@
                                     <span class="font-weight-bold">La Rosa Náutica</span>
                                 </div>
                             </a>
-                            <a class="dropdown-item text-center small text-gray-500" href="listaPedidoActual.html">Mostrar todos mis pedidos pendientes</a>
+                            <a class="dropdown-item text-center small text-gray-500" href="listaPedidoActual.html">Mostrar
+                                todos mis pedidos pendientes</a>
                         </div>
                     </li>
 
@@ -212,7 +225,8 @@
                         <!-- Dropdown - Messages -->
                         <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
                              aria-labelledby="messagesDropdown">
-                            <h6 class="dropdown-header font-weight-bold " style="background-color:#701111; color:white; border:#701111;">
+                            <h6 class="dropdown-header font-weight-bold "
+                                style="background-color:#701111; color:white; border:#701111;">
                                 Joham Romucho
                             </h6>
                             <a class="dropdown-item d-flex align-items-center">
@@ -276,11 +290,251 @@
 
                     <div class="row">
 
-                        <div class="col-4 ml-lg-5 mt-4">
+                        <div class="col mr-3 mb-5 ml-3 mt-4">
+                            <div class="card-background text-center">
+                                <div class="card-header">
+                                    <ul class="nav nav-tabs card-header-tabs">
+                                        <li class="nav-item active card-background">
+                                            <a href="#pagoOnline" class="nav-link" role="tab" data-toggle="tab" style="color: #6f6f6f"><strong>PAGO
+                                                ONLINE</strong></a>
+                                        </li>
+                                        <li class="nav-item ml-2 card-background">
+                                            <a href="#pagoEfectivo" class="nav-link active" role="tab" data-toggle="tab" style="color:#6f6f6f"><strong>PAGO
+                                                EFECTIVO</strong></a>
+                                        </li>
+                                        <li class="nav-item ml-2 card-background">
+                                            <a href="#pagoPOS" class="nav-link" role="tab" data-toggle="tab" style="color:#6f6f6f"><strong>PAGO
+                                                POS</strong></a>
+                                        </li>
+                                    </ul>
+                                </div>
 
+                                <div class="tab-content">
+                                    <div role="tabpanel" class="tab-pane fade" id="pagoOnline">
+                                        <div class="container">
+                                            <div class="row justify-content-start">
+                                                <div class="col-2 mt-3 ml-2">
+                                                    <i class="fab fa-cc-visa" style="color: darkblue"></i>
+                                                    <i class="fab fa-cc-mastercard" style="color: darkred"></i>
+                                                </div>
+                                            </div>
+                                            <hr width="100%" style="border-top: #701111 solid" align="left" class="ml-3">
+
+                                            <div class="row justify-content-between mt-3">
+                                                <div class="col-6 mt-1">
+                                                    <h6 style="color:#000000;" class="ml-3 mt-1 text-left"><strong>Tipo
+                                                        de Tarjeta</strong></h6>
+                                                    <br>
+                                                    <h6 style="color:#000000;" class="ml-3 mt-1 text-left"><strong>Número
+                                                        de Tarjeta</strong></h6>
+                                                    <br>
+                                                    <h6 style="color:#000000;" class="ml-3 mt-3 text-left"><strong>Expiración</strong>
+                                                    </h6>
+                                                    <br>
+                                                    <h6 style="color:#000000;" class="ml-3 mt-1 text-left">
+                                                        <strong>CVV</strong></h6>
+                                                    <br>
+                                                </div>
+                                                <div class="col-6">
+                                                    <select class="form-control form-control-sm">
+                                                        <option selected>Seleccionar una tarjeta</option>
+                                                        <option value="1">Visa</option>
+                                                        <option value="2">Mastercard</option>
+                                                    </select>
+                                                    <br>
+                                                    <div class="input-group input-group-sm mb-3">
+                                                        <input type="text" class="form-control text-center">
+                                                    </div>
+                                                    <br>
+                                                    <div class="form-check-inline">
+                                                        <select class="form-control form-control-sm mr-2 mb-4">
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5">5</option>
+                                                            <option value="6">6</option>
+                                                            <option value="7">7</option>
+                                                            <option value="8">8</option>
+                                                            <option value="9">9</option>
+                                                            <option value="10">10</option>
+                                                            <option value="11">11</option>
+                                                            <option value="12">12</option>
+                                                        </select>
+                                                        <select class="form-control form-control-sm mr-2 mb-4">
+                                                            <option value="1">01</option>
+                                                            <option value="2">02</option>
+                                                            <option value="3">03</option>
+                                                            <option value="4">04</option>
+                                                            <option value="5">05</option>
+                                                            <option value="6">06</option>
+                                                            <option value="7">07</option>
+                                                            <option value="8">08</option>
+                                                            <option value="9">09</option>
+                                                            <option value="10">10</option>
+                                                            <option value="11">11</option>
+                                                            <option value="12">12</option>
+                                                        </select>
+                                                    </div>
+                                                    <br>
+                                                    <div class="input-group input-group-sm mb-3">
+                                                        <input type="text" class="form-control text-center">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane active fade" id="pagoEfectivo">
+                                        <div class="container">
+                                            <div class="row justify-content-start">
+                                                <div class="col-2 mt-3 ml-2">
+                                                    <i class="fab fa-paypal" style="color: darkred;"></i>
+                                                </div>
+                                            </div>
+                                            <hr width="100%" style="border-top: #701111 solid" align="left" class="ml-3">
+
+                                            <div class="row justify-content-between mt-2 mb-2">
+                                                <div class="col-6 mt-1">
+                                                    <h6 style="color:#000000;" class="ml-3 mt-1 text-left"><strong>Ingrese el tipo de tarjeta con la que pagará:  </strong></h6>
+                                                </div>
+                                                <div class="col-6">
+                                                    <select class="form-control form-control-sm mt-2">
+                                                        <option selected>Seleccionar una tarjeta</option>
+                                                        <option value="1">Visa</option>
+                                                        <option value="2">Mastercard</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="pagoPOS">
+                                        <div class="container">
+                                            <div class="row justify-content-start">
+                                                <div class="col-2 mt-3 ml-2">
+                                                    <i class="fas fa-money-bill" style="color: darkgreen"></i>
+                                                </div>
+                                            </div>
+                                            <hr width="100%" style="border-top: #701111 solid" align="left" class="ml-3">
+
+                                            <div class="row justify-content-between mt-2 mb-2">
+                                                <div class="col-6 mt-1">
+                                                    <h6 style="color:#000000;" class="ml-3 mt-1 text-left"><strong>Ingrese con cuanto cancelara: </strong></h6>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="input-group input-group-sm mb-3 mt-2">
+                                                        <h6>S/. </h6>
+                                                        <input type="text" class="form-control text-center ml-2">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="container mt-3 mb-3">
+                                <div class="row justify-content-center">
+                                    <img src="img/pago.jpg">
+
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-6 ml-lg-5 mt-4">
+                        <div class="col mt-4">
+                            <!--   <p>
+                                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseExample" aria-expanded="false"
+                                            aria-controls="collapseExample">
+                                        Button with data-bs-target
+                                    </button>
+                                </p>
+                                <div class="collapse" id="collapseExample">
+                                    <div class="card card-body">
+                                        Some placeholder content for the collapse component. This panel is
+                                        hidden by default but revealed when the user activates the relevant
+                                        trigger.
+                                    </div>
+                                </div> -->
+                            <div class="card-background mr-3 mb-5 ml-3">
+                                <div class="row justify-content-between mt-2">
+                                    <div class="col-4">
+                                        <!-- TODO MOSTRAR LA LISTA CARRITO -->
+                                        <h6 style="color:#000000;" class="ml-3 mt-2"><strong>5 Productos</strong></h6>
+                                        <h6 style="color:#000000;" class="ml-3 mt-2"><strong>Transporte</strong></h6>
+                                    </div>
+                                    <div class="col-4">
+                                        <h6 style="color:#000000;" class="mr-3 mt-sm-2"><strong>S/. 56.00</strong></h6>
+                                        <h6 style="color:#000000;" class="mr-3 mt-sm-2"><strong>S/. 5.00</strong></h6>
+                                    </div>
+                                </div>
+                                <hr width="85%" style="border-top: #701111 solid" align="left" class="ml-3">
+                                <div class="row justify-content-between">
+                                    <div class="col-6">
+                                        <h4 style="color: #701111" class="ml-3"><strong>Submonto: </strong></h4>
+                                        <br>
+                                        <h7 class="ml-3"><strong>¿Desea agregar un cupón? </strong></h7>
+                                        <select class="form-control form-control-sm ml-3 mt-2">
+                                            <option selected>Seleccionar un cupón</option>
+                                            <option value="1">-50% por ser perrón</option>
+                                            <option value="2">-75% por Bienvenida</option>
+                                            <option value="3">-15% por Primera Compra</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-4">
+                                        <h6 style="color:#000000;" class="mr-3 mt-sm-1"><strong>S/. 56.00</strong></h6>
+                                        <br>
+                                        <h6 style="color:#000000;" class="mr-3 mt-sm-2"><strong>- S/. 5.00</strong></h6>
+                                    </div>
+                                </div>
 
+                                <div class="form-check-inline">
+                                    <div class="container mt-4">
+                                        <input class="form-check-input" type="checkbox" value="">
+                                        <i class="fab fa-cc-visa" style="color: darkblue"></i>
+                                        <i class="fab fa-cc-mastercard" style="color: darkred"></i>
+                                    </div>
+                                    <div class="container mt-4">
+                                        <input class="form-check-input" type="checkbox" value="">
+                                        <i class="fab fa-paypal" style="color: darkred;"></i>
+                                    </div>
+                                    <div class="container mt-4">
+                                        <input class="form-check-input" type="checkbox" value="">
+                                        <i class="fas fa-money-bill" style="color: darkgreen"></i>
+                                    </div>
+                                </div>
+                                <div class="container mt-sm-2">
+                                    <div class="row justify-content-between">
+                                        <div class="col-sm-7">
+                                            <select class="form-control form-control-sm">
+                                                <option selected>Seleccionar una tarjeta</option>
+                                                <option value="1">Visa - 123456789</option>
+                                                <option value="2">Mastercard - 456789123</option>
+                                                <option value="3">Otras - 369852147</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <hr width="85%" style="border-top: #701111 solid" align="left" class="ml-3">
+                                <div class="row justify-content-between">
+                                    <div class="col-6">
+                                        <h4 style="color: #701111" class="ml-3"><strong>Monto Total: </strong></h4>
+                                    </div>
+                                    <div class="col-4">
+                                        <h6 style="color:#000000;" class="mr-3 mt-sm-2"><strong>S/. 90.00</strong></h6>
+                                    </div>
+                                </div>
+                                <hr width="85%" style="border-top: #701111 solid" align="left" class="ml-3">
+                                <div class="container">
+                                    <div class="row justify-content-end mb-3">
+                                        <button class="btn btn-back mr-3"><i class="fas fa-arrow-left"></i> Regresar
+                                        </button>
+                                        <button class="btn btn-pay mr-4"><i class="fas fa-money-bill"></i> Terminar
+                                            Compra
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
                     </div>
