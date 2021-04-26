@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Crear administrador</title>
+    <title>Visualizar Administrador Restaurante</title>
 
     <!-- Custom fonts for this template/BASE-COPIAR-NOBORRAR/bootstrap/vendor/fontawesome-free/css/all.min.css -->
     <link href="../bootstrap/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -143,7 +143,18 @@
                 </form>
 
                 <!-- Topbar Search -->
-
+                <form
+                        class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                    <div class="input-group">
+                        <input type="text" class="form-control bg-light border-0 small" placeholder="Buscar..."
+                               aria-label="Search" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <button class="btn botonbusca" type="button">
+                                <i class="fas fa-search fa-sm"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
 
                 <!-- Topbar Navbar -->
                 <ul class="navbar-nav ml-auto">
@@ -232,163 +243,179 @@
             <!-- End of Topbar -->
 
             <!-- Begin Page Content -->
-            <div class="container-fluid">
-
+            <div class="container-fluid ">
 
                 <!-- DataTales Example -->
                 <div class="card shadow mb-4">
                     <div class="card-header py-3 " style="background-color: #701111;">
 
-                        <div class="d-sm-flex align-items-center justify-content-between">
+                        <h5 class="font-weight-bold text-white  text-md-center">INFORMACION DE ADMINISTRADOR DE RESTAURANTE</h5>
 
-                            <h2 class="font-weight-bold text-white text-lg-center mx-auto ">Crear Administrador</h2>
+                        <style>
+                            .containerta {
+                                padding: 2rem 0rem;
+                            }
 
-                        </div>
+                            h4 {
+                                margin: 2rem 0rem 1rem;
+                            }
 
+                            .table-image
+                            td, th {
+                                vertical-align: middle;
+                            }
+                            .posicion{
+                                position: relative;
+                                left: 150%;
+                            }
+
+                        </style>
                     </div>
-                    <div class="card-body">
-                        <form class="user">
 
-                            <div class="form-group row">
-                                <div class="col-sm-6 mb-2 mb-sm-0">
-                                    <input type="text" class="form-control"
-                                           id="exampleNombre"
-                                           placeholder="Nombres">
-                                </div>
-                                <div class="col-sm-6 mb-2">
-                                    <input type="text" class="form-control"
-                                           id="exampleApellido"
-                                           placeholder="Apellidos">
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <div class="col-sm-6 mb-2 mb-sm-0">
-                                    <input type="email" class="form-control"
-                                           id="exampleCorreo"
-                                           placeholder="Correo electrónico">
-                                </div>
-                                <div class="col-sm-6 mb-2">
-                                    <input placeholder="Fecha de nacimiento" class="form-control" type="text"
-                                           onfocus="(this.type='date')" onblur="(this.type='text')" id="date">
-                                </div>
+                    <div class="card-body"   >
+
+                        <div class="container-fluid justify-content-center">
+
+                            <div class="w-25" align="center">
+                                <img src="imgAG/front-view-young-female-courier-in-blue-uniform-black-gloves-and-black-mask-holding-food-delivery-package%20(1).jpg" class="img-fluid img-thumbnail posicion" alt="Sheep">
                             </div>
 
-                            <div class="form-group row">
-                                <div class="col-sm-6 mb-2 mb-sm-0">
-                                    <select class="form-control">
-                                        <option value="" disabled selected>Sexo</option>
-                                        <option value="Femenino">Femenino</option>
-                                        <option value="Masculino">Masculino</option>
-                                    </select>
-                                </div>
-                                <div class="col-sm-6  mb-2 mb-sm-0">
-                                    <input type="number" class="form-control"
-                                           id="exampleTelefono" placeholder="Teléfono">
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <div class="col-sm-6 mb-2 mt-2 mb-sm-0">
-                                    <input type="number" class="form-control"
-                                           id="exampleDNI" placeholder="DNI">
-                                </div>
+                            <div class="containerta " >
 
-                            </div>
+                                <div class="row">
+
+                                    <div class="col-12">
 
 
-                            <div class="form-group row">
-                                <div class="col-sm-6 mb-2 mb-sm-0">
-                                    <h4 style="color: black">Foto de perfil</h4>
-                                    <p>Adjunte una foto de perfil para su cuenta. Esta debe ser una fotografía en la que se visualice claramente su rostro</p>
-                                    <div class="custom-file">
-                                        <input type="file" class="custom-file-input" id="inputGroupFile03">
-                                        <label class="custom-file-label" for="inputGroupFile03">Adjuntar archivo</label>
+
+                                        <div class="table-responsive">
+
+                                            <table class="table table-bordered table-image table-responsive" >
+
+                                                <tbody>
+                                                <tr >
+
+                                                    <td  style="width: 1300px;" >Fecha de Registro: 20/01/3113</td>
+                                                    <td  style="width: 1300px;">Estado: Bloqueado </td>
+                                                </tr>
+                                                <tr>
+
+                                                    <td>Nombre: Martin Alvaro</td>
+                                                    <td>Telefono: 12345678
+                                                    </td>
+                                                </tr>
+                                                <tr>
+
+                                                    <td>Apellidos: Lopez Flores</td>
+                                                    <td>Sexo: Masculino </td>
+
+                                                </tr>
+                                                <tr>
+
+                                                    <td>Correo: mastin@gmail.com</td>
+                                                    <td>DNI : 23145560 </td>
+                                                </tr>
+
+                                                <tr>
+
+                                                    <td>Restaurante que Administra: Don alvaro</td>
+                                                    <td>
+
+                                                        <a href="lista.html" class="btn btn-warning btn-icon-split">
+                                        <span class="icon text-white-50">
+                                            <i class="fas fa-reply"></i>
+                                        </span>
+                                                            <span class="text">Volver</span>
+                                                        </a>
+                                                        <a href="#" class="btn btn-icon-split" style="background-color: #701111;">
+                                        <span class="icon text-white-50">
+                                            <i class="fas fa-lock-open"></i>
+                                        </span>
+                                                            <span class="text text-white">Bloquear</span>
+                                                        </a>
+                                                        <a href="#" class="btn btn-primary btn-icon-split">
+                                        <span class="icon text-white-50">
+                                            <i class="fas fa-home"></i>
+                                        </span>
+                                                            <span class="text">Ver Restaurante</span>
+                                                        </a>
+
+                                                    </td>
+
+                                                </tr>
+                                                </tbody>
+
+                                            </table>
+
+                                        </div>
                                     </div>
                                 </div>
-
                             </div>
-
-
-                            <div class="form-group row">
-
-                            </div>
-                            <hr>
-                            <a href="#" class="btn btn-warning   text-md-center"  data-toggle="modal" data-target="#registrarModal">
-                                Registrar
-                            </a>
-                            <a href="#" class="btn btn-danger   text-md-center"  data-toggle="modal" data-target="#registrarModal">
-                                Cancelar
-                            </a>
-                        </form>
                         </div>
-
                     </div>
 
-
-            </div>
-            <!-- /.container-fluid -->
-
-        </div>
-        <!-- End of Main Content -->
-
-        <!-- Footer -->
-        <footer class="sticky-footer bg-white">
-            <div class="containerta my-auto">
-                <div class="copyright text-center my-auto">
-                    <span>Geek Developers &copy; 2021-1</span>
                 </div>
             </div>
-        </footer>
-        <!-- End of Footer -->
+            <!-- End of Main Content -->
+
+            <!-- Footer -->
+            <footer class="sticky-footer bg-white">
+                <div class="containerta my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Geek Developers &copy; 2021-1</span>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of Footer -->
+
+        </div>
+        <!-- End of Content Wrapper -->
 
     </div>
-    <!-- End of Content Wrapper -->
+    <!-- End of Page Wrapper -->
 
-</div>
-<!-- End of Page Wrapper -->
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
 
-<!-- Scroll to Top Button-->
-<a class="scroll-to-top rounded" href="#page-top">
-    <i class="fas fa-angle-up"></i>
-</a>
-
-<!-- Logout Modal-->
-<div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-     aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">¿Desea Salir?</h5>
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">×</span>
-                </button>
-            </div>
-            <div class="modal-body">Al seleecionar el boton salir, usted cerrará su sesión.</div>
-            <div class="modal-footer">
-                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                <a class="btn btn-primary" href="/html/Login.html">Cerrar Sesión</a>
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">¿Desea Salir?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Al seleecionar el boton salir, usted cerrará su sesión.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-primary" href="/html/Login.html">Cerrar Sesión</a>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<!-- Bootstrap core JavaScript-->
-<script src="../bootstrap/vendor/jquery/jquery.min.js"></script>
-<script src="../bootstrap/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap core JavaScript-->
+    <script src="../bootstrap/vendor/jquery/jquery.min.js"></script>
+    <script src="../bootstrap/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-<!-- Core plugin JavaScript-->
-<script src="../bootstrap/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="../bootstrap/vendor/jquery-easing/jquery.easing.min.js"></script>
 
-<!-- Custom scripts for all pages-->
-<script src="../bootstrap/js/sb-admin-2.min.js"></script>
+    <!-- Custom scripts for all pages-->
+    <script src="../bootstrap/js/sb-admin-2.min.js"></script>
 
-<!-- Page level plugins -->
-<script src="../bootstrap/vendor/datatables/jquery.dataTables.min.js"></script>
-<script src="../bootstrap/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+    <!-- Page level plugins -->
+    <script src="../bootstrap/vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="../bootstrap/vendor/datatables/dataTables.bootstrap4.min.js"></script>
 
-<!-- Page level custom scripts -->
-<script src="../bootstrap/js/demo/datatables-demo.js"></script>
+    <!-- Page level custom scripts -->
+    <script src="../bootstrap/js/demo/datatables-demo.js"></script>
 
 </body>
 
 </html>
-
