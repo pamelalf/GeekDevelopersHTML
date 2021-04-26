@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Solicitudes</title>
+    <title>Crear administrador</title>
 
     <!-- Custom fonts for this template/BASE-COPIAR-NOBORRAR/bootstrap/vendor/fontawesome-free/css/all.min.css -->
     <link href="../bootstrap/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -31,6 +31,7 @@
 
 <!-- Page Wrapper -->
 <div id="wrapper">
+
 
     <!-- Sidebar -->
     <ul class="navbar-nav  sidebar sidebar-dark accordion" style="background-color:#701111       ;" id="accordionSidebar">
@@ -58,12 +59,23 @@
 
         <!-- Nav Item - Pages Collapse Menu -->
         <li class="nav-item">
-            <a class="nav-link nav-link collapsed text-truncate" href="solicitudRepartidor.html" >
+            <a class="nav-link nav-link collapsed text-truncate"  href="#submenu2" data-toggle="collapse" >
                 <i class="fas fa-fw fa-folder"></i>
                 <span>Solicitudes</span>
 
             </a>
+            <div class="collapse" id="submenu2" aria-expanded="false">
+                <ul class="flex-column pl-2 nav">
+                    <li class="nav-item"><a class="nav-link py-0" href="solicitudAR.html"><span>Administrador Restaurante</span></a></li>
+                </ul>
+                <ul class="flex-column pl-2 nav">
+                    <li class="nav-item"><a class="nav-link py-0" href=solicitudRepartidor.html#"><span>Repartidor</span></a></li>
+                </ul>
+                <ul class="flex-column pl-2 nav">
+                    <li class="nav-item"><a class="nav-link py-0" href="solicitudRestaurante.html"><span>Restaurante</span></a></li>
+                </ul>
 
+            </div>
         </li>
         <!-- Nav Item - Utilities Collapse Menu -->
         <li class="nav-item">
@@ -113,6 +125,7 @@
 
     </ul>
     <!-- End of Sidebar -->
+
     <!-- Content Wrapper -->
     <div id="content-wrapper" class="d-flex flex-column">
 
@@ -128,6 +141,8 @@
                         <i class="fa fa-bars"></i>
                     </button>
                 </form>
+
+                <!-- Topbar Search -->
 
 
                 <!-- Topbar Navbar -->
@@ -193,6 +208,7 @@
                     </li>
 
                     <div class="topbar-divider d-none d-sm-block"></div>
+
                     <!-- Nav Item - User Information -->
                     <li class="nav-item dropdown no-arrow">
                         <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
@@ -219,177 +235,102 @@
 
             </nav>
             <!-- End of Topbar -->
-            <style>
-                .containerta {
-                    padding: 2rem 0rem;
-                }
 
-                h4 {
-                    margin: 2rem 0rem 1rem;
-                }
-
-                .table-image
-                td, th {
-                    vertical-align: middle;
-                }
-
-            </style>
             <!-- Begin Page Content -->
-            <div class="container-fluid justify-content-center">
+            <div class="container-fluid">
+
+
                 <!-- DataTales Example -->
                 <div class="card shadow mb-4">
                     <div class="card-header py-3 " style="background-color: #701111;">
+
                         <div class="d-sm-flex align-items-center justify-content-between">
-                            <h2 class="font-weight-bold text-white text-lg-center mx-auto ">Solicitudes</h2>
+
+                            <h2 class="font-weight-bold text-white text-lg-center mx-auto ">Crear Administrador</h2>
+
                         </div>
 
-                    </div></div>
-
                     </div>
-                    <div class="containerta">
-                        <div class="row">
-                            <div class="col-12">
-                                <table class="table table-image table-responsive">
-                                    <thead>
-                                    <tr>
-                                        <th scope="col" style="width: 50px">N°</th>
-                                        <th scope="col" style="width: 600px">Image</th>
-                                        <th scope="col" style="width: 700px">Datos</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <td scope="row">1</td>
-                                        <td class="w-25">
-                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4nu4ej6fgxyPM8v---fOhOQg7Tw8xPTudfVYqogq6noeuNjCeBIrXhhUsakfeneVNFPI&usqp=CAU" class="img-fluid img-thumbnail" alt="Sheep">
-                                        </td>
-                                        <td><div class="table-responsive">
-                                            <table class="table table-bordered ">
+                    <div class="card-body">
+                        <form class="user">
 
-                                                <tbody>
-                                                <tr>
-
-                                                    <td>Fecha de Registro: 20/01/3113</td>
-                                                    <td>Estado: Pendiente </td>
-                                                </tr>
-                                                <tr>
-
-                                                    <td>Nombre: Martin Alvaro</td>
-                                                    <td>DNI: 12345678
-                                                    </td>
-                                                </tr>
-                                                <tr>
-
-                                                    <td>Apellidos: Lopez Flores</td>
-                                                    <td>Sexo: Masculino </td>
-
-                                                </tr>
-                                                <tr>
-
-                                                    <td>Correo: asdddd@gmail.com</td>
-                                                    <td>Teléfono: 32325164564 </td>
-                                                </tr>
-
-                                                <tr>
-
-                                                    <td>Movilidad: Moto</td>
-                                                    <td>
-                                                        <a href="#" class="btn btn-success btn-circle btn-sm">
-                                                            <i class="fas fa-check"></i>
-                                                        </a>
-                                                        <a href="#" class="btn btn-danger btn-circle btn-sm">
-                                                            <i class="fas fa-times"></i>
-                                                        </a>
-                                                        <a href="#" class="btn btn-warning btn-circle btn-sm">
-                                                            <i class="fas fa-info"></i>
-                                                        </a>
-                                                    </td>
-
-                                                </tr>
-                                                </tbody>
-
-                                            </table>
-
-
-
-
-                                        </div>
-                                        </td>
-
-
-                                    </tr>
-                                    <tr>
-                                        <td scope="row">2</td>
-                                        <td class="w-25">
-                                            <img src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/sheep-5.jpg" class="img-fluid img-thumbnail" alt="Sheep">
-                                        </td>
-                                        <td><div class="table-responsive">
-                                            <table class="table table-bordered ">
-
-                                                <tbody>
-                                                <tr>
-
-                                                    <td>Fecha de Registro: 20/01/3113</td>
-                                                    <td>Estado: Pendiente </td>
-                                                </tr>
-                                                <tr>
-
-                                                    <td>Nombre: Martin Alvaro</td>
-                                                    <td>DNI: 12345678
-                                                    </td>
-                                                </tr>
-                                                <tr>
-
-                                                    <td>Apellidos: Lopez Flores</td>
-                                                    <td>Sexo: Masculino
-                                                    </td>
-                                                </tr>
-                                                <tr>
-
-                                                    <td>Correo: asdddd@gmail.com</td>
-                                                    <td>
-                                                        <a href="#" class="btn btn-success btn-circle btn-sm">
-                                                            <i class="fas fa-check"></i>
-                                                        </a>
-                                                        <a href="#" class="btn btn-danger btn-circle btn-sm">
-                                                            <i class="fas fa-times"></i>
-                                                        </a>
-                                                        <a href="#" class="btn btn-warning btn-circle btn-sm">
-                                                            <i class="fas fa-info"></i>
-                                                    </td>
-
-                                                </tr>
-                                                </tbody>
-
-                                            </table>
-
-
-
-
-                                        </div>
-                                        </td>
-
-
-                                    </tr>
-                                    </tbody>
-                                </table>
-                                <div aria-label="Page navigation example">
-                                    <div class="pagination justify-content-center">
-                                        <div class="btn-group" role="group" aria-label="Basic example">
-                                            <button type="button" class="btn btn-light">anterior</button>
-                                            <button type="button" class="btn text-light" style="background-color: #701111;">1</button>
-
-                                            <button type="button" class="btn btn-light" >2</button>
-                                            <button type="button" class="btn btn-light" >3</button>
-
-                                            <button type="button" class="btn btn-light">siguiente</button>
-                                        </div>
-                                    </div>
+                            <div class="form-group row">
+                                <div class="col-sm-6 mb-2 mb-sm-0">
+                                    <input type="text" class="form-control"
+                                           id="exampleNombre"
+                                           placeholder=" Carlos Gabriel ">
+                                </div>
+                                <div class="col-sm-6 mb-2">
+                                    <input type="text" class="form-control"
+                                           id="exampleApellido"
+                                           placeholder="Lopez MArtin">
                                 </div>
                             </div>
-                        </div>
+                            <div class="form-group row">
+                                <div class="col-sm-6 mb-2 mb-sm-0">
+                                    <input type="email" class="form-control"
+                                           id="exampleCorreo"
+                                           placeholder="matin@gmail.sac.com">
+                                </div>
+                                <div class="col-sm-6 mb-2">
+                                    <input placeholder="20/04/1965" class="form-control" type="text"
+                                           onfocus="(this.type='date')" onblur="(this.type='text')" id="date">
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <div class="col-sm-6 mb-2 mb-sm-0">
+                                    <select class="form-control">
+                                        <option value="" disabled >Sexo</option>
+                                        <option value="Femenino" selected>Femenino</option>
+                                        <option value="Masculino">Masculino</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-6  mb-2 mb-sm-0">
+                                    <input type="number" class="form-control"
+                                           id="exampleTelefono" placeholder="98562133">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-sm-6 mb-2 mt-2 mb-sm-0">
+                                    <input type="number" class="form-control"
+                                           id="exampleDNI" placeholder="153214">
+                                </div>
+
+                            </div>
+
+
+                            <div class="form-group row">
+                                <div class="col-sm-6 mb-2 mb-sm-0">
+                                    <div class="w-25" align="center">
+                                        <img src="imgAG/front-view-young-female-courier-in-blue-uniform-black-gloves-and-black-mask-holding-food-delivery-package%20(1).jpg" class="img-fluid img-thumbnail posicion" alt="Sheep">
+                                    </div>
+                                    <h4 style="color: black">Foto de perfil</h4>
+                                    <p>Adjunte una foto de perfil para su cuenta. Esta debe ser una fotografía en la que se visualice claramente su rostro</p>
+
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" id="inputGroupFile03">
+                                        <label class="custom-file-label" for="inputGroupFile03">Adjuntar archivo</label>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="form-group row">
+
+                            </div>
+                            <hr>
+                            <a href="validaciones.html" class="btn btn-warning " >
+                                Registrar
+                            </a>
+                            <a href="lista.html" class="btn btn-danger"  >
+                                Cancelar
+                            </a>
+                        </form>
                     </div>
+
                 </div>
+
 
             </div>
             <!-- /.container-fluid -->
@@ -458,3 +399,4 @@
 </body>
 
 </html>
+
