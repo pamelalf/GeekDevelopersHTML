@@ -49,6 +49,12 @@
     border-color: white;
 }
 
+.btn-next {
+    color: white;
+    background-color: #d4b900;
+    border-color: white;
+}
+
 
 .card-background{
     position: center;

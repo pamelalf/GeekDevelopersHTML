@@ -116,18 +116,6 @@
                     </button>
                 </form>
 
-                <!-- Topbar Search -->
-                <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-                    <div class="input-group">
-                        <input type="text" class="form-control bg-light border-0 small" placeholder="Buscar..."
-                               aria-label="Search" aria-describedby="basic-addon2">
-                        <div class="input-group-append">
-                            <button class="btn" style="background-color:#701111; color:white;" type="button">
-                                <i class="fas fa-search fa-sm"></i>
-                            </button>
-                        </div>
-                    </div>
-                </form>
 
                 <!-- Topbar Navbar -->
                 <ul class="navbar-nav ml-auto">
@@ -292,11 +280,11 @@
                                         </li>
                                         <li class="nav-item ml-2 card-background">
                                             <a href="#pagoEfectivo" class="nav-link active" role="tab" data-toggle="tab" style="color:#6f6f6f"><strong>PAGO
-                                                EFECTIVO</strong></a>
+                                                POS</strong></a>
                                         </li>
                                         <li class="nav-item ml-2 card-background">
                                             <a href="#pagoPOS" class="nav-link" role="tab" data-toggle="tab" style="color:#6f6f6f"><strong>PAGO
-                                                POS</strong></a>
+                                                EFECTIVO</strong></a>
                                         </li>
                                     </ul>
                                 </div>
@@ -452,7 +440,7 @@
                                     <div class="col-4">
                                         <!-- TODO MOSTRAR LA LISTA CARRITO -->
                                         <h6 style="color:#000000;" class="ml-3 mt-2"><strong>5 Productos</strong></h6>
-                                        <h6 style="color:#000000;" class="ml-3 mt-2"><strong>Transporte</strong></h6>
+                                        <h6 style="color:#000000;" class="ml-3 mt-2"><strong>Delivery</strong></h6>
                                     </div>
                                     <div class="col-4">
                                         <h6 style="color:#000000;" class="mr-3 mt-sm-2"><strong>S/. 56.00</strong></h6>
@@ -519,9 +507,9 @@
                                 <hr width="85%" style="border-top: #701111 solid" align="left" class="ml-3">
                                 <div class="container">
                                     <div class="row justify-content-end mb-3">
-                                        <button class="btn btn-back mr-3"><i class="fas fa-arrow-left"></i> Regresar
-                                        </button>
-                                        <button class="btn btn-pay mr-4"><i class="fas fa-money-bill"></i> Terminar
+                                        <a class="btn btn-back mr-3" href="carritoCompras.html"><i class="fas fa-arrow-left"></i> Regresar
+                                        </a>
+                                        <button class="btn btn-pay mr-4" data-toggle="modal" data-target="#terminarCompra"><i class="fas fa-money-bill"></i> Terminar
                                             Compra
                                         </button>
                                     </div>
@@ -555,6 +543,24 @@
 </div>
 <!-- End of Page Wrapper -->
 
+<!-- Termiar Modal -->
+<div class="modal fade" id="terminarCompra" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel2  ">¿Desea Terminar la Compra?</h5>
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                <a class="btn btn-primary" style="background-color: #2b542c; color: #FFFFFF; border: #701111" href="listaPedidoActual.html">Terminar Compra</a>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- Logout Modal-->
 <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
