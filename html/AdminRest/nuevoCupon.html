@@ -213,19 +213,6 @@
                                                     <td colspan="2"><br><input type="text" class="form-control" id="nombre"
                                                                name="nombre"><h1 style="color: red; font-size: small; text-align: left">Debe ingresar como máximo 8 caracteres</h1></td>
 
-                                                </tr>
-                                                <tr>
-                                                    <td><label for="nombre">Política:</label></td>
-                                                    <td colspan="2"><select class="form-control">
-                                                        <option value="">Elegir política</option>
-                                                        <option value="">Primer pedido
-                                                        </option>
-                                                        <option value="">Pedido numero 10
-                                                        </option>
-                                                        <option value="">Monto en pedidos de S/.100.00
-                                                        </option>
-                                                    </select></td>
-
                                                     <td rowspan="4" colspan="3"><img id="image_preview"
                                                                                      src="https://image.flaticon.com/icons/png/512/39/39887.png"
                                                                                      width="300"></td>
@@ -234,7 +221,9 @@
                                                     <td><label>Descripción:</label></td>
                                                     <td colspan="2"><input class="form-control" name="descrip"
                                                                            type="text"
-                                                                           class="form-control"></td>
+                                                                           class="form-control">
+                                                        <h1 style="color: red; font-size: small; text-align: left">Debe ingresar como máximo 40 caracteres</h1></td>
+
 
                                                 </tr>
                                                 <tr>
@@ -243,9 +232,12 @@
                                                         <div class="input-group">
                                                             <div class="input-group-prepend">
                                                                 <input name="cantidad" type="date" class="form-control">
+
                                                             </div>
                                                         </div>
+                                                        <h1 style="color: red; font-size: small; text-align: left">Debe ingresar una fecha válida</h1>
                                                     </td>
+
                                                 </tr>
 
                                                 <tr>
@@ -255,8 +247,10 @@
                                                             <div class="input-group-prepend">
                                                                 <span class="input-group-text">S/.</span>
                                                                 <input name="cantidad" type="text" class="form-control">
+
                                                             </div>
                                                         </div>
+                                                        <h1 style="color: red; font-size: small; text-align: left">Debe ingresar un valor válido</h1>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -370,7 +364,7 @@
                     </div>
                     <div class="modal-footer">
                         <a class="btn btn-primary" style="background-color: #701111; color: #FFFFFF; border: #701111"
-                           href="../login.html">Cerrar
+                           href="login.html">Cerrar
                             Sesión</a>
                         <a class="btn" type="button"
                            data-dismiss="modal">
