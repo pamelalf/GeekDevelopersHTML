@@ -52,7 +52,7 @@
                 <div class="bg-white py-2 collapse-inner rounded">
                     <a class="collapse-item" href="listaRestaurantes.html">Restaurantes</a>
 
-                    <a class="collapse-item" href="listaRestaurantes.html">Categorías</a>
+                    <a class="collapse-item" href="categorías.html">Categorías</a>
                 </div>
             </div>
         </li>
@@ -107,7 +107,7 @@
         <div id="content">
 
             <!-- Topbar -->
-            <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+            <nav class="navbar navbar-expand navbar-light bg-white topbar mb-6 static-top shadow">
 
                 <!-- Sidebar Toggle (Topbar) -->
                 <form class="form-inline">
@@ -116,25 +116,10 @@
                     </button>
                 </form>
 
-                <!-- Topbar Search -->
-                <form
-                        class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-                    <div class="input-group">
-                        <input type="text" class="form-control bg-light border-0 small" placeholder="Buscar..."
-                               aria-label="Search" aria-describedby="basic-addon2">
-                        <div class="input-group-append">
-                            <button class="btn" style="background-color:#701111; color:white;" type="button">
-                                <i class="fas fa-search fa-sm"></i>
-                            </button>
-                        </div>
-                    </div>
-                </form>
-
                 <!-- Topbar Navbar -->
                 <ul class="navbar-nav ml-auto">
                     <!-- Al parecer no pasa nada si lo quitamos-->
-
-                    <!-- Nav Item - Search Dropdown  -->
+                    <!-- Nav Item - Search Dropdown (Visible Only XS) -->
                     <li class="nav-item dropdown no-arrow d-sm-none">
                         <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -149,8 +134,7 @@
                                            placeholder="Buscar..." aria-label="Search"
                                            aria-describedby="basic-addon2">
                                     <div class="input-group-append">
-                                        <button class="btn" style="background-color:#701111; color:white;"
-                                                type="button">
+                                        <button class="btn" style="background-color:#701111; color:white;" type="button">
                                             <i class="fas fa-search fa-sm"></i>
                                         </button>
                                     </div>
@@ -161,6 +145,12 @@
                     <!-- Al parecer no pasa nada si lo quitamos-->
 
                     <!-- Nav Item - Alerts -->
+
+                    <li class="nav-item dropdown no-arrow mx-1">
+                        <a class="nav-link dropdown-toggle" href="listaDirecciones.html">
+                            Los Eneldos 204
+                        </a>
+                    </li>
                     <li class="nav-item dropdown no-arrow mx-1">
                         <a class="nav-link dropdown-toggle" href="listaDirecciones.html">
                             <i class="fas fa-map-marker-alt"></i>
@@ -181,7 +171,7 @@
                         <!-- Dropdown - Alerts -->
                         <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
                              aria-labelledby="alertsDropdown">
-                            <h6 class="dropdown-header" style="background-color:#701111; color:white;border:#701111;">
+                            <h6 class="dropdown-header" style="background-color:white; color:#701111; border:#701111;">
                                 Pedidos Pendientes
                             </h6>
                             <a class="dropdown-item d-flex align-items-center" href="#">
@@ -211,8 +201,7 @@
                                     <span class="font-weight-bold">La Rosa Náutica</span>
                                 </div>
                             </a>
-                            <a class="dropdown-item text-center small text-gray-500" href="listaPedidoActual.html">Mostrar
-                                todos mis pedidos pendientes</a>
+                            <a class="dropdown-item text-center small text-gray-500" href="listaPedidoActual.html">Mostrar todos mis pedidos pendientes</a>
                         </div>
                     </li>
 
@@ -225,26 +214,16 @@
                         <!-- Dropdown - Messages -->
                         <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
                              aria-labelledby="messagesDropdown">
-                            <h6 class="dropdown-header font-weight-bold "
-                                style="background-color:#701111; color:white; border:#701111;">
+                            <h6 class="dropdown-header font-weight-bold " style="background-color:white; color:#701111; border:#701111;">
                                 Joham Romucho
                             </h6>
                             <a class="dropdown-item d-flex align-items-center">
                                 <div class="mr-3">
                                     <i class="fas fa-mobile"></i>
                                 </div>
-                                <div class="font-weight-bold">
+                                <div class="font-weight">
                                     <div class="text-truncate">999999999</div>
                                     <div class="small text-gray-500">Teléfono</div>
-                                </div>
-                            </a>
-                            <a class="dropdown-item d-flex align-items-center">
-                                <div class="mr-3">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                </div>
-                                <div class="font-weight-bold">
-                                    <div class="text-truncate">Av. Carlo Izaguirre, Los Olivos</div>
-                                    <div class="small text-gray-500">Dirección</div>
                                 </div>
                             </a>
                         </div>
@@ -257,8 +236,7 @@
                         <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <span class="mr-2 d-none d-lg-inline text-gray-600 small">Joham Romucho</span>
-                            <img class="img-profile rounded-circle"
-                                 src="../bootstrap/img/undraw_profile.svg">
+                            <img class="img-profile rounded-circle" src="../bootstrap/img/undraw_profile.svg">
                         </a>
                         <!-- Dropdown - User Information -->
                         <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
@@ -275,6 +253,7 @@
                         </div>
                     </li>
 
+
                 </ul>
 
             </nav>
@@ -282,6 +261,35 @@
 
             <!-- Begin Page Content -->
             <div class="container-fluid">
+
+                <form>
+                    <div class="form-group row mt-3">
+                        <div class="col-sm-3 mb-1 ">
+                            <div class="input-group">
+                                <input type="text" class="form-control bg-light border-0 small" placeholder="Búsqueda por plato...">
+                                <div class="input-group-append">
+                                    <button class="btn" style="background-color:#701111; color:white;" type="button">
+                                        <i class="fas fa-search fa-sm"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 mb-1">
+                            <select class="form-control">
+                                <option value="">Precio</option>
+                                <option value="">S./00.00 hasta S./5.00</option>
+                                <option value="">S./5.00 hasta S./10.00</option>
+                                <option value="">S./10.00 hasta S./15.00</option>
+                                <option value="">S./15.00 hasta S./20.00</option>
+                                <option value="">S./20.00 a más</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-2 mb-1" style="margin-right: 10px" >
+                            <a class="btn btn-secondary " >Quitar filtros</a>
+                        </div>
+                    </div>
+                </form>
+
 
                 <!-- DataTales Example -->
                 <div class="card shadow mb-4">
@@ -296,7 +304,7 @@
                                 <thead>
                                 <tr>
                                     <th class="text-center">
-                                        Producto
+                                        Plato
                                     </th>
                                     <th class="text-center">
                                         Precio
