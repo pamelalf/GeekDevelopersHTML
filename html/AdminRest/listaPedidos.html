@@ -38,9 +38,9 @@
         <!-- Sidebar - Brand -->
         <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
           <div class="sidebar-brand-icon rotate-n-15">
-            <i class="fas fa-laugh-wink"></i>
+            <i class="fas fa-shopping-basket"></i>
           </div>
-          <div class="sidebar-brand-text mx-3">Food Delivery </div>
+          <div class="sidebar-brand-text mx-3">Food Delivery</div>
         </a>
 
         <!-- Divider -->
@@ -56,8 +56,8 @@
 
         <!-- Nav Item - Pages Collapse Menu -->
         <li class="nav-item">
-          <a class="nav-link" href="listaPedidos.html" >
-            <i class="fas fa-fw fa-cog"></i>
+          <a class="nav-link" href="listaPedidos.html">
+            <i class="fas fa-fw fa-book-open"></i>
             <span>Pedidos</span>
           </a>
         </li>
@@ -65,7 +65,7 @@
         <!-- Nav Item - Utilities Collapse Menu -->
         <li class="nav-item">
           <a class="nav-link" href="extras.html">
-            <i class="fas fa-fw fa-laugh-wink"></i>
+            <i class="fas fa-fw fa-utensils"></i>
             <span>Extras</span>
           </a>
         </li>
@@ -73,13 +73,13 @@
         <!-- Nav Item - Pages Collapse Menu -->
         <li class="nav-item">
           <a class="nav-link " href="eleccionReporte.html">
-            <i class="fas fa-fw fa-folder"></i>
+            <i class="fas fa-fw fa-fw fa-file"></i>
             <span>Reportes</span>
           </a>
         </li>
         <li class="nav-item">
           <a class="nav-link " href="listaCupones.html">
-            <i class="fas fa-fw fa-folder"></i>
+            <i class="fas fa-fw fa-ticket-alt"></i>
             <span>Cupones</span>
           </a>
         </li>
@@ -181,7 +181,7 @@
                 <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <span class="mr-2 d-none d-lg-inline text-gray-600 small">Joham Romucho</span>
-                  <i class="fas fa-user"></i>
+                  <img class="img-profile rounded-circle" src="../bootstrap/img/undraw_profile.svg">
                 </a>
                 <!-- Dropdown - User Information -->
                 <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
@@ -203,7 +203,7 @@
             <form>
 
               <div class="form-group row">
-                <div class="col-sm-3 mb-1 ">
+                <div class="col-sm-2 mb-1 ">
                   <select class="form-control  ">
                     <option value="" disabled selected>Estado</option>
                     <option value="Entregado">Entregado</option>
@@ -216,7 +216,7 @@
                          id="exampleCliente"
                          placeholder="Búsqueda por cliente">
                 </div>
-                <div class="col-sm-3 mb-1">
+                <div class="col-sm-2 mb-1">
                   <select class="form-control">
                     <option value="">Precio</option>
                     <option value="">S./00.00 hasta S./5.00</option>
@@ -225,8 +225,13 @@
                     <option value="">S./15.00 hasta S./20.00</option>
                   </select>
                 </div>
-                <div class="col-sm-2 mb-1" style="margin-right: 10px" >
-                  <a class="btn btn-secondary " >Quitar filtros</a>
+                <div class="input-group-append col-sm-1 mb-3 ml-0">
+                  <button class="btn" style="background-color:#701111; color:white; border:#701111" type="button">
+                    <i class="fas fa-filter"></i>
+                  </button>
+                </div>
+                <div class="col-sm-4 mb-1 ml-0" style="text-align: right">
+                  <a class="btn btn-secondary">Quitar filtros</a>
                 </div>
               </div>
 
@@ -265,7 +270,7 @@
                           Rechazar
                         </th>
                         <th class="text-center">
-                          Editar
+                          Visualizar
                         </th>
                       </tr>
                     </thead>
@@ -285,7 +290,7 @@
                         </a></td>
                         <td style="width: 160px"><a style="color: #dce3f9"
                                                     class="btn btn-warning btn-circle align" href="detallePedido.html">
-                          <i class="fas fa-pen"></i>
+                          <i class="fas fa-eye"></i>
                         </a></td>
 
                       </tr>
@@ -303,7 +308,7 @@
                         </a></td>
                         <td style="width: 160px"><a style="color: #dce3f9"
                                                     class="btn btn-warning btn-circle align" href="detallePedido.html">
-                          <i class="fas fa-pen"></i>
+                          <i class="fas fa-eye"></i>
                         </a></td>
 
                       </tr>
@@ -321,7 +326,7 @@
                         </a></td>
                         <td style="width: 160px"><a style="color: #dce3f9"
                                                     class="btn btn-warning btn-circle align" href="detallePedido.html">
-                          <i class="fas fa-pen"></i>
+                          <i class="fas fa-eye"></i>
                         </a></td>
 
                       </tr>
@@ -339,7 +344,7 @@
                         </a></td>
                         <td style="width: 160px"><a style="color: #dce3f9"
                                                     class="btn btn-warning btn-circle align" href="detallePedido.html">
-                          <i class="fas fa-pen"></i>
+                          <i class="fas fa-eye"></i>
                         </a></td>
 
                       </tr>
@@ -357,7 +362,7 @@
                         </a></td>
                         <td style="width: 160px"><a style="color: #dce3f9"
                                                     class="btn btn-warning btn-circle align" href="detallePedido.html">
-                          <i class="fas fa-pen"></i>
+                          <i class="fas fa-eye"></i>
                         </a></td>
 
                       </tr>
@@ -375,7 +380,7 @@
                         </a></td>
                         <td style="width: 160px"><a style="color: #dce3f9"
                                                     class="btn btn-warning btn-circle align" href="detallePedido.html">
-                          <i class="fas fa-pen"></i>
+                          <i class="fas fa-eye"></i>
                         </a></td>
 
                       </tr>
@@ -393,7 +398,7 @@
                         </a></td>
                         <td style="width: 160px"><a style="color: #dce3f9"
                                                     class="btn btn-warning btn-circle align" href="detallePedido.html">
-                          <i class="fas fa-pen"></i>
+                          <i class="fas fa-eye"></i>
                         </a></td>
 
                       </tr>
@@ -411,7 +416,7 @@
                         </a></td>
                         <td style="width: 160px"><a style="color: #dce3f9"
                                                     class="btn btn-warning btn-circle align" href="detallePedido.html">
-                          <i class="fas fa-pen"></i>
+                          <i class="fas fa-eye"></i>
                         </a></td>
 
                       </tr>
@@ -476,7 +481,7 @@
           <div class="modal-body">Al seleecionar el boton salir, usted cerrará su sesión.</div>
           <div class="modal-footer">
             <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-            <a class="btn btn-primary" style="background-color: #701111; color: #FFFFFF; border: #701111" href="/html/login.html">Cerrar Sesión</a>
+            <a class="btn btn-primary" style="background-color: #701111; color: #FFFFFF; border: #701111" href="login.html">Cerrar Sesión</a>
           </div>
         </div>
       </div>
