@@ -20,6 +20,7 @@
     <!-- Custom styles for this template -->
     <link href="../bootstrap/css/sb-admin-2.min.css" rel="stylesheet">
 
+    <link href="cssAG/estilosAdmin.css" rel="stylesheet" type="text/css">
 
     <link href="estilosAdminRest.css" rel="stylesheet" type="text/css">
     <!-- Custom styles for this page -->
@@ -31,6 +32,7 @@
 
 <!-- Page Wrapper -->
 <div id="wrapper">
+
     <!-- Sidebar -->
     <ul class="navbar-nav  sidebar sidebar-dark accordion" style="background-color:#701111       ;" id="accordionSidebar">
         <div class="">
@@ -49,35 +51,69 @@
 
         <!-- Nav Item - Dashboard -->
         <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="lista.html">
                 <i class="fas fa-fw fa-list"></i>
                 <span>Listas</span></a>
         </li>
 
 
+
         <!-- Nav Item - Pages Collapse Menu -->
         <li class="nav-item">
-            <a class="nav-link" href="#" >
-                <i class="fas fa-fw fa-cog"></i>
+            <a class="nav-link nav-link collapsed text-truncate"  href="#submenu2" data-toggle="collapse" >
+                <i class="fas fa-fw fa-folder"></i>
                 <span>Solicitudes</span>
-            </a>
-        </li>
 
+            </a>
+            <div class="collapse" id="submenu2" aria-expanded="false">
+                <ul class="flex-column pl-2 nav">
+                    <li class="nav-item"><a class="nav-link py-0" href="solicitudAR.html"><span>Administrador Restaurante</span></a></li>
+                </ul>
+                <ul class="flex-column pl-2 nav">
+                    <li class="nav-item"><a class="nav-link py-0" href=solicitudRepartidor.html#"><span>Repartidor</span></a></li>
+                </ul>
+                <ul class="flex-column pl-2 nav">
+                    <li class="nav-item"><a class="nav-link py-0" href="solicitudRestaurante.html"><span>Restaurante</span></a></li>
+                </ul>
+
+            </div>
+        </li>
         <!-- Nav Item - Utilities Collapse Menu -->
         <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="crearAdministrador.html">
                 <i class="fas fa-fw fa-user-edit"></i>
                 <span>Crear Administrador</span>
             </a>
         </li>
 
         <!-- Nav Item - Pages Collapse Menu -->
+
         <li class="nav-item">
-            <a class="nav-link " href="#">
-                <i class="fas fa-fw fa-file"></i>
+            <a class="nav-link nav-link collapsed text-truncate" href="#submenu1" data-toggle="collapse" >
+                <i class="fas fa-fw fa-folder"></i>
                 <span>Reportes</span>
+
             </a>
+            <div class="collapse" id="submenu1" aria-expanded="false">
+                <ul class="flex-column pl-2 nav">
+                    <li class="nav-item"><a class="nav-link py-0" href="reporteUsuario.html"><span>Usuarios</span></a></li>
+                </ul>
+                <ul class="flex-column pl-2 nav">
+                    <li class="nav-item"><a class="nav-link py-0" href=reportePedidoCliente.html#"><span>Pedidos por cliente</span></a></li>
+                </ul>
+                <ul class="flex-column pl-2 nav">
+                    <li class="nav-item"><a class="nav-link py-0" href="reportePedidoRepartidor.html"><span>Pedidos por repartidor</span></a></li>
+                </ul>
+                <ul class="flex-column pl-2 nav">
+                    <li class="nav-item"><a class="nav-link py-0" href="reporteVentas.html"><span>Ventas</span></a></li>
+                </ul>
+                <ul class="flex-column pl-2 nav">
+                    <li class="nav-item"><a class="nav-link py-0" href="reporteIngresos.html"><span>Ingresos</span></a></li>
+                </ul>
+            </div>
         </li>
+
+
 
 
         <!-- Divider -->
@@ -90,7 +126,6 @@
 
     </ul>
     <!-- End of Sidebar -->
-
     <!-- Content Wrapper -->
     <div id="content-wrapper" class="d-flex flex-column">
 
@@ -208,14 +243,61 @@
             <!-- End of Topbar -->
             <!-- Begin Page Content -->
             <div class="container-fluid">
+                <form>
 
+                    <div class="form-group row">
+                        <div class="col-sm-3 mb-1 ">
+                            <input type="text" class="form-control"
+                                   id="exampleCliente"
+                                   placeholder="Búsqueda por usuario">
+                        </div>
+                        <div class="col-sm-2 mb-1 ">
+                            <select class="form-control  ">
+                                <option value="" disabled selected>Movilidad</option>
+                                <option value="Pendiente">Moto</option>
+                                <option value="Pendiente">Bicicleta</option>
+                            </select>
+                        </div>
+
+                        <div class="col-sm-2 mb-1">
+                            <select class="form-control">
+                                <option value="">Fecha de Registro</option>
+                                <option value="">Última Hora</option>
+                                <option value="">Hoy</option>
+                                <option value="">Esta semana</option>
+                                <option value="">Este mes</option>
+                                <option value="">Este año</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-2 mb-1">
+                            <select class="form-control">
+                                <option value="">Estado</option>
+                                <option value="">Aceptado</option>
+                                <option value="">Rechazado</option>
+                                <option value="">Pendiente</option>
+
+
+                            </select>
+                        </div>
+                        <div class="input-group-append col-sm-1 mb-3 ml-0">
+                            <button class="btn" style="background-color:#701111; color:white; border:#701111" type="button">
+                                <i class="fas fa-filter"></i>
+                            </button>
+                        </div>
+                        <div class="col-sm-2 mb-1 ml-0" style="text-align: right">
+                            <a class="btn btn-secondary">Quitar filtros</a>
+                        </div>
+                    </div>
+
+
+                </form>
                 <!-- DataTales Example -->
                 <div class="card shadow mb-4">
                     <div class="card-header py-3 " style="background-color: #701111;">
 
 
 
-                            <h5 class="font-weight-bold text-white  text-md-center">LISTA DE SOLICITUDES REPARTIDORES</h5>
+                            <h2 class="font-weight-bold text-white  text-md-center">LISTA DE SOLICITUDES REPARTIDORES</h2>
 
 
                         <style>
@@ -241,7 +323,7 @@
                                     <thead>
                                     <tr>
                                         <th scope="col" style="width: 50px">N°</th>
-                                        <th scope="col" style="width: 600px">Image</th>
+                                        <th scope="col" style="width: 600px">Imagen</th>
                                         <th scope="col" style="width: 700px">Datos</th>
                                     </tr>
                                     </thead>
@@ -255,6 +337,11 @@
                                             <table class="table table-bordered ">
 
                                                 <tbody>
+                                                <tr>
+
+                                                    <td>Fecha de Registro: 20/01/3113</td>
+                                                    <td>Estado: Pendiente </td>
+                                                </tr>
                                                 <tr>
 
                                                     <td>Nombre: Martin Alvaro</td>
@@ -273,18 +360,29 @@
                                                     <td>Teléfono: 32325164564 </td>
                                                 </tr>
 
+
                                                 <tr>
 
-                                                    <td>Fecha de Aceptacion: Moto</td>
+                                                    <td>Movilidad: moto </td>
                                                     <td>
-                                                        <a href="#" class="btn btn-success btn-circle btn-sm">
-                                                            <i class="fas fa-check"></i>
+                                                        <a href="#" class="btn btn-success btn-icon-split">
+                                        <span class="icon text-white-50">
+                                            <i class="fas fa-check"></i>
+                                        </span>
+                                                            <span class="text">Aceptar</span>
                                                         </a>
-                                                        <a href="#" class="btn btn-danger btn-circle btn-sm">
-                                                            <i class="fas fa-times"></i>
+                                                        <a href="#" class="btn btn-danger btn-icon-split">
+                                        <span class="icon text-white-50">
+                                            <i class="fas fa-times"></i>
+                                        </span>
+                                                            <span class="text">Rechazar</span>
                                                         </a>
-                                                        <a href="#" class="btn btn-warning btn-circle btn-sm">
-                                                            <i class="fas fa-info"></i>
+
+                                                        <a href="#" class="btn btn-warning btn-icon-split">
+                                        <span class="icon text-white-50">
+                                            <i class="fas fa-info"></i>
+                                        </span>
+                                                            <span class="text">Informacion</span>
                                                         </a>
                                                     </td>
 
@@ -311,6 +409,12 @@
                                             <table class="table table-bordered ">
 
                                                 <tbody>
+
+                                                <tr>
+
+                                                    <td>Fecha de Registro: 20/01/3113</td>
+                                                    <td>Estado: Rechazado </td>
+                                                </tr>
                                                 <tr>
 
                                                     <td>Nombre: Martin Alvaro</td>
@@ -333,14 +437,94 @@
 
                                                     <td>Movilidad: Moto</td>
                                                     <td>
-                                                        <a href="#" class="btn btn-success btn-circle btn-sm">
-                                                            <i class="fas fa-check"></i>
+                                                        <a href="#" class="btn btn-secondary btn-icon-split">
+                                        <span class="icon text-white-50">
+                                            <i class="fas fa-check"></i>
+                                        </span>
+                                                            <span class="text">Aceptar</span>
                                                         </a>
-                                                        <a href="#" class="btn btn-danger btn-circle btn-sm">
-                                                            <i class="fas fa-times"></i>
+                                                        <a href="#" class="btn btn-danger btn-icon-split">
+                                        <span class="icon text-white-50">
+                                            <i class="fas fa-times"></i>
+                                        </span>
+                                                            <span class="text">Rechazar</span>
                                                         </a>
-                                                        <a href="#" class="btn btn-warning btn-circle btn-sm">
-                                                            <i class="fas fa-info"></i>
+
+                                                        <a href="#" class="btn btn-warning btn-icon-split">
+                                        <span class="icon text-white-50">
+                                            <i class="fas fa-info"></i>
+                                        </span>
+                                                            <span class="text">Informacion</span>
+                                                        </a>
+                                                    </td>
+
+                                                </tr>
+                                                </tbody>
+
+                                            </table>
+
+
+
+
+                                        </div>
+                                        </td>
+
+
+                                    </tr><tr>
+                                        <td scope="row">2</td>
+                                        <td class="w-25">
+                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4nu4ej6fgxyPM8v---fOhOQg7Tw8xPTudfVYqogq6noeuNjCeBIrXhhUsakfeneVNFPI&usqp=CAU" class="img-fluid img-thumbnail" alt="Sheep">
+                                        </td>
+                                        <td><div class="table-responsive">
+                                            <table class="table table-bordered ">
+
+                                                <tbody>
+
+                                                <tr>
+
+                                                    <td>Fecha de Registro: 20/01/3113</td>
+                                                    <td>Estado: Aceptado </td>
+                                                </tr>
+                                                <tr>
+
+                                                    <td>Nombre: Martin Alvaro</td>
+                                                    <td>DNI: 12345678
+                                                    </td>
+                                                </tr>
+                                                <tr>
+
+                                                    <td>Apellidos: Lopez Flores</td>
+                                                    <td>Sexo: Masculino </td>
+
+                                                </tr>
+                                                <tr>
+
+                                                    <td>Correo: asdddd@gmail.com</td>
+                                                    <td>Teléfono: 32325164564 </td>
+                                                </tr>
+
+                                                <tr>
+
+                                                    <td>Movilidad: Moto</td>
+                                                    <td>
+                                                        <a href="#" class="btn btn-success btn-icon-split">
+                                        <span class="icon text-white-50">
+                                            <i class="fas fa-check"></i>
+                                        </span>
+                                                            <span class="text">Aceptar</span>
+                                                        </a>
+                                                        <a href="#" class="btn btn-secondary btn-icon-split">
+                                        <span class="icon text-white-50">
+                                            <i class="fas fa-times"></i>
+                                        </span>
+                                                            <span class="text">Rechazar</span>
+                                                        </a>
+
+                                                        <a href="#" class="btn btn-warning btn-icon-split">
+                                        <span class="icon text-white-50">
+                                            <i class="fas fa-info"></i>
+                                        </span>
+                                                            <span class="text">Informacion</span>
                                                         </a>
                                                     </td>
 
@@ -359,19 +543,17 @@
                                     </tr>
                                     </tbody>
                                 </table>
-                                <div aria-label="Page navigation example">
-                                    <div class="pagination justify-content-center">
-                                        <div class="btn-group" role="group" aria-label="Basic example">
-                                            <button type="button" class="btn btn-light">anterior</button>
-                                            <button type="button" class="btn text-light" style="background-color: #701111;">1</button>
 
-                                            <button type="button" class="btn btn-light" >2</button>
-                                            <button type="button" class="btn btn-light" >3</button>
-
-                                            <button type="button" class="btn btn-light">siguiente</button>
-                                        </div>
-                                    </div>
-                                </div>
+                            </div>
+                            <div class="pagination" style=" margin-left: 630px ;align-content: center">
+                                <a  href="#">&laquo;</a>
+                                <a  href="#" class="active">1</a>
+                                <a href="#">2</a>
+                                <a href="#">3</a>
+                                <a href="#">4</a>
+                                <a href="#">5</a>
+                                <a href="#">6</a>
+                                <a href="#">&raquo;</a>
                             </div>
                         </div>
                     </div>

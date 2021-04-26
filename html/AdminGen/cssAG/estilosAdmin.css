@@ -1,6 +1,6 @@
 button.botonbusca {
-color: #eeeeee;
-background-color:#701111;
+    color: #eeeeee;
+    background-color:#701111;
 }
 div.notificacion{
     background-color:#701111;
@@ -26,25 +26,25 @@ h6.notificacion{
     overflow: hidden;
     left: 50%;
     position: absolute;
-  }
-  .pagination a.active {
+}
+.pagination a.active {
     background-color: #ffffff;
     color: #701111;
-  }
-  .pagination a {
+}
+.pagination a {
     color: rgb(255, 255, 255);
     padding: 8px 16px;
     background-color:  #701111;
     transition: background-color .3s;
 
-  }
-  .bontondate{
-      background-color: rgb(255, 255, 255);
-      color: black;
-  }
-  @media screen and (max-width: 600px) {
+}
+.bontondate{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+@media screen and (max-width: 600px) {
     .column {
-      width: 100%;
+        width: 100%;
     }
-  }
+}
 

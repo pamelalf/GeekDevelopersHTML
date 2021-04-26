@@ -119,19 +119,6 @@
                         </button>
                     </form>
 
-                    <!-- Topbar Search -->
-                    <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-                        <div class="input-group">
-                            <input type="text" class="form-control bg-light border-0 small" placeholder="Buscar..."
-                                aria-label="Search" aria-describedby="basic-addon2">
-                            <div class="input-group-append">
-                                <button class="btn" style="background-color:#701111; color:white;" type="button">
-                                    <i class="fas fa-search fa-sm"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
 					<!-- Al parecer no pasa nada si lo quitamos-->
@@ -311,7 +298,7 @@
                                                     Precio
                                                 </th>
 												<th style="color:white">
-                                                    Comentario
+                                                    Observación
                                                 </th>
                                             </tr>
                                         </thead>
@@ -322,7 +309,7 @@
                                                 <td>1</td>
                                                 <td>S/. 18.00</td>
                                                 <td>S/. 18.00</td>
-												<td><i class="fas fa-comments"></i></td>
+												<td><i class="fas fa-comments" href="#" data-toggle="modal" data-target="#verComent"></i></td>
 
                                             </tr><tr>
                                                 <td>1</td>
@@ -330,7 +317,7 @@
                                                 <td>1</td>
                                                 <td>S/. 18.00</td>
                                                 <td>S/. 18.00</td>
-												<td><i class="fas fa-comments"></i></td>
+												<td><i class="fas fa-comments" href="#" data-toggle="modal" data-target="#verComent"></i></td>
 
                                             </tr>
 
@@ -382,7 +369,7 @@
 							<h6 class="col-3 offset-md-3" style="color:black">03/04/2021</h6>
 						</div>	
 						<div class="row justify-content-center">
-							<h6 class="col-3" style="color:black">Hora estimada de entrega</h6>
+							<h6 class="col-3" style="color:black">Tiempo estimado de entrega</h6>
 							<h6 class="col-3 offset-md-3" style="color:black">30-45 min</h6>
 						</div>
 
@@ -452,6 +439,25 @@
           <div class="modal-footer">
             <button class="btn btn-secondary" type="button" data-dismiss="modal">No</button>
             <a class="btn" style="background-color:#701111; color:white" href="listaPedidoActual.html">Cancelar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+	
+	<!-- Ver Comentario-->
+    <div class="modal fade" id="verComent" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Observación:</h5>
+            <button class="close" type="button"  data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">Por favor, añadir harto ají dentro del plato</div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" type="button" data-dismiss="modal">Listo</button>
           </div>
         </div>
       </div>
