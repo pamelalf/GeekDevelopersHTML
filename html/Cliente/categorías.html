@@ -20,7 +20,7 @@
     <!-- Custom styles for this page -->
     <link href="../bootstrap/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 
-    <title>Categorías de Restaurante</title>
+    <title>Categoias de Restaurante</title>
 </head>
 
 <body id="page-top">
@@ -51,7 +51,8 @@
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
                     <a class="collapse-item" href="listaRestaurantes.html">Restaurantes</a>
-                    <a class="collapse-item" href="listaCategorias.html">Categorías</a>
+
+                    <a class="collapse-item" href="categorías.html">Categorías</a>
                 </div>
             </div>
         </li>
@@ -99,7 +100,6 @@
     </ul>
     <!-- End of Sidebar -->
 
-
     <!-- Content Wrapper -->
     <div id="content-wrapper" class="d-flex flex-column">
 
@@ -107,7 +107,7 @@
         <div id="content">
 
             <!-- Topbar -->
-            <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+            <nav class="navbar navbar-expand navbar-light bg-white topbar mb-6 static-top shadow">
 
                 <!-- Sidebar Toggle (Topbar) -->
                 <form class="form-inline">
@@ -116,25 +116,10 @@
                     </button>
                 </form>
 
-                <!-- Topbar Search -->
-                <form
-                        class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-                    <div class="input-group">
-                        <input type="text" class="form-control bg-light border-0 small" placeholder="Buscar..."
-                               aria-label="Search" aria-describedby="basic-addon2">
-                        <div class="input-group-append">
-                            <button class="btn" style="background-color:#701111; color:white;" type="button">
-                                <i class="fas fa-search fa-sm"></i>
-                            </button>
-                        </div>
-                    </div>
-                </form>
-
                 <!-- Topbar Navbar -->
                 <ul class="navbar-nav ml-auto">
                     <!-- Al parecer no pasa nada si lo quitamos-->
-
-                    <!-- Nav Item - Search Dropdown  -->
+                    <!-- Nav Item - Search Dropdown (Visible Only XS) -->
                     <li class="nav-item dropdown no-arrow d-sm-none">
                         <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -149,8 +134,7 @@
                                            placeholder="Buscar..." aria-label="Search"
                                            aria-describedby="basic-addon2">
                                     <div class="input-group-append">
-                                        <button class="btn" style="background-color:#701111; color:white;"
-                                                type="button">
+                                        <button class="btn" style="background-color:#701111; color:white;" type="button">
                                             <i class="fas fa-search fa-sm"></i>
                                         </button>
                                     </div>
@@ -161,6 +145,12 @@
                     <!-- Al parecer no pasa nada si lo quitamos-->
 
                     <!-- Nav Item - Alerts -->
+
+                    <li class="nav-item dropdown no-arrow mx-1">
+                        <a class="nav-link dropdown-toggle" href="listaDirecciones.html">
+                            Los Eneldos 204
+                        </a>
+                    </li>
                     <li class="nav-item dropdown no-arrow mx-1">
                         <a class="nav-link dropdown-toggle" href="listaDirecciones.html">
                             <i class="fas fa-map-marker-alt"></i>
@@ -181,7 +171,7 @@
                         <!-- Dropdown - Alerts -->
                         <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
                              aria-labelledby="alertsDropdown">
-                            <h6 class="dropdown-header" style="background-color:#701111; color:white;border:#701111;">
+                            <h6 class="dropdown-header" style="background-color:white; color:#701111; border:#701111;">
                                 Pedidos Pendientes
                             </h6>
                             <a class="dropdown-item d-flex align-items-center" href="#">
@@ -211,8 +201,7 @@
                                     <span class="font-weight-bold">La Rosa Náutica</span>
                                 </div>
                             </a>
-                            <a class="dropdown-item text-center small text-gray-500" href="listaPedidoActual.html">Mostrar
-                                todos mis pedidos pendientes</a>
+                            <a class="dropdown-item text-center small text-gray-500" href="listaPedidoActual.html">Mostrar todos mis pedidos pendientes</a>
                         </div>
                     </li>
 
@@ -225,26 +214,16 @@
                         <!-- Dropdown - Messages -->
                         <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
                              aria-labelledby="messagesDropdown">
-                            <h6 class="dropdown-header font-weight-bold "
-                                style="background-color:#701111; color:white; border:#701111;">
+                            <h6 class="dropdown-header font-weight-bold " style="background-color:white; color:#701111; border:#701111;">
                                 Joham Romucho
                             </h6>
                             <a class="dropdown-item d-flex align-items-center">
                                 <div class="mr-3">
                                     <i class="fas fa-mobile"></i>
                                 </div>
-                                <div class="font-weight-bold">
+                                <div class="font-weight">
                                     <div class="text-truncate">999999999</div>
                                     <div class="small text-gray-500">Teléfono</div>
-                                </div>
-                            </a>
-                            <a class="dropdown-item d-flex align-items-center">
-                                <div class="mr-3">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                </div>
-                                <div class="font-weight-bold">
-                                    <div class="text-truncate">Av. Carlo Izaguirre, Los Olivos</div>
-                                    <div class="small text-gray-500">Dirección</div>
                                 </div>
                             </a>
                         </div>
@@ -257,8 +236,7 @@
                         <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <span class="mr-2 d-none d-lg-inline text-gray-600 small">Joham Romucho</span>
-                            <img class="img-profile rounded-circle"
-                                 src="../bootstrap/img/undraw_profile.svg">
+                            <img class="img-profile rounded-circle" src="../bootstrap/img/undraw_profile.svg">
                         </a>
                         <!-- Dropdown - User Information -->
                         <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
@@ -275,6 +253,7 @@
                         </div>
                     </li>
 
+
                 </ul>
 
             </nav>
@@ -285,78 +264,141 @@
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
+                    <form>
+                        <div class="form-group row mt-3">
+                            <div class="col-sm-3 mb-1 ">
+                                <div class="input-group">
+                                    <input type="text" class="form-control bg-light border-0 small" placeholder="Buscar...">
+                                    <div class="input-group-append">
+                                        <button class="btn" style="background-color:#701111; color:white;" type="button">
+                                            <i class="fas fa-search fa-sm"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-2 mb-1" style="margin-right: 10px" >
+                                <a class="btn btn-secondary " >Quitar filtros</a>
+                            </div>
+                        </div>
+                    </form>
+
 
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3" style="background-color: #701111;">
-                            <h5 class="font-weight-bold text-white text-center mb-0">Categorias</h5>
+                            <h5 class="font-weight-bold text-white text-center mb-0">CATEGORIAS</h5>
                         </div>
-                        <div class="row">
-                            <div class="column">
-                                <div class="col-sm-6">
-                                    <div class="col-sm-6 mb-4 mt-4"
-                                         style="margin-left: 50%; margin-top: 30px">
-                                        <div class="container2">
-                                            <img src="img/amazonicas.jpg" alt="Avatar"
-                                                 class="image2 shadow"
-                                                 style="height: 300px; width: 400px">
-                                            <a class="overlay2" style="height: 300px; width: 400px" href="#">
-                                                <H1 class="text2 font-weight-bolder">AMAZONAS</H1>
-                                            </a>
-                                        </div>
+                        <div class="container">
+                            <div class="row mb-5 mt-5 ml-5">
+                                <div class="col-6">
+                                    <div class="container2">
+                                        <img src="img/amazonicas.jpg" alt="Avatar"
+                                             class="image2 shadow"
+                                             style="height: 200px; width: 300px">
+                                        <a class="overlay2" style="height: 200px; width: 300px" href="listaRestaurantes.html">
+                                            <h1 class="text2 font-weight-bolder">AMAZONAS</h1>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="container2">
+                                        <img src="img/oriental.jpg" alt="Avatar"
+                                             class="image2 shadow"
+                                             style="height: 200px; width: 300px">
+                                        <a class="overlay2" style="height: 200px; width: 300px" href="listaRestaurantes.html">
+                                            <h1 class="text2 font-weight-bolder">ORIENTALS</h1>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--
+                                <div class="column">
+                                    <div class="col-sm-6">
+                                        <div class="col-sm-6 mb-4 mt-4"
+                                             style="margin-left: 50%; margin-top: 30px">
+                                            <div class="container2">
+                                                <img src="img/amazonicas.jpg" alt="Avatar"
+                                                     class="image2 shadow"
+                                                     style="height: 300px; width: 400px">
+                                                <a class="overlay2" style="height: 300px; width: 400px" href="#">
+                                                    <H1 class="text2 font-weight-bolder">AMAZONAS</H1>
+                                                </a>
+                                            </div>
 
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="column">
-                                <div class="col-sm-6">
-                                    <div class="col-sm-6 mb-4 mt-4" style="margin-left: 50%">
-                                        <div class="container2">
-                                            <img src="img/oriental.jpg" alt="Avatar"
-                                                 class="image2 shadow"
-                                                 style="height: 300px; width: 400px">
-                                            <a class="overlay2" style="height: 300px; width: 400px">
-                                                <H1 class="text2 font-weight-bolder">ORIENTALS</H1>
-                                            </a>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="column" style="height: 370px">
-                                <div class="col-sm-6">
-                                    <div class="col-sm-6 mb-4 mt-4"
-                                         style="margin-left: 50%; margin-top: 10px; margin-bottom: 200px">
-                                        <div class="container2">
-                                            <img src="img/marina.jpg" alt="Avatar"
-                                                 class="image2 shadow"
-                                                 style="height: 300px; width: 400px">
-                                            <a class="overlay2" style="height: 300px; width: 400px">
-                                                <H1 class="text2 font-weight-bolder">MARINO</H1>
-                                            </a>
+                                <div class="column">
+                                    <div class="col-sm-6">
+                                        <div class="col-sm-6 mb-4 mt-4" style="margin-left: 50%">
+                                            <div class="container2">
+                                                <img src="img/oriental.jpg" alt="Avatar"
+                                                     class="image2 shadow"
+                                                     style="height: 300px; width: 400px">
+                                                <a class="overlay2" style="height: 300px; width: 400px">
+                                                    <H1 class="text2 font-weight-bolder">ORIENTALS</H1>
+                                                </a>
+                                            </div>
                                         </div>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="col-sm-6">
+                                        <div class="col-sm-6 mb-4 mt-4"
+                                             style="margin-left: 50%; margin-top: 10px; margin-bottom: 200px">
+                                            <div class="container2">
+                                                <img src="img/marina.jpg" alt="Avatar"
+                                                     class="image2 shadow"
+                                                     style="height: 300px; width: 400px">
+                                                <a class="overlay2" style="height: 300px; width: 400px">
+                                                    <H1 class="text2 font-weight-bolder">MARINO</H1>
+                                                </a>
+                                            </div>
 
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="column">
-                                <div class="col-sm-6">
-                                    <div class="col-sm-6 mb-4 mt-4"
-                                         style="margin-left: 50%; margin-top: 10px; margin-bottom: 70px">
-                                        <div class="container2">
-                                            <img src="img/postres.jpg" alt="Avatar"
-                                                 class="image2 shadow"
-                                                 style="height: 300px; width: 400px">
-                                            <a class="overlay2" style="height: 300px; width: 400px">
-                                                <H1 class="text2 font-weight-bolder">POSTRES</H1>
-                                            </a>
                                         </div>
                                     </div>
                                 </div>
+                                <div class="column">
+                                    <div class="col-sm-6">
+                                        <div class="col-sm-6 mb-4 mt-4"
+                                             style="margin-left: 50%; margin-top: 10px; margin-bottom: 70px">
+                                            <div class="container2">
+                                                <img src="img/postres.jpg" alt="Avatar"
+                                                     class="image2 shadow"
+                                                     style="height: 300px; width: 400px">
+                                                <a class="overlay2" style="height: 300px; width: 400px">
+                                                    <H1 class="text2 font-weight-bolder">POSTRES</H1>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
                             </div>
+                            <div class="row mb-5 mt-5 ml-5">
+                                <div class="col-6">
+                                    <div class="container2">
+                                        <img src="img/postres.jpg" alt="Avatar"
+                                             class="image2 shadow"
+                                             style="height: 200px; width: 300px">
+                                        <a class="overlay2" style="height: 200px; width: 300px" href="listaRestaurantes.html">
+                                            <h1 class="text2 font-weight-bolder">POSTRES</h1>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="container2">
+                                        <img src="img/marina.jpg" alt="Avatar"
+                                             class="image2 shadow"
+                                             style="height: 200px; width: 300px">
+                                        <a class="overlay2" style="height: 200px; width: 300px" href="listaRestaurantes.html">
+                                            <h1 class="text2 font-weight-bolder">MARINO</h1>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
+
                 </div>
                 <!-- /.container-fluid -->
 
@@ -400,11 +442,13 @@
             <div class="modal-body">Al seleecionar el boton salir, usted cerrará su sesión.</div>
             <div class="modal-footer">
                 <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                <a class="btn btn-primary" style="background-color: #701111; color: #FFFFFF; border: #701111" href="/html/login.html">Cerrar Sesión</a>
+                <a class="btn btn-primary" style="background-color: #701111; color: #FFFFFF; border: #701111"
+                   href="/html/login.html">Cerrar Sesión</a>
             </div>
         </div>
     </div>
 </div>
+
 
 <!-- Bootstrap core JavaScript-->
 <script src="../bootstrap/vendor/jquery/jquery.min.js"></script>
