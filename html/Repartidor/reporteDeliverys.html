@@ -211,7 +211,7 @@
                 <!-- DataTales Example -->
                 <form>
 
-                    <div class="form-group row">
+                    <div class="row">
                         <div class="col-sm-2  col-lg-2  mb-2 mb-sm-0">
                             <input type="busquedaRestaurante" class="form-control"
                                    id="exampleRestaurante"
@@ -234,13 +234,35 @@
                                 <option value="Jesús María">Jesús María</option>
                             </select>
                         </div>
-                        <div class="col-sm-2 col-lg-2 mb-2">
+                        <div class="col-sm-2 col-lg-2 mb-3">
                             <input placeholder="Desde" class="form-control" type="text"
                                    onfocus="(this.type='date')" onblur="(this.type='text')" id="date1">
                         </div>
-                        <div class="col-sm-2 col-lg-2  mb-2">
+                        <div class="col-sm-2 col-lg-2  mb-3">
                             <input placeholder="Hasta" class="form-control" type="text"
                                    onfocus="(this.type='date')" onblur="(this.type='text')" id="date2">
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2 col-lg-2  mb-2 mb-sm-0">
+                            <select class="form-control  ">
+                                <option value="" disabled selected>Monto</option>
+                                <option value="monto1">S/. 0.0 - S/. 20.0</option>
+                                <option value="monto2">S/. 20. - S/. 40.0</option>
+                                <option value="monto3">S/. 40.0 - S/. 60.0</option>
+                                <option value="monto4">S/. 60.0 - S/. 80.0</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-2 col-lg-2  mb-2 mb-sm-0">
+                            <select class="form-control  ">
+                                <option value="" disabled selected>Valoracion</option>
+                                <option value="val1">0 - 1</option>
+                                <option value="val2">1 - 2</option>
+                                <option value="val3">2 - 3</option>
+                                <option value="val4">3 - 4</option>
+                                <option value="val4">4 - 5</option>
+                            </select>
                         </div>
                         <div class="col-sm-2 mb-2 mb-sm-0">
                             <button class="btn" style="background-color:#701111; color:white; border:#701111" type="button">
@@ -250,8 +272,6 @@
                         <div class="col-sm-2 mb-2 col-lg-2  " style="margin-right: 10px" >
                             <a class="btn btn-secondary " >Quitar filtros</a>
                         </div>
-
-
                     </div>
 
 
