@@ -199,7 +199,7 @@
                     </div>
                     <div class="card-body">
                         <div class="table-responsive">
-                            <h4 class="text-danger text-left h4 mb-4 text-black-500 ">Arroz con Pollo
+                            <h4 class="text-danger text-left h4 mb-4 text-black-500 "> <b>Arroz con Pollo</b>
                             </h4>
                             <TABLE class="table">
                                 <form id="editar" method="POST"
@@ -216,14 +216,19 @@
                                         <div class="form-group">
                                             <TD ROWSPAN=4><img
                                                     src="https://upload.wikimedia.org/wikipedia/commons/3/39/Arroz-con-Pollo.jpg"
-                                                    width="230" style="position:absolute;left:1220px;top:240px;">
+                                                    width="280">
                                             </TD>
                                         </div>
                                     </TR>
                                 <TR>
                                     <div class="form-group">
-                                        <TD><b>Precio: S/.</b></TD>
-                                        <td><br><input name="precio" type="text" class="form-control" value="39.90">
+                                        <TD><b>Precio:</b></TD>
+
+                                        <td>
+                                            <div class="input-group-prepend">
+                                            <span class="input-group-text">S/.</span>
+                                           <br>
+                                                <input name="cantidad" type="text" class="form-control" value="3.50"></div>
                                             <h1 style="color: red; font-size: small; text-align: left">Debes insertar un número positivo</h1>
                                         </td>
                                     </div>
@@ -233,7 +238,8 @@
 
                                     <div class="form-group">
                                         <TD><b>Extras: </b></TD>
-                                        <td><div class="form-row justify-content-center">
+                                        <td>
+                                            <div class="form-row justify-content-center">
                                             <div class="col-md-5 mb-4">
                                                 <div class="form-check">
                                                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
@@ -267,6 +273,7 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        </td>
                                     </div>
                                 </TR>
                                 </form>

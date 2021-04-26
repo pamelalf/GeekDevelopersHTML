@@ -21,7 +21,7 @@
     <link href="../bootstrap/css/sb-admin-2.css" rel="stylesheet">
 
 
-    <link href="css/cssRepartidor.css" rel="stylesheet" type="text/css">
+    <link href="estilosAdminRest.css" rel="stylesheet" type="text/css">
     <!-- Custom styles for this page -->
     <link href="../bootstrap/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 
@@ -74,7 +74,7 @@
             </a>
             <div class="collapse" id="submenu1" aria-expanded="false">
                 <ul class="flex-column pl-2 nav">
-                    <li class="nav-item"><a class="nav-link py-0" href="reporteDeliverys.html"><span>Reporte de deliverys</span></a></li>
+                    <li class="nav-item"><a class="nav-link py-0" href="reporteDeliverys.html"><span>Reporte de deliberys</span></a></li>
                 </ul>
                 <ul class="flex-column pl-2 nav">
                     <li class="nav-item"><a class="nav-link py-0" href="reporteIngresos.html"><span>Reporte de ingresos</span></a></li>
@@ -183,7 +183,7 @@
                         <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <span class="mr-2 d-none d-lg-inline text-gray-600 small">Repartidor X</span>
-                            <img class="img-profile rounded-circle" src="../bootstrap/img/undraw_profile.svg">
+                            <i class="fas fa-user"></i>
                         </a>
                         <!-- Dropdown - User Information -->
                         <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
@@ -211,49 +211,54 @@
                 <!-- DataTales Example -->
                 <form>
                     <div class=" form-group row" >
-
-                        <div class="col-sm-6 mb-2 " style="position: relative; left: 80%" >
-                           Ingreso total : S/. 28.0
+                        <div class="col-sm-6 mb-2  " >
+                            <a class="btn btn-secondary " >Quitar filtros</a>
                         </div>
-
-
+                        <div class="col-sm-4 mb-2 " style="position: relative; left: 33.5%" >
+                           Ingreso total : S/. 1176.00
+                        </div>
                     </div>
                     <div class="form-group row">
-                        <div class="col-sm-2 mb-2">
-                            <input placeholder="Desde" class="form-control" type="text"
-                                   onfocus="(this.type='date')" onblur="(this.type='text')" id="date1">
-                        </div>
-                        <div class="col-sm-2 mb-2">
-                            <input placeholder="Hasta" class="form-control" type="text"
-                                   onfocus="(this.type='date')" onblur="(this.type='text')" id="date2">
-                        </div>
-                        <div class="col-sm-2 mb-2 mb-sm-0">
+                        <div class="col-sm-3 mb-2">
                             <select class="form-control  ">
-                                <option value="" disabled selected>Buscar por distrito</option>
-                                <option value="Cercado de Lima">Cercado de Lima</option>
-                                <option value="Bellavista">Bellavista</option>
-                                <option value="Carmen de la Legua">Carmen de la Legua</option>
-                                <option value="La Perla">La Perla</option>
-                                <option value="La Punta">La Punta</option>
-                                <option value="Ventanilla"> Ventanilla</option>
-                                <option value="Barranco">Barranco</option>
-                                <option value="Breña">Breña</option>
-                                <option value="Comas">Comas</option>
-                                <option value="Chorrillos">Chorrillos</option>
-                                <option value="El Agustino">El Agustino</option>
-                                <option value="Jesús María">Jesús María</option>
+                                <option value="" disabled selected>Año</option>
+                                <option value="2015">2015</option>
+                                <option value="2016">2016</option>
+                                <option value="2017">2017</option>
+                                <option value="2018">2018</option>
+                                <option value="2019">2019</option>
+                                <option value="2020">2020</option>
+                                <option value="2021">2021</option>
                             </select>
                         </div>
-                        <div class="col-sm-2 mb-2 mb-sm-0">
-                            <input type="busquedaRestaurante" class="form-control"
-                                   id="exampleRestaurante"
-                                   placeholder="Búsqueda por restaurante">
+                        <div class="col-sm-3 mb-2">
+                            <select class="form-control  ">
+                                <option value="" disabled selected>Mes</option>
+                                <option value="1">Enero</option>
+                                <option value="2">Febrero</option>
+                                <option value="3">Marzo</option>
+                                <option value="4">Abril</option>
+                                <option value="5">Mayo</option>
+                                <option value="6">Junio</option>
+                                <option value="7">Julio</option>
+                                <option value="8">Agosto</option>
+                                <option value="9">Septiembre</option>
+                                <option value="10">Octubre</option>
+                                <option value="11">Noviembre</option>
+                                <option value="12">Diciembre</option>
+                            </select>
                         </div>
-                        <div class="col-sm-2 col-lg-2  mb-2  " style="margin-right: 10px" >
-                            <a class="btn btn-secondary " >Filtrar</a>
+                        <div class="col-sm-3 mb-2 mb-sm-0">
+                            <select class="form-control  ">
+                                <option value="" disabled selected>Entregas a un</option>
+                                <option value="1">Mismo distrito</option>
+                                <option value="2">Diferente distrito</option>
+                            </select>
                         </div>
-                        <div class="col-sm-2 mb-2 col-lg-2  " style="margin-right: 10px" >
-                            <a class="btn btn-secondary " >Quitar filtros</a>
+                        <div class="col-sm-3 mb-2 mb-sm-0">
+                            <button class="btn" style="background-color:#701111; color:white; border:#701111" type="button">
+                                <i class="fas fa-filter"></i>
+                            </button>
                         </div>
                     </div>
 
@@ -265,7 +270,7 @@
 
                         <div class="d-sm-flex align-items-center justify-content-between">
 
-                            <h5 class="font-weight-bold text-white text-lg-center mx-auto ">REPORTE DE INGRESOS</h5>
+                            <h5 class="font-weight-bold text-white text-lg-center mx-auto ">REPORTE DE INGRESOS - 2021</h5>
                             <a class="btn btn-warning mr-1">Exportar</a>
                         </div>
 
@@ -276,118 +281,110 @@
                                 <thead>
                                 <tr>
                                     <th class="text-center">
-                                        N°
+                                        Mes
                                     </th>
                                     <th class="text-center">
-                                        Código
+                                        Entregas a un mismo distrito
                                     </th>
                                     <th class="text-center">
-                                        Restaurante
-                                    </th>
-
-                                    <th class="text-center">
-                                        Distrito
+                                        Entregas a un diferente distrito
                                     </th>
                                     <th class="text-center">
-                                        Fecha
-                                    </th>
-                                    <th class="text-center">
-                                        Ingresos
-                                    </th>
-                                    <th class="text-center">
-                                        Valoración
+                                        Total del mes
                                     </th>
                                 </tr>
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <td style="width: 300px">1</td>
-                                    <td style="width: 160px">123455</td>
-                                    <td style="width: 250px">La Leña</td>
-                                    <td style="width: 160px">La Molina</td>
-                                    <td style="width: 160px">04/02/2021</td>
-                                    <td style="width: 160px">S/. 4</td>
-                                    <td style="width: 160px">4.5</td>
-
+                                    <td style="width: 300px">Enero</td>
+                                    <td style="width: 250px">S/.50</td>
+                                    <td style="width: 250px">S/.48</td>
+                                    <td style="width: 160px">S/.98</td>
                                 </tr>
                                 <tr>
-                                    <td style="width: 300px">2</td>
-                                    <td style="width: 160px">123455</td>
-                                    <td style="width: 250px">La Leña</td>
-                                    <td style="width: 160px">La Molina</td>
-                                    <td style="width: 160px">04/02/2021</td>
-                                    <td style="width: 160px">S/. 4</td>
-                                    <td style="width: 160px">4.5</td>
-
+                                    <td style="width: 300px">Febrero</td>
+                                    <td style="width: 700px">S/.50</td>
+                                    <td style="width: 250px">S/.48</td>
+                                    <td style="width: 160px">S/.98</td>
                                 </tr>
                                 <tr>
-                                    <td style="width: 300px">3</td>
-                                    <td style="width: 160px">123455</td>
-                                    <td style="width: 250px">La Leña</td>
-                                    <td style="width: 160px">La Molina</td>
-                                    <td style="width: 160px">04/02/2021</td>
-                                    <td style="width: 160px">S/. 4</td>
-                                    <td style="width: 160px">4.5</td>
-
+                                    <td style="width: 300px">Marzo</td>
+                                    <td style="width: 700px">S/.50</td>
+                                    <td style="width: 250px">S/.48</td>
+                                    <td style="width: 160px">S/.98</td>
                                 </tr>
                                 <tr>
-                                    <td style="width: 300px">4</td>
-                                    <td style="width: 160px">123455</td>
-                                    <td style="width: 250px">La Leña</td>
-                                    <td style="width: 160px">La Molina</td>
-                                    <td style="width: 160px">04/02/2021</td>
-                                    <td style="width: 160px">S/. 4</td>
-                                    <td style="width: 160px">4.5</td>
-
+                                    <td style="width: 300px">Enero</td>
+                                    <td style="width: 700px">S/.50</td>
+                                    <td style="width: 250px">S/.48</td>
+                                    <td style="width: 160px">S/.98</td>
                                 </tr>
                                 <tr>
-                                    <td style="width: 300px">5</td>
-                                    <td style="width: 160px">123455</td>
-                                    <td style="width: 250px">La Leña</td>
-                                    <td style="width: 160px">La Molina</td>
-                                    <td style="width: 160px">04/02/2021</td>
-                                    <td style="width: 160px">S/. 4</td>
-                                    <td style="width: 160px">4.5</td>
-
+                                    <td style="width: 300px">Abril</td>
+                                    <td style="width: 700px">S/.50</td>
+                                    <td style="width: 250px">S/.48</td>
+                                    <td style="width: 160px">S/.98</td>
                                 </tr>
                                 <tr>
-                                    <td style="width: 300px">6</td>
-                                    <td style="width: 160px">123455</td>
-                                    <td style="width: 250px">La Leña</td>
-                                    <td style="width: 160px">La Molina</td>
-                                    <td style="width: 160px">04/02/2021</td>
-                                    <td style="width: 160px">S/. 4</td>
-                                    <td style="width: 160px">4.5</td>
-
+                                    <td style="width: 300px">Mayo</td>
+                                    <td style="width: 700px">S/.50</td>
+                                    <td style="width: 250px">S/.48</td>
+                                    <td style="width: 160px">S/.98</td>
                                 </tr>
                                 <tr>
-                                    <td style="width: 300px">7</td>
-                                    <td style="width: 160px">123455</td>
-                                    <td style="width: 250px">La Leña</td>
-                                    <td style="width: 160px">La Molina</td>
-                                    <td style="width: 160px">04/02/2021</td>
-                                    <td style="width: 160px">S/. 4</td>
-                                    <td style="width: 160px">4.5</td>
-
+                                    <td style="width: 300px">Junio</td>
+                                    <td style="width: 700px">S/.50</td>
+                                    <td style="width: 250px">S/.48</td>
+                                    <td style="width: 160px">S/.98</td>
                                 </tr>
                                 <tr>
-                                    <td style="width: 300px">8</td>
-                                    <td style="width: 160px">123455</td>
-                                    <td style="width: 250px">La Leña</td>
-                                    <td style="width: 160px">La Molina</td>
-                                    <td style="width: 160px">04/02/2021</td>
-                                    <td style="width: 160px">S/. 4</td>
-                                    <td style="width: 160px">4.5</td>
-
+                                    <td style="width: 300px">Julio</td>
+                                    <td style="width: 700px">S/.50</td>
+                                    <td style="width: 250px">S/.48</td>
+                                    <td style="width: 160px">S/.98</td>
                                 </tr>
-
+                                <tr>
+                                    <td style="width: 300px">Agosto</td>
+                                    <td style="width: 700px">S/.50</td>
+                                    <td style="width: 250px">S/.48</td>
+                                    <td style="width: 160px">S/.98</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 300px">Septiembre</td>
+                                    <td style="width: 700px">S/.50</td>
+                                    <td style="width: 250px">S/.48</td>
+                                    <td style="width: 160px">S/.98</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 300px">Octubre</td>
+                                    <td style="width: 700px">S/.50</td>
+                                    <td style="width: 250px">S/.48</td>
+                                    <td style="width: 160px">S/.98</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 300px">Noviembre</td>
+                                    <td style="width: 700px">S/.50</td>
+                                    <td style="width: 250px">S/.48</td>
+                                    <td style="width: 160px">S/.98</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 300px">Diciembre</td>
+                                    <td style="width: 700px">S/.50</td>
+                                    <td style="width: 250px">S/.48</td>
+                                    <td style="width: 160px">S/.98</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 300px"></td>
+                                    <td style="width: 700px"></td>
+                                    <td style="width: 250px">TOTAL:</td>
+                                    <td style="width: 160px">S/.1176</td>
+                                </tr>
                                 </tbody>
 
                             </table>
 
                         </div>
-                        <!--Pagination -->
-                        <div class="pagination" style=" margin-left: 630px ;align-content: center; position: relative;right: 25%">
+                        <div class="pagination" style=" margin-left: 630px ;align-content: center">
                             <a  href="#">&laquo;</a>
                             <a  href="#" class="active">1</a>
                             <a href="#">2</a>
@@ -397,7 +394,6 @@
                             <a href="#">6</a>
                             <a href="#">&raquo;</a>
                         </div>
-                        <!-- End of pagination -->
                     </div>
                     <!-- Footer -->
                     <footer class="sticky-footer bg-white">
@@ -444,7 +440,7 @@
             <div class="modal-body">Al seleecionar el boton salir, usted cerrará su sesión.</div>
             <div class="modal-footer">
                 <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                <a class="btn btn-danger" href="/html/login.html">Cerrar Sesión</a>
+                <a class="btn btn-primary" href="/html/login.html">Cerrar Sesión</a>
             </div>
         </div>
     </div>
