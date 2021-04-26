@@ -117,19 +117,6 @@
                     </button>
                 </form>
 
-                <!-- Topbar Search -->
-                <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-                    <div class="input-group">
-                        <input type="text" class="form-control bg-light border-0 small" placeholder="Buscar..."
-                               aria-label="Search" aria-describedby="basic-addon2">
-                        <div class="input-group-append">
-                            <button class="btn" style="background-color:#701111; color:white;" type="button">
-                                <i class="fas fa-search fa-sm"></i>
-                            </button>
-                        </div>
-                    </div>
-                </form>
-
                 <!-- Topbar Navbar -->
                 <ul class="navbar-nav ml-auto">
                     <!-- Al parecer no pasa nada si lo quitamos-->
@@ -275,8 +262,35 @@
 
             <!-- Begin Page Content -->
             <div class="container-fluid">
+                <form>
+                    <div class="form-group row mt-3">
+                        <div class="col-sm-3 mb-1 ">
+                            <div class="input-group">
+                                <input type="text" class="form-control bg-light border-0 small" placeholder="Búsqueda por plato...">
+                                <div class="input-group-append">
+                                    <button class="btn" style="background-color:#701111; color:white;" type="button">
+                                        <i class="fas fa-search fa-sm"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 mb-1">
+                            <select class="form-control">
+                                <option value="">Precio</option>
+                                <option value="">S./00.00 hasta S./5.00</option>
+                                <option value="">S./5.00 hasta S./10.00</option>
+                                <option value="">S./10.00 hasta S./15.00</option>
+                                <option value="">S./15.00 hasta S./20.00</option>
+                                <option value="">S./20.00 a más</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-2 mb-1" style="margin-right: 10px" >
+                            <a class="btn btn-secondary " >Quitar filtros</a>
+                        </div>
+                    </div>
+                </form>
 
-                <div class="card shadow mb-4 mt-5">
+                <div class="card shadow mb-4">
                     <div class="card-header py-3" style="background-color: #701111;">
                         <h5 class="font-weight-bold text-white text-center mb-0">LITTLE CEASERS</h5>
                     </div>

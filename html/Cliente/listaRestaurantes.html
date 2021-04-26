@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Lista Resturantes</title>
+    <title>Pedido Actual</title>
 
     <!-- Custom fonts for this template -->
     <link href="../bootstrap/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -19,11 +19,11 @@
 
     <!-- Custom styles for this template -->
     <link href="../bootstrap/css/sb-admin-2.min.css" rel="stylesheet">
-    <link href="../AdminRest/cssAR/estilosAdminRest.css" rel="stylesheet" type="text/css">
+
     <!-- Custom styles for this page -->
     <link href="../bootstrap/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+    <link href="../AdminRest/cssAR/estilosAdminRest.css" rel="stylesheet" type="text/css">
     <link href="cssC/estilosCliente.css" rel="stylesheet" type="text/css">
-
 
 </head>
 
@@ -57,7 +57,7 @@
                 <div class="bg-white py-2 collapse-inner rounded">
                     <a class="collapse-item" href="listaRestaurantes.html">Restaurantes</a>
 
-                    <a class="collapse-item" href="categorías.html">Categorías</a>
+                    <a class="collapse-item" href="listaRestaurantes.html">Categorías</a>
                 </div>
             </div>
         </li>
@@ -121,19 +121,6 @@
                     </button>
                 </form>
 
-                <!-- Topbar Search -->
-                <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-                    <div class="input-group">
-                        <input type="text" class="form-control bg-light border-0 small" placeholder="Buscar..."
-                               aria-label="Search" aria-describedby="basic-addon2">
-                        <div class="input-group-append">
-                            <button class="btn" style="background-color:#701111; color:white;" type="button">
-                                <i class="fas fa-search fa-sm"></i>
-                            </button>
-                        </div>
-                    </div>
-                </form>
-
                 <!-- Topbar Navbar -->
                 <ul class="navbar-nav ml-auto">
                     <!-- Al parecer no pasa nada si lo quitamos-->
@@ -166,7 +153,7 @@
 
                     <li class="nav-item dropdown no-arrow mx-1">
                         <a class="nav-link dropdown-toggle" href="listaDirecciones.html">
-                            Los Eneldos 204
+                            Av. Carlos Izaguirre
                         </a>
                     </li>
                     <li class="nav-item dropdown no-arrow mx-1">
@@ -276,22 +263,32 @@
 
             </nav>
             <!-- End of Topbar -->
-
-            <!-- -------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- -------------------------------------------------------------------------------------------------------------------------------------------------->
             <!-- Begin Page Content -->
             <div class="container-fluid">
                 <form>
-                    <div class="form-group row mt-2">
-                        <div class="col-sm-3 mb-2 ">
-                            <select class="form-control ">
-                                <option value="" disabled selected>Rango de Precios</option>
-                                <option value="1">Menor a S/15 </option>
-                                <option value="2">S/15 - S/25 </option>
-                                <option value="3">S/25 - S/40</option>
-                                <option value="5">Mayor S/40</option>
+                    <div class="form-group row mt-3">
+                        <div class="col-sm-3 mb-1 ">
+                            <div class="input-group">
+                                <input type="text" class="form-control bg-light border-0 small" placeholder="Búsqueda por restarurante...">
+                                <div class="input-group-append">
+                                    <button class="btn" style="background-color:#701111; color:white;" type="button">
+                                        <i class="fas fa-search fa-sm"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2 mb-1">
+                            <select class="form-control">
+                                <option value="">Precio</option>
+                                <option value="">S./00.00 hasta S./5.00</option>
+                                <option value="">S./5.00 hasta S./10.00</option>
+                                <option value="">S./10.00 hasta S./15.00</option>
+                                <option value="">S./15.00 hasta S./20.00</option>
+                                <option value="">S./20.00 a más</option>
                             </select>
                         </div>
-                        <div class="col-sm-3 mb-2 ">
+                        <div class="col-sm-2 mb-2 ">
                             <select class="form-control ">
                                 <option value="" disabled selected>Valoración</option>
                                 <option value="1">1</option>
@@ -301,21 +298,15 @@
                                 <option value="5">5</option>
                             </select>
                         </div>
-                        <div class="input-group-append col-sm-3 mb-2 ">
+                        <div class="input-group-append col-sm-1 mb-2 ">
                             <button class="btn" style="background-color:#701111; color:white; border:#701111" type="button">
                                 <i class="fas fa-filter"></i>
                             </button>
                         </div>
-                  
-
-                        <div class="col-sm-2 mb-2  " style="margin-right: 10px" >
+                        <div class="col-sm-2" style="margin-right: 10px" >
                             <a class="btn btn-secondary " >Quitar filtros</a>
                         </div>
-
-
-
                     </div>
-
                 </form>
 
                 <!-- DataTales Example -->
@@ -494,9 +485,9 @@
                     </tbody>
                 </table>
         </div>
-                        <div class="pagination" style=" margin-left: 30% ;align-content: center">
-                            <a href="#">&laquo;</a>
-                            <a href="#" class="active">1</a>
+                        <div class="pagination topnav">
+                            <a  href="#">&laquo;</a>
+                            <a  href="#" class="active">1</a>
                             <a href="#">2</a>
                             <a href="#">3</a>
                             <a href="#">4</a>
