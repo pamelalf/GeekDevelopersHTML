@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Solicitud Informacion Restaurante</title>
+    <title>Visualizar Restaurante</title>
 
     <!-- Custom fonts for this template/BASE-COPIAR-NOBORRAR/bootstrap/vendor/fontawesome-free/css/all.min.css -->
     <link href="../bootstrap/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -19,7 +19,7 @@
 
     <!-- Custom styles for this template -->
     <link href="../bootstrap/css/sb-admin-2.min.css" rel="stylesheet">
-
+    <link href="cssAG/estilosAdmin.css" rel="stylesheet" type="text/css">
 
     <link href="estilosAdminRest.css" rel="stylesheet" type="text/css">
     <!-- Custom styles for this page -->
@@ -54,7 +54,6 @@
                 <i class="fas fa-fw fa-list"></i>
                 <span>Listas</span></a>
         </li>
-
 
 
         <!-- Nav Item - Pages Collapse Menu -->
@@ -142,19 +141,7 @@
                     </button>
                 </form>
 
-                <!-- Topbar Search -->
-                <form
-                        class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-                    <div class="input-group">
-                        <input type="text" class="form-control bg-light border-0 small" placeholder="Buscar..."
-                               aria-label="Search" aria-describedby="basic-addon2">
-                        <div class="input-group-append">
-                            <button class="btn botonbusca" type="button">
-                                <i class="fas fa-search fa-sm"></i>
-                            </button>
-                        </div>
-                    </div>
-                </form>
+
 
                 <!-- Topbar Navbar -->
                 <ul class="navbar-nav ml-auto">
@@ -249,7 +236,7 @@
                 <div class="card shadow mb-4">
                     <div class="card-header py-3 " style="background-color: #701111;">
 
-                        <h5 class="font-weight-bold text-white  text-md-center">INFORME DE SOLICITUD RESTAURANTE</h5>
+                        <h5 class="font-weight-bold text-white  text-md-center">INFORMACION DE RESTAURANTE</h5>
 
                         <style>
                             .containerta {
@@ -271,11 +258,16 @@
 
                         </style>
                     </div>
+
+                    <div class="card-body"   >
+
+                        <div class="container-fluid justify-content-center">
+
                     <div class="w-25" align="center">
                         <img src="imgAG/fondo.jpg" class="img-fluid img-thumbnail posicion" alt="Sheep">
                     </div>
 
-                    <div class="containerta ">
+                    <div class="containerta " >
 
                         <div class="row">
 
@@ -284,13 +276,14 @@
 
 
                                 <div class="table-responsive">
-                                    <table class="table table-bordered ">
+
+                                    <table class="table table-bordered table-image table-responsive" >
 
                                         <tbody>
-                                        <tr>
+                                        <tr >
 
-                                            <td>Fecha de Registro: 20/01/3113</td>
-                                            <td>Estado: Pendiente </td>
+                                            <td  style="width: 1300px;" >Fecha de Registro: 20/01/3113</td>
+                                            <td  style="width: 1300px;">Estado: Bloqueado </td>
                                         </tr>
                                         <tr>
 
@@ -300,7 +293,7 @@
                                         </tr>
                                         <tr>
 
-                                            <td>Distrito: Lopez Flores</td>
+                                            <td>Distrito: San martin</td>
                                             <td>Direccion: Av . Los mangos 2454 </td>
 
                                         </tr>
@@ -312,33 +305,44 @@
                                         <tr>
 
                                             <td>Categoria: Polleria, Suchi, Asiatico, Criollo </td>
-                                            <td>Correo Administrador: 10/25/3210 </td>
+                                            <td>Correo Administrador: mastin@gmail.com </td>
                                         </tr>
+                                        <tr>
 
+                                            <td>Total de ventas: 13154554 </td>
+                                            <td>Promedio de ventas por dia: 3245 </td>
+                                        </tr>
+                                        <tr>
 
+                                            <td>Valoracion:
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+
+                                            </td>
+                                            <td>Plato más vendido: Pollito a la brasa </td>
+                                        </tr>
                                         <tr>
 
                                             <td>Ubicaión: -115463255  - 14511</td>
                                             <td>
-                                                <a href="#" class="btn btn-success btn-icon-split">
-                                        <span class="icon text-white-50">
-                                            <i class="fas fa-check"></i>
-                                        </span>
-                                                    <span class="text">Aceptar</span>
-                                                </a>
-                                                <a href="#" class="btn btn-danger btn-icon-split">
-                                        <span class="icon text-white-50">
-                                            <i class="fas fa-times"></i>
-                                        </span>
-                                                    <span class="text">Rechazar</span>
-                                                </a>
 
-                                                <a href="#" class="btn btn-warning btn-icon-split">
+                                                <a href="lista.html" class="btn btn-warning btn-icon-split">
                                         <span class="icon text-white-50">
                                             <i class="fas fa-reply"></i>
                                         </span>
                                                     <span class="text">Volver</span>
                                                 </a>
+                                                <a href="#" class="btn btn-secondary btn-icon-split">
+                                        <span class="icon text-white-50">
+                                            <i class="fas fa-lock"></i>
+                                        </span>
+                                                    <span class="text">Desbloquear</span>
+                                                </a>
+
+
                                             </td>
 
                                         </tr>
@@ -350,10 +354,270 @@
                             </div>
                         </div>
                     </div>
+                        </div>
+                    </div>
 
                 </div>
-                <!-- /.container-fluid -->
 
+
+                <form>
+
+                    <div class="form-group row">
+
+                        <div class="col-sm-2 mb-1 ">
+                            <select class="form-control  ">
+                                <option value="" disabled selected>Valoracion</option>
+                                <option value="Pendiente">1</option>
+                                <option value="Pendiente">2</option>
+
+                                <option value="Entregado">3</option>
+
+                                <option value="Cancelado">4</option>
+
+                                <option value="Cancelado">5</option>
+
+                            </select>
+                        </div>
+
+                        <div class="col-sm-2 mb-1">
+                            <select class="form-control">
+                                <option value="">Fecha</option>
+                                <option value="">Última Hora</option>
+                                <option value="">Hoy</option>
+                                <option value="">Esta semana</option>
+                                <option value="">Este mes</option>
+                                <option value="">Este año</option>
+                            </select>
+                        </div>
+
+                        <div class="input-group-append col-sm-1 mb-3 ml-0">
+                            <button class="btn" style="background-color:#701111; color:white; border:#701111" type="button">
+                                <i class="fas fa-filter"></i>
+                            </button>
+                        </div>
+                        <div class="col-sm-2 mb-1 ml-0" style="text-align: right">
+                            <a class="btn btn-secondary">Quitar filtros</a>
+                        </div>
+                    </div>
+
+
+                </form>
+
+                <!-- /.container-fluid -->
+                <div class="card shadow ">
+                    <div class="card-header py-3 " style="background-color: #701111;">
+
+                        <div class="d-sm-flex align-items-center justify-content-between">
+
+                            <h5 class="font-weight-bold text-white text-lg-center mx-auto">COMENTARIOS</h5>
+
+                        </div>
+
+                    </div>
+
+                    <div class="card-body" >
+
+                            <div class="container-fluid" >
+
+                                <div class="table-responsive " >
+                                    <table class="table table-bordered table-image table-responsive">
+
+                                        <tbody>
+                                        <tr>
+
+                                            <td style="width: 1300px;"> <h4  style="color: black">lOPEZ MARTINES MENIALA  </h4>
+                                                <p >Me gusto toda la comida, uhmmm riquisimo xd. Recomendaria que el pollito a la brasa
+                                                    con las extras de aliños y su pan de ajo. </p>
+                                            </td>
+
+
+                                            <td style="width: 300px;" align="center">
+
+                                                <div class="col-sm-auto m-5" >
+                                                    <div class="row ">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    </div>
+                                                    <div class="row ">
+                                                        <h7> 20/02/2021 </h7>
+                                                    </div>
+                                                </div>
+                                            </td>
+
+
+
+
+
+                                        </tr><tr>
+
+                                            <td style="width: 1300px;"> <h4  style="color: black">lOPEZ MARTINES MENIALA  </h4>
+                                                <p >Me gusto toda la comida, uhmmm riquisimo xd. Recomendaria que el pollito a la brasa
+                                                    con las extras de aliños y su pan de ajo. </p>
+                                            </td>
+
+
+                                            <td style="width: 300px;" align="center">
+
+                                                <div class="col-sm-auto m-5" >
+                                                    <div class="row ">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                    <div class="row ">
+                                                        <h7> 20/02/2021 </h7>
+                                                    </div>
+                                                </div>
+                                            </td>
+
+
+
+
+
+                                        </tr><tr>
+
+                                            <td style="width: 1300px;"> <h4  style="color: black">lOPEZ MARTINES MENIALA  </h4>
+                                                <p >Me gusto toda la comida, uhmmm riquisimo xd. Recomendaria que el pollito a la brasa
+                                                    con las extras de aliños y su pan de ajo. </p>
+                                            </td>
+
+
+                                            <td style="width: 300px;" align="center">
+
+                                                <div class="col-sm-auto m-5" >
+                                                    <div class="row ">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                    <div class="row ">
+                                                        <h7> 20/02/2021 </h7>
+                                                    </div>
+                                                </div>
+                                            </td>
+
+
+
+
+
+                                        </tr><tr>
+
+                                            <td style="width: 1300px;"> <h4  style="color: black">lOPEZ MARTINES MENIALA  </h4>
+                                                <p >Me gusto toda la comida, uhmmm riquisimo xd. Recomendaria que el pollito a la brasa
+                                                    con las extras de aliños y su pan de ajo. </p>
+                                            </td>
+
+
+                                            <td style="width: 300px;" align="center">
+
+                                                <div class="col-sm-auto m-5" >
+                                                    <div class="row ">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                    <div class="row ">
+                                                        <h7> 20/02/2021 </h7>
+                                                    </div>
+                                                </div>
+                                            </td>
+
+
+
+
+
+                                        </tr><tr>
+
+                                            <td style="width: 1300px;"> <h4  style="color: black">lOPEZ MARTINES MENIALA  </h4>
+                                                <p >Me gusto toda la comida, uhmmm riquisimo xd. Recomendaria que el pollito a la brasa
+                                                    con las extras de aliños y su pan de ajo. </p>
+                                            </td>
+
+
+                                            <td style="width: 300px;" align="center">
+
+                                                <div class="col-sm-auto m-5" >
+                                                    <div class="row ">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                    <div class="row ">
+                                                        <h7> 20/02/2021 </h7>
+                                                    </div>
+                                                </div>
+                                            </td>
+
+
+
+
+
+                                        </tr><tr>
+
+                                            <td style="width: 1300px;"> <h4  style="color: black">lOPEZ MARTINES MENIALA  </h4>
+                                                <p >Me gusto toda la comida, uhmmm riquisimo xd. Recomendaria que el pollito a la brasa
+                                                    con las extras de aliños y su pan de ajo. </p>
+                                            </td>
+
+
+                                            <td style="width: 300px;" align="center">
+
+                                                <div class="col-sm-auto m-5" >
+                                                    <div class="row ">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                    <div class="row ">
+                                                        <h7> 20/02/2021 </h7>
+                                                    </div>
+                                                </div>
+                                            </td>
+
+
+
+
+
+                                        </tr>
+
+
+                                        </tbody>
+
+                                    </table>
+                                    <div class="pagination" style=" margin-left: 630px ;align-content: center">
+                                        <a  href="#">&laquo;</a>
+                                        <a  href="#" class="active">1</a>
+                                        <a href="#">2</a>
+                                        <a href="#">3</a>
+                                        <a href="#">4</a>
+                                        <a href="#">5</a>
+                                        <a href="#">6</a>
+                                        <a href="#">&raquo;</a>
+                                    </div>
+
+                                </div>
+
+
+
+                            </div>
+
+
+                    </div>
+
+                </div>
             </div>
             <!-- End of Main Content -->
 
