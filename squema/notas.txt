@@ -1,0 +1,22 @@
+repartidor - pedido
+	- direcciones
+	- movilidad
+
+- Restaurante
+	-categoria (4 columnas o muchos a muchos)
+	-pedidos
+		-platos
+		-adicionales(bebida, cubiertos, etc)
+		-cupon
+			-descuentos
+			-
+
+
+- direcciones <- PARA TODOS
+ ● idDireccion - INT - AI - NN
+ ● nombre VAVRCHAR(45)
+ ● latitud INT - NN
+ ● longitud INT
+
+
+5 direcciones

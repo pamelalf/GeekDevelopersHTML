@@ -132,7 +132,8 @@
                                            placeholder="Buscar..." aria-label="Search"
                                            aria-describedby="basic-addon2">
                                     <div class="input-group-append">
-                                        <button class="btn" style="background-color:#701111; color:white;" type="button">
+                                        <button class="btn" style="background-color:#701111; color:white;"
+                                                type="button">
                                             <i class="fas fa-search fa-sm"></i>
                                         </button>
                                     </div>
@@ -199,7 +200,8 @@
                                     <span class="font-weight-bold">La Rosa Náutica</span>
                                 </div>
                             </a>
-                            <a class="dropdown-item text-center small text-gray-500" href="listaPedidoActual.html">Mostrar todos mis pedidos pendientes</a>
+                            <a class="dropdown-item text-center small text-gray-500" href="listaPedidoActual.html">Mostrar
+                                todos mis pedidos pendientes</a>
                         </div>
                     </li>
 
@@ -212,7 +214,8 @@
                         <!-- Dropdown - Messages -->
                         <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
                              aria-labelledby="messagesDropdown">
-                            <h6 class="dropdown-header font-weight-bold " style="background-color:white; color:#701111; border:#701111;">
+                            <h6 class="dropdown-header font-weight-bold "
+                                style="background-color:white; color:#701111; border:#701111;">
                                 Joham Romucho
                             </h6>
                             <a class="dropdown-item d-flex align-items-center">
@@ -261,20 +264,33 @@
             <div class="container-fluid">
 
                 <div class="card shadow mb-4 mt-5">
+
                     <div class="card-header py-3" style="background-color: #701111;">
-                        <h5 class="font-weight-bold text-white text-center mb-0">DETALLE DEL PRODUCTO</h5>
+                        <div class="row">
+                            <div class="col-1">
+                                <a class="btn" href="carritoCompras.html"><i class="fas fa-cart-plus" style="color: white"></i></a>
+                            </div>
+                            <div class="col-9 mt-2">
+                                <h5 class="font-weight-bold text-white text-center">LITTLE CEASERS</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="alert alert-info mt-2 ml-2 mr-2" role="alert">
+                        Se agregó un plato al carrito
                     </div>
 
                     <div class="row">
+
                         <div class="col-4 align-content-center">
-                            <div align="center" class="mt-5 mb-5">
+                            <div align="center" class="mt-2 mb-5">
                                 <img src="img/pizza.jpg" style="width: 90%; height: 90%">
                             </div>
 
 
                         </div>
                         <div class="col-8">
-                            <div class="mt-5">
+                            <div class="mt-2">
                                 <div class="form-check-inline">
                                     <h2 style="color:#000000;"><strong>Pizza a la Italiana</strong></h2>
                                     <button class="btn btn-dark ml-5"><i class="fas fa-arrow-left"></i></button>
@@ -291,20 +307,29 @@
                             </div>
                             <form>
                                 <div class="form-check-inline">
-                                    <label for="precio"><strong style="color:#000000;">Añadir: </strong></label>
-                                    <input size="2%" class="form-control ml-3 mr-sm-1 mb-3" type="text" id="precio" style="background: #ededed">
-                                    <span>uni.</span>
+                                    <div class="form-check-inline">
+                                        <label for="precio"><strong style="color:#000000;">Añadir: </strong></label>
+                                        <input size="2%" class="form-control ml-3 mr-sm-1 mb-3" type="text" id="precio"
+                                               style="border-color: lightgray">
+                                        <span>uni.</span>
+                                    </div>
+                                    <div class="ml-2 mb-3" style="color:#EE2D20;">Ingrese un número </div> <!-- | Ingrese más de un plato | Debe agregar un valor mayor que 1 -->
                                 </div>
                                 <br>
                                 <div class="form-check-inline align-content-xl-end mb-5">
-                                    <a class="btn btn-secondary mr-3" href="#" data-toggle="modal" data-target="#extraModal">
+                                    <a class="btn btn-secondary mr-3" href="#" data-toggle="modal"
+                                       data-target="#extraModal">
                                         <i class="fas fa-plus mr-2"></i>
                                         Extras
                                     </a>
 
-                                    <button class="btn btn-cielito mr-3"><i class="fas fa-cart-plus mr-2"></i>Añadir al carrito</button>
-                                    <a class="btn btn-back mr-3" href="listaProductos.html"><i class="fas fa-arrow-left"></i> Regresar</a>
-                                    <a class="btn btn-pay mr-3" href="pagoPedido.html"><i class="fas fa-arrow-right"></i> Ir a Pagar</a>
+                                    <button class="btn btn-cielito mr-3" type="submit"><i
+                                            class="fas fa-cart-plus mr-2"></i>Añadir al carrito
+                                    </button>
+                                    <a class="btn btn-back mr-3" href="listaProductos.html"><i
+                                            class="fas fa-arrow-left"></i> Regresar</a>
+                                    <a class="btn btn-pay mr-3" href="pagoPedido.html"><i
+                                            class="fas fa-arrow-right"></i> Ir a Pagar</a>
                                 </div>
 
                             </form>
@@ -346,7 +371,8 @@
             <div class="modal-body">Al seleecionar el boton salir, usted cerrará su sesión.</div>
             <div class="modal-footer">
                 <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                <a class="btn btn-primary" style="background-color: #701111; color: #FFFFFF; border: #701111" href="/html/login.html">Cerrar Sesión</a>
+                <a class="btn btn-primary" style="background-color: #701111; color: #FFFFFF; border: #701111"
+                   href="/html/login.html">Cerrar Sesión</a>
             </div>
         </div>
     </div>
@@ -358,7 +384,7 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Extras Disponibles</h5>
+                <h5 class="modal-title" id="exampleModalLabel2">Extras Disponibles</h5>
                 <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">×</span>
                 </button>
@@ -382,7 +408,7 @@
                         </div>
                         <div class="col text-center">S/. 5.00</div>
                         <div class="col text-left">
-                            <input class="form-control mr-3" type="text" size="5%" style="background: #ededed">
+                            <input class="form-control mr-3" type="text" size="5%" style="border-color: lightgray">
                         </div>
                     </div>
                     <div class="row">
@@ -399,7 +425,7 @@
                         </div>
                         <div class="col text-center">S/. 5.00</div>
                         <div class="col text-left">
-                            <input class="form-control mr-3" type="text" size="5%" style="background: #ededed">
+                            <input class="form-control mr-3" type="text" size="5%" style="border-color: lightgray">
                         </div>
                     </div>
                     <div class="row">
@@ -416,7 +442,7 @@
                         </div>
                         <div class="col text-center">S/. 5.00</div>
                         <div class="col text-left">
-                            <input class="form-control mr-3" type="text" size="5%" style="background: #ededed">
+                            <input class="form-control mr-3" type="text" size="5%" style="border-color: lightgray">
                         </div>
                     </div>
 
@@ -428,7 +454,7 @@
                             <div class="form-check-inline">
                                 <img class="img-profile rounded-circle" alt="list-style-image"
                                      style="width: 35px; height: 35px"
-                                     src="img/gaseosa.jpg">
+                                     src="img/cuchillo.jpg">
                                 <div class="ml-1"> Inca Kola</div>
                             </div>
                         </div>
@@ -437,7 +463,24 @@
                         </div>
                         <div class="col text-center">S/. 5.00</div>
                         <div class="col text-left">
-                            <input class="form-control mr-3" type="text" size="5%" style="background: #ededed">
+                            <input class="form-control mr-3" type="text" size="5%" style="border-color: lightgray">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4 text-left">
+                            <div class="form-check-inline">
+                                <img class="img-profile rounded-circle" alt="list-style-image"
+                                     style="width: 35px; height: 35px"
+                                     src="img/tenedor.jpg">
+                                <div class="ml-1"> Tenedor</div>
+                            </div>
+                        </div>
+                        <div class="col text-center">
+                            <div class="ml-1"> De plástico</div>
+                        </div>
+                        <div class="col text-center">Gratis</div>
+                        <div class="col text-left">
+                            <input class="form-control mr-3" type="text" size="5%" style="border-color: lightgray">
                         </div>
                     </div>
                     <div class="row">
@@ -454,24 +497,7 @@
                         </div>
                         <div class="col text-center">S/. 5.00</div>
                         <div class="col text-left">
-                            <input class="form-control mr-3" type="text" size="5%" style="background: #ededed">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-4 text-left">
-                            <div class="form-check-inline">
-                                <img class="img-profile rounded-circle" alt="list-style-image"
-                                     style="width: 35px; height: 35px"
-                                     src="img/gaseosa.jpg">
-                                <div class="ml-1"> Inca Kola</div>
-                            </div>
-                        </div>
-                        <div class="col text-center">
-                            <div class="ml-1"> 1.5L de saber peruano</div>
-                        </div>
-                        <div class="col text-center">S/. 5.00</div>
-                        <div class="col text-left">
-                            <input class="form-control mr-3" type="text" size="5%" style="background: #ededed">
+                            <input class="form-control mr-3" type="text" size="5%" style="border-color: lightgray">
                         </div>
                     </div>
 
@@ -492,7 +518,7 @@
                         </div>
                         <div class="col text-center">S/. 5.00</div>
                         <div class="col text-left">
-                            <input class="form-control mr-3" type="text" size="5%" style="background: #ededed">
+                            <input class="form-control mr-3" type="text" size="5%" style="border-color: lightgray">
                         </div>
                     </div>
                     <div class="row">
@@ -509,7 +535,7 @@
                         </div>
                         <div class="col text-center">S/. 5.00</div>
                         <div class="col text-left">
-                            <input class="form-control mr-3" type="text" size="5%" style="background: #ededed">
+                            <input class="form-control mr-3" type="text" size="5%" style="border-color: lightgray">
                         </div>
                     </div>
                     <div class="row">
@@ -526,7 +552,7 @@
                         </div>
                         <div class="col text-center">S/. 5.00</div>
                         <div class="col text-left">
-                            <input class="form-control mr-3" type="text" size="5%" style="background: #ededed">
+                            <input class="form-control mr-3" type="text" size="5%" style="border-color: lightgray">
                         </div>
                     </div>
 

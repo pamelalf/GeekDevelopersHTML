@@ -121,19 +121,6 @@
                         </button>
                     </form>
 
-                    <!-- Topbar Search -->
-                    <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-                        <div class="input-group">
-                            <input type="text" class="form-control bg-light border-0 small" placeholder="Buscar..."
-                                aria-label="Search" aria-describedby="basic-addon2">
-                            <div class="input-group-append">
-                                <button class="btn" style="background-color:#701111; color:white;" type="button">
-                                    <i class="fas fa-search fa-sm"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
 					<!-- Al parecer no pasa nada si lo quitamos-->
@@ -280,34 +267,39 @@
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
 
-                    <!-- DataTales Example -->
-					<form>
-                    <div class=" form-group row" >
-                        <div class="col-sm-12 mb-2 " style="margin-right: 10px; margin-top: 20px" >
-                            <a class="btn btn-secondary" href="listaPedidoActual.html" >Quitar filtros</a>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="col-sm-3 mb-2 mb-sm-0">
-                            <select class="form-control  ">
-                                <option value="" disabled selected>Estado</option>
-                                <option value="Entregado">Entregado</option>
-                                <option value="Cancelado">Cancelado</option>
-                            </select>
-                        </div>
-						<div class="col-sm-3 mb-2">
-                            <input type="busquedaRestaurante" class="form-control"
-                                   id="exampleRestaurante"
-                                   placeholder="Búsqueda por restaurante">
-							
-                        </div>
-						<div class="input-group-append col-sm-3 mb-2 ">
+                    <form>
+                        <div class="form-group row mt-3">
+                            <div class="col-sm-3 mb-1 ">
+                                <div class="input-group">
+                                    <input type="text" class="form-control bg-light border-0 small" placeholder="Búsqueda por restarurante...">
+                                    <div class="input-group-append">
+                                        <button class="btn" style="background-color:#701111; color:white;" type="button">
+                                            <i class="fas fa-search fa-sm"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-2 mb-1">
+                                <select class="form-control">
+                                    <option value="">Estado</option>
+                                    <option value="">Entregado</option>
+                                    <option value="">Cancelado</option>
+
+                                </select>
+                            </div>
+                            <div class="input-group-append col-sm-1 mb-2 ">
                                 <button class="btn" style="background-color:#701111; color:white; border:#701111" type="button">
-                                   <i class=" fas fa-filter"></i>
+                                    <i class="fas fa-filter"></i>
                                 </button>
                             </div>
-                    </div>
-                </form>
+                            <div class="col-sm-2" style="margin-right: 10px" >
+                                <a class="btn btn-secondary " >Quitar filtros</a>
+                            </div>
+                        </div>
+                    </form>
+
+
+                    <!-- DataTales Example -->
                     <div class="card-header py-3 " style="background-color: #701111;">
 
                         <div class="d-sm-flex align-items-center justify-content-between">
