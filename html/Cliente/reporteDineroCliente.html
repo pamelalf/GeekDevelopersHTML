@@ -55,7 +55,7 @@
                     <div class="bg-white py-2 collapse-inner rounded">
                         <a class="collapse-item" href="listaRestaurantes.html">Restaurantes</a>
                     
-                        <a class="collapse-item" href="listaRestaurantes.html">Categorías</a>
+                        <a class="collapse-item" href="categorías.html">Categorías</a>
                     </div>
                 </div>
             </li>
@@ -117,19 +117,6 @@
                         <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
                             <i class="fa fa-bars"></i>
                         </button>
-                    </form>
-
-                    <!-- Topbar Search -->
-                    <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-                        <div class="input-group">
-                            <input type="text" class="form-control bg-light border-0 small" placeholder="Buscar..."
-                                aria-label="Search" aria-describedby="basic-addon2">
-                            <div class="input-group-append">
-                                <button class="btn" style="background-color:#701111; color:white;" type="button">
-                                    <i class="fas fa-search fa-sm"></i>
-                                </button>
-                            </div>
-                        </div>
                     </form>
 
                     <!-- Topbar Navbar -->
@@ -276,33 +263,31 @@
                 <!-- End of Topbar -->
 				<!-- Begin Page Content -->
                 <div class="container-fluid">
-
-				<form>
-                    <div class=" form-group row" >
-                        <div class="col-sm-12 mb-2 " style="margin-right: 10px; margin-top: 20px" >
-                            <a class="btn btn-secondary" href="listaPedidoActual.html" >Quitar filtros</a>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                       
-						<div class="col-sm-2 mb-2">
-                            <input type="busquedaRestaurante" class="form-control"
-                                   id="exampleRestaurante"
-                                   placeholder="Restaurante">
-							
-                        </div>
-						<div class="col-sm-2 mb-2">
-                            <input type="busquedaNumeroPedidos" class="form-control"
-                                   id="exampleCupon"
-                                   placeholder="Cupón">
-							
-                        </div>
-						<div class="col-sm-2 mb-2">
-                                    <input placeholder="Fecha" class="form-control" type="text"
-                                           onfocus="(this.type='date')" onblur="(this.type='text')" id="date1">
+					<form>
+                        <div class="form-group row mt-3">
+                            <div class="col-sm-2 mb-1 ">
+                                <div class="input-group">
+                                    <input type="text" class="form-control bg-light border-0 small" placeholder="Búsqueda por restarurante...">
+                                    <div class="input-group-append">
+                                        <button class="btn" style="background-color:#701111; color:white;" type="button">
+                                            <i class="fas fa-search fa-sm"></i>
+                                        </button>
+                                    </div>
                                 </div>
-						 <div class="col-sm-2 mb-2 mb-sm-0">
-                            <select class="form-control  ">
+                            </div>
+							<div class="col-sm-2 mb-1 ">
+                                <div class="input-group">
+                                    <input type="busquedaNumeroPedidos" class="form-control" id="exampleCumpon" placeholder="Cupón">
+                                    <div class="input-group-append">
+                                        <button class="btn" style="background-color:#701111; color:white;" type="button">
+                                            <i class="fas fa-search fa-sm"></i>
+                                        </button>
+                                    </div>
+                                </div>
+								
+                            </div>
+							<div class="col-sm-2 mb-1">
+                                <select class="form-control  ">
                                 <option value="" disabled selected>Mes</option>
                                 <option value="Enero">Enero</option>
                                 <option value="Febrero">Febrero</option>
@@ -317,14 +302,22 @@
 								<option value="Noviembre">Noviembre</option>
 								<option value="Diciembre">Diciembre</option>
                             </select>
-                        </div>
-						<div class="input-group-append col-sm-3 mb-2 ">
+                            </div>
+							<div class="col-sm-2 mb-1">
+							<input placeholder="Fecha" class="form-control" type="text"
+                                           onfocus="(this.type='date')" onblur="(this.type='text')" id="date1">
+                             </div>
+                            <div class="input-group-append col-sm-1 mb-2 ">
                                 <button class="btn" style="background-color:#701111; color:white; border:#701111" type="button">
-                                   <i class=" fas fa-filter"></i>
+                                    <i class="fas fa-filter"></i>
                                 </button>
                             </div>
-                    </div>
-                </form>
+                            <div class="col-sm-2" style="margin-right: 10px" >
+                                <a class="btn btn-secondary " >Quitar filtros</a>
+                            </div>
+                        </div>
+                    </form>
+				
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3 " style="background-color: #701111;">
