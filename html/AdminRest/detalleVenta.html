@@ -9,10 +9,10 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>REPORTES DE PLATOS</title>
+        <title>DETALLES DE VENTA</title>
 
         <!-- Custom fonts for this template/BASE-COPIAR-NOBORRAR/bootstrap/vendor/fontawesome-free/css/all.min.css -->
-        <link href="../bootstrap/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+        <link href="../bootstrap/vendor/fontawesome-free/css/all.css" rel="stylesheet" type="text/css">
         <link
                 href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
                 rel="stylesheet">
@@ -58,7 +58,7 @@
                 <!-- Nav Item - Pages Collapse Menu -->
                 <li class="nav-item">
                     <a class="nav-link" href="listaPedidos.html">
-                        <i class="fas fas fa-book-open"></i>
+                        <i class="fas fa-book-open"></i>
                         <span>Pedidos</span>
                     </a>
                 </li>
@@ -66,7 +66,7 @@
                 <!-- Nav Item - Utilities Collapse Menu -->
                 <li class="nav-item">
                     <a class="nav-link" href="extras.html">
-                        <i class="fas fas fa-utensils"></i>
+                        <i class="fas fa-utensils"></i>
                         <span>Extras</span>
                     </a>
                 </li>
@@ -84,7 +84,6 @@
                         <span>Cupones</span>
                     </a>
                 </li>
-
                 <!-- Divider -->
                 <hr class="sidebar-divider d-none d-md-block">
 
@@ -111,6 +110,8 @@
                                 <i class="fa fa-bars"></i>
                             </button>
                         </form>
+
+                        <!-- Topbar Search -->
 
 
                         <!-- Topbar Navbar -->
@@ -184,7 +185,6 @@
                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <span class="mr-2 d-none d-lg-inline text-gray-600 small">Joham Romucho</span>
                                     <img class="img-profile rounded-circle" src="../bootstrap/img/undraw_profile.svg">
-
                                 </a>
                                 <!-- Dropdown - User Information -->
                                 <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
@@ -203,178 +203,153 @@
 
                     <!-- Begin Page Content -->
                     <div class="container-fluid">
-                        <form>
-
-                            <div class="form-group row">
-                                <div class="col-sm-2 mb-1 ">
-                                    <input type="text" class="form-control"
-                                           id="examplePlato"
-                                           placeholder="Búsqueda por plato">
-                                </div>
-                                <div class="col-sm-2 mb-2">
-                                    <select class="form-control">
-                                        <option value="">Categorias</option>
-                                        <option value="">Criollo</option>
-                                        <option value="">Oriental</option>
-                                        <option value="">Marino</option>
-                                        <option value="">Postre</option>
-                                    </select>
-                                </div>
-                                <div class="col-sm-2 mb-2">
-                                    <input placeholder="Desde" class="form-control" type="text"
-                                           onfocus="(this.type='date')" onblur="(this.type='text')" id="date1">
-                                </div>
-                                <div class="col-sm-2 mb-2">
-                                    <input placeholder="Hasta" class="form-control" type="text"
-                                           onfocus="(this.type='date')" onblur="(this.type='text')" id="date2">
-                                </div>
-                                <div class="col-sm-2 mb-2">
-                                    <select class="form-control">
-                                        <option value="">Cantidad Vendida</option>
-                                        <option value="">0 uni. hasta 25 uni.</option>
-                                        <option value="">25 uni. hasta 50 uni.</option>
-                                        <option value="">50 uni. hasta 100 uni.</option>
-                                        <option value="">100 uni. a más</option>
-                                    </select>
-                                </div>
-                                <div class="input-group-append col-sm-1 mb-3 ml-0 mr-0">
-                                    <button class="btn" style="background-color:#701111; color:white; border:#701111" type="button">
-                                        <i class="fas fa-filter"></i>
-                                    </button>
-                                </div>
-                                <div class="col-xs-2 mb-1 ml-0 mr-0" style="text-align: right">
-                                    <a class="btn btn-secondary">Quitar filtros</a>
-                                </div>
-                            </div>
-                        </form>
                         <!-- DataTales Example -->
-                        <div class="card shadow mb-4">
+                        <div class="card shadow mb-4 ">
                             <div class="card-header py-3 " style="background-color: #701111;">
-
-                                <div class="d-sm-flex align-items-center justify-content-between">
-
-                                    <h5 class="font-weight-bold text-white text-lg-center mx-auto ">REPORTE DE
-                                        PLATOS</h5>
-                                    <a class="btn btn-warning mr-1">Exportar</a>
-                                </div>
-
+                                <h3 class="h3 font-weight-bold  text-white text-xl-center">DETALLE DE VENTA</h3>
                             </div>
+
+                            <!-- Detalles del pedido -->
+                            <div class="card-header">
+                                <table width="100%" cellspacing="0">
+                                    <td>
+                                        <ul class="list-group col-10  ml-5">
+                                            <li class="text-light list-group-item d-flex justify-content-between align-items-center"
+                                                style="background-color: #701111;">
+                                                <h5><b>Código: </b>0000001</h5>
+                                                <span class="text-light "><h6></h6></span>
+                                            </li>
+                                            <li class="text-light list-group-item d-flex justify-content-between align-items-center"
+                                                style="background-color: #701111;">
+                                                <h5><b>Cliente: </b>Hector Ventura</h5>
+                                                <span class="text-light"><h6></h6></span>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul class="list-group col-10  ml-lg-5">
+                                            <li class="text-light list-group-item d-flex justify-content-between align-items-center"
+                                                style="background-color: #701111;">
+                                                <h5><b>Fecha: </b>08/05/2021</h5>
+                                                <span class="text-light"><h6></h6></span>
+                                            </li>
+                                            <li class="text-light list-group-item d-flex justify-content-between align-items-center"
+                                                style="background-color: #701111;">
+                                                <h5><b>Método de Pago: </b>Efectivo</h5>
+                                                <span class="text-light "><h6></h6></span>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </table>
+                            </div>
+                            <!-- Fin Detalles del pedido -->
                             <div class="card-body">
                                 <div class="table-responsive">
-                                    <table class="table table-bordered">
+                                    <table class="table table-bordered" width="100%" cellspacing="0">
                                         <thead>
                                             <tr>
                                                 <th>
-                                                    N°
+                                                    <div style=text-align:center>#</div>
                                                 </th>
                                                 <th>
-                                                    Nombre del Plato
+                                                    <div style=text-align:center>Plato</div>
                                                 </th>
                                                 <th>
-                                                    Categoria
+                                                    <div style=text-align:center>Cantidad</div>
                                                 </th>
                                                 <th>
-                                                    Fecha
+                                                    <div style=text-align:center>Precio Unitario</div>
                                                 </th>
                                                 <th>
-                                                    Cantidad Vendida
+                                                    <div style=text-align:center>Precio Total</div>
                                                 </th>
+
                                             </tr>
                                         </thead>
                                         <tbody>
+
                                             <tr>
-                                                <td>1</td>
-                                                <td>Arroz con pollo</td>
-                                                <td>Criollo</td>
-                                                <td>08/01/2021</td>
-                                                <td>25 uni.</td>
+                                                <td>
+                                                    <div style="text-align:center">1
+                                                    </div>
+                                                </td>
+                                                <td>Arroz con pollo
+                                                </td>
+                                                <td>
+                                                    <div style="text-align:center">2
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div style=text-align:center>S/.30
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div style=text-align:center>S/.60
+                                                    </div>
+                                                </td>
                                             </tr>
                                             <tr>
-                                                <td>2</td>
-                                                <td>Arroz con pollo</td>
-                                                <td>Criollo</td>
-                                                <td>08/01/2021</td>
-                                                <td>25 uni.</td>
-                                            </tr>
-                                            <tr>
-                                                <td>3</td>
-                                                <td>Arroz con pollo</td>
-                                                <td>Criollo</td>
-                                                <td>08/01/2021</td>
-                                                <td>25 uni.</td>
-                                            </tr>
-                                            <tr>
-                                                <td>4</td>
-                                                <td>Arroz con pollo</td>
-                                                <td>Criollo</td>
-                                                <td>08/01/2021</td>
-                                                <td>25 uni.</td>
-                                            </tr>
-                                            <tr>
-                                                <td>5</td>
-                                                <td>Arroz con pollo</td>
-                                                <td>Criollo</td>
-                                                <td>08/01/2021</td>
-                                                <td>25 uni.</td>
-                                            </tr>
-                                            <tr>
-                                                <td>6</td>
-                                                <td>Arroz con pollo</td>
-                                                <td>Criollo</td>
-                                                <td>08/01/2021</td>
-                                                <td>25 uni.</td>
-                                            </tr>
-                                            <tr>
-                                                <td>7</td>
-                                                <td>Arroz con pollo</td>
-                                                <td>Criollo</td>
-                                                <td>08/01/2021</td>
-                                                <td>25 uni.</td>
-                                            </tr>
-                                            <tr>
-                                                <td>8</td>
-                                                <td>Arroz con pollo</td>
-                                                <td>Criollo</td>
-                                                <td>08/01/2021</td>
-                                                <td>25 uni.</td>
+                                                <td>
+                                                    <div style="text-align:center">2
+                                                    </div>
+                                                </td>
+                                                <td>Lomo Saltado
+                                                </td>
+                                                <td>
+                                                    <div style="text-align:center">2
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div style=text-align:center>S/.35
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div style=text-align:center>S/.70
+                                                    </div>
+                                                </td>
                                             </tr>
 
+                                            <tr>
+                                                <td colspan="3"
+                                                    style="border-bottom-color: white; border-left-color: white"></td>
+                                                <td style="text-align:center" bgcolor="#F5F5F5"><b
+                                                        style="color: #701111">Total</b>
+                                                </td>
+                                                <td style="text-align:center" bgcolor="#F5F5F5"><b
+                                                        style="color: #701111">S/. 130
+                                                </b>
+                                                </td>
+                                            </tr>
+                                            <table class="table">
+                                                <thead>
+                                                    <div style="text-align: center">
+                                                        <div class="btn-group" style="text-align: left" role="group"
+                                                             aria-label="Basic example">
+                                                            <a style="text-decoration: none"
+                                                               class="btn btn-primary mb-1"
+                                                               href="reporteVentas.html"
+                                                               role="button">
+                                                                Regresar
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </thead>
+                                            </table>
                                         </tbody>
-
                                     </table>
-
-                                </div>
-                                <div class="pagination" style=" margin-left: 630px ;align-content: center">
-                                    <a href="#">&laquo;</a>
-                                    <a href="#" class="active">1</a>
-                                    <a href="#">2</a>
-                                    <a href="#">3</a>
-                                    <a href="#">4</a>
-                                    <a href="#">5</a>
-                                    <a href="#">6</a>
-                                    <a href="#">&raquo;</a>
                                 </div>
                             </div>
                         </div>
 
                     </div>
-                    <!-- /.container-fluid -->
-
                 </div>
-                <!-- End of Main Content -->
-
-                <!-- Footer -->
-                <footer class="sticky-footer bg-white">
-                    <div class="container my-auto">
-                        <div class="copyright text-center my-auto">
-                            <span>Geek Developers &copy; 2021-1</span>
-                        </div>
-                    </div>
-                </footer>
-                <!-- End of Footer -->
-
             </div>
-            <!-- End of Content Wrapper -->
+
+            <!-- End of Main Content -->
+
+
+        </div>
+        <!-- End of Content Wrapper -->
 
         </div>
         <!-- End of Page Wrapper -->
@@ -384,25 +359,69 @@
             <i class="fas fa-angle-up"></i>
         </a>
 
-        <!-- Logout Modal-->
+        <!-- Alerta cierre sesion-->
         <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
              aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">¿Desea Salir?</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Usted está a punto de salir ¿Desea
+                            continuar?</h5>
+                        <button class="close" type="button" data-dismiss="modal" aria-label="Cerrar">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-footer">
+                        <a class="btn btn-primary" style="background-color: #701111; color: #FFFFFF; border: #701111"
+                           href="login.html">Cerrar
+                            Sesión</a>
+                        <a class="btn" type="button"
+                           data-dismiss="modal">
+                            Cancelar
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal1-->
+        <div class="modal fade" id="Modal-Entregar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel2">El pedido será aceptado</h5>
                         <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">×</span>
                         </button>
                     </div>
-                    <div class="modal-body">Al seleecionar el boton salir, usted cerrará su sesión.</div>
                     <div class="modal-footer">
-                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                        <a class="btn btn-primary" style="background-color: #701111; color: #FFFFFF; border: #701111"
-                           href="login.html">Cerrar Sesión</a>
+                        <button type="submit" form="eliminar" class="btn btn-primary">Aceptar</button>
                     </div>
                 </div>
             </div>
+        </div>
+        <!-- Modal2-->
+        <!-- Modal3-->
+        <div class="modal fade" id="Modal-Cancelar-Pedido" tabindex="-1" role="dialog"
+             aria-labelledby="exampleModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel4">¿Desea rechazar el pedido?</h5>
+                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" type="button" data-dismiss="modal">No</button>
+                        <button class="btn btn-primary" type="submit" form="cancelar">Sí</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         </div>
 
         <!-- Bootstrap core JavaScript-->
