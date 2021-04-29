@@ -254,12 +254,14 @@
                                     <td>Arroz con pollo - Restaurante amarillo</td>
                                     <td>17:49</td>
                                     <td>
-                                       <a href="#" class="btn">
-                                           <i class="fas fa-check-circle" style="color: green"></i>
-                                       </a>
+                                        <a style="color: #dce3f9" class="btn btn-success btn-circle align" role="button"
+                                           data-toggle="modal" href="#Modal-Aceptar">
+                                            <i class="fas fa-check"></i></a>
                                     </td>
                                     <td>
-                                        <i class="fas fa-times-circle" style="color: red"></i>
+                                        <a style="color: #dce3f9" class="btn btn-danger btn-circle align" role="button"
+                                           data-toggle="modal" href="#Modal-Rechazar">
+                                            <i class="fas fa-times"></i></a>
                                     </td>
                                 </tr>
                                 <tr>
@@ -267,10 +269,14 @@
                                     <td>Sopa - Restaurante María</td>
                                     <td>18:08</td>
                                     <td>
-                                        <i class="fas fa-check-circle" style="color: green"></i>
+                                        <a style="color: #dce3f9" class="btn btn-success btn-circle align" role="button"
+                                           data-toggle="modal" href="#Modal-Aceptar">
+                                            <i class="fas fa-check"></i></a>
                                     </td>
                                     <td>
-                                        <i class="fas fa-times-circle" style="color: red"></i>
+                                        <a style="color: #dce3f9" class="btn btn-danger btn-circle align" role="button"
+                                           data-toggle="modal" href="#Modal-Rechazar">
+                                            <i class="fas fa-times"></i></a>
                                     </td>
                                 </tr>
                                 </tbody>
@@ -317,10 +323,14 @@
                                         </div>
                                         <div class="row mt-3">
                                             <div class="col-sm-6">
-                                                <i class="fas fa-check-circle" style="color: green"></i>
+                                                <a style="color: #dce3f9" class="btn btn-success btn-circle align" role="button"
+                                                   data-toggle="modal" href="#Modal-Aceptar">
+                                                    <i class="fas fa-check"></i></a>
                                             </div>
                                             <div class="col-sm-6">
-                                                <i class="fas fa-times-circle" style="color: red"></i>
+                                                <a style="color: #dce3f9" class="btn btn-danger btn-circle align" role="button"
+                                                   data-toggle="modal" href="#Modal-Rechazar">
+                                                    <i class="fas fa-times"></i></a>
                                             </div>
                                         </div>
 
@@ -375,6 +385,42 @@
             <div class="modal-footer">
                 <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
                 <a class="btn btn-danger" href="/html/login.html">Cerrar Sesión</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="Modal-Aceptar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel2">El pedido será aceptado</h5>
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-footer">
+                <a class="btn btn-warning" href="pedidoActual.html">Aceptar</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="Modal-Rechazar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel3">El pedido será aceptado</h5>
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-footer">
+                <a class="btn btn-danger" href="pedidoActual.html">Rechazar</a>
             </div>
         </div>
     </div>
