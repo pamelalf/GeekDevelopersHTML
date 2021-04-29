@@ -213,12 +213,17 @@
                     <li class="nav-item dropdown no-arrow">
                         <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span class="mr-2 d-none d-lg-inline text-gray-600 small">Administrador</span>
-                            <i class="fas fa-user"></i>
+                            <span class="mr-2 d-none d-lg-inline text-gray-600 small">Administrador General</span>
+                            <img class="img-profile rounded-circle" src="../bootstrap/img/undraw_profile.svg">
                         </a>
                         <!-- Dropdown - User Information -->
                         <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                              aria-labelledby="userDropdown">
+                            <a class="dropdown-item" href="editarPerfilAG.html">
+                                <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                                Editar Perfil
+                            </a>
+                            <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
                                 <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                                 Cerrar Sesión
@@ -312,10 +317,10 @@
 
                             </div>
                             <hr>
-                            <a href="#" class="btn btn-warning   text-md-center"  data-toggle="modal" data-target="#registrarModal">
+                            <a href="validaciones.html" class="btn btn-warning " >
                                 Registrar
                             </a>
-                            <a href="#" class="btn btn-danger   text-md-center"  data-toggle="modal" data-target="#registrarModal">
+                            <a href="lista.html" class="btn btn-danger"  >
                                 Cancelar
                             </a>
                         </form>
