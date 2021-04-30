@@ -264,18 +264,23 @@
 
                 <form>
                     <div class="form-group row mt-3">
+
                         <div class="col-sm-3 mb-1 ">
                             <div class="input-group">
-                                <input type="text" class="form-control bg-light border-0 small" placeholder="Búsqueda por plato...">
-                                <div class="input-group-append">
-                                    <button class="btn" style="background-color:#701111; color:white;" type="button">
-                                        <i class="fas fa-search fa-sm"></i>
-                                    </button>
+                                <div class="form-check-label">
+                                    <div class="input-group-append">
+                                        <input id="buscador" type="text" class="form-control bg-light small"
+                                               placeholder="Búsqueda por plato..." style="border-color: lightgray">
+                                        <button class="btn" style="background-color:#701111; color:white" type="button">
+                                            <i class="fas fa-search fa-sm"></i>
+                                        </button>
+                                    </div>
                                 </div>
+
                             </div>
                         </div>
                         <div class="col-sm-3 mb-1">
-                            <select class="form-control">
+                            <select id="buscadorPrecios" class="form-control" style="border-color: lightgray">
                                 <option value="">Precio</option>
                                 <option value="">S./00.00 hasta S./5.00</option>
                                 <option value="">S./5.00 hasta S./10.00</option>
@@ -284,8 +289,11 @@
                                 <option value="">S./20.00 a más</option>
                             </select>
                         </div>
-                        <div class="col-sm-2 mb-1" style="margin-right: 10px" >
-                            <a class="btn btn-secondary " >Quitar filtros</a>
+                        <div class="col-sm-2 mb-1 mt-md-auto">
+                            <button class="btn" style="background-color:#701111; color:white; border:#701111" type="button">
+                                <i class="fas fa-filter"></i>
+                            </button>
+                            <a class="btn btn-secondary">Quitar filtros</a>
                         </div>
                     </div>
                 </form>
@@ -294,12 +302,16 @@
                 <!-- DataTales Example -->
                 <div class="card shadow mb-4">
                     <div class="card-header py-3 " style="background-color: #701111;">
-
-
                         <h5 class="font-weight-bold text-white text-lg-center" align="center">CARRITO DE COMPRAS</h5>
                     </div>
                     <div class="card-body">
+                        <!--- TODO MENSAJE DE ALERTA AL NO ENCONTRAR NADA
+                            <div class="alert alert-danger ml-2 mr-2 mt-2" role="alert">
+                                No se encontraron resultados en la búsqueda
+                            </div> -->
+
                         <div class="table-responsive">
+                            <div class="mb-2" style="color: red">Ingrese un número</div>
                             <table class="table table-bordered">
                                 <thead>
                                 <tr>

@@ -17,6 +17,7 @@
 
     <!-- Custom styles for this page -->
     <link href="../bootstrap/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+    <link href="cssC/estilosCliente.css" rel="stylesheet" type="text/css">
 
     <title>Ver Cupones</title>
 </head>
@@ -275,21 +276,18 @@
                         </div>
                         <div class="col-sm-3 mb-1">
                             <select class="form-control">
-                                <option value="">Precio</option>
-                                <option value="">S./00.00 hasta S./5.00</option>
-                                <option value="">S./5.00 hasta S./10.00</option>
-                                <option value="">S./10.00 hasta S./15.00</option>
-                                <option value="">S./15.00 hasta S./20.00</option>
+                                <option value="" selected>Descuento</option>
+                                <option value="">0% hasta 25%</option>
+                                <option value="">25% hasta 50%</option>
+                                <option value="">50% hasta 75%</option>
+                                <option value="">75% hasta 100%</option>
                             </select>
                         </div>
-                        <div class="col-sm-3 mb-1">
-                            <select class="form-control" style="justify-content: right">
-                                <option value="">Disponibilidad</option>
-                                <option value="">Disponible</option>
-                                <option value="">No disponible</option>
-                            </select>
-                        </div>
+
                         <div class="col-sm-2 mb-1" style="margin-right: 10px" >
+                            <button class="btn" style="background-color:#701111; color:white; border:#701111" type="button">
+                                <i class="fas fa-filter"></i>
+                            </button>
                             <a class="btn btn-secondary " >Quitar filtros</a>
                         </div>
                     </div>
@@ -300,6 +298,10 @@
                     <div class="card-header py-3" style="background-color: #701111;">
                         <h5 class="font-weight-bold text-white text-center mb-0">CUPONES DISPONIBLES</h5>
                     </div>
+                    <!--- TODO MENSAJE DE ALERTA AL NO ENCONTRAR NADA
+                    <div class="alert alert-danger ml-2 mr-2 mt-2" role="alert">
+                        No se encontraron resultados en la búsqueda
+                    </div> -->
 
                     <div class="container mt-4 mb-4">
                         <div class="row mb-5 mr-xl-5">
@@ -330,7 +332,7 @@
                                     </div>
                                     <h6>Política: </h6>
                                     <textarea class="form-control" aria-label="With textarea"
-                                              style="background: #ededed" disabled>Por su primera compra obten un 50% de descuento en la Rosa Nautica :o</textarea>
+                                              style="background: #ededed" disabled>Por su primera compra obten un 10% de descuento en la Rosa Nautica :o</textarea>
 
                                 </form>
                             </div>
@@ -341,7 +343,7 @@
                                     <img src="img/cupon1.jpg" alt="Avatar"
                                          class="image2 shadow" style="height: 250px; width: 400px">
                                     <a class="overlay2" href="#" style="height: 250px; width: 400px">
-                                        <h1 class="text2 font-weight-bolder text-left">CUPON #1</h1>
+                                        <h1 class="text2 font-weight-bolder text-left">CUPON #2</h1>
                                     </a>
                                 </div>
 
@@ -363,7 +365,7 @@
                                     </div>
                                     <h6>Política: </h6>
                                     <textarea class="form-control" aria-label="With textarea"
-                                              style="background: #ededed" disabled>Por su primera compra obten un 50% de descuento en la Rosa Nautica :o</textarea>
+                                              style="background: #ededed" disabled>Por su primera compra obten un 10% de descuento en la Rosa Nautica :o</textarea>
 
                                 </form>
                             </div>
@@ -374,7 +376,7 @@
                                     <img src="img/cupon1.jpg" alt="Avatar"
                                          class="image2 shadow" style="height: 250px; width: 400px">
                                     <a class="overlay2" href="#" style="height: 250px; width: 400px">
-                                        <h1 class="text2 font-weight-bolder text-left">CUPON #1</h1>
+                                        <h1 class="text2 font-weight-bolder text-left">CUPON #3</h1>
                                     </a>
                                 </div>
 
@@ -396,7 +398,7 @@
                                     </div>
                                     <h6>Política: </h6>
                                     <textarea class="form-control" aria-label="With textarea"
-                                              style="background: #ededed" disabled>Por su primera compra obten un 50% de descuento en la Rosa Nautica :o</textarea>
+                                              style="background: #ededed" disabled>Por su primera compra obten un 10% de descuento en la Rosa Nautica :o</textarea>
 
                                 </form>
                             </div>
@@ -407,7 +409,7 @@
                                     <img src="img/cupon1.jpg" alt="Avatar"
                                          class="image2 shadow" style="height: 250px; width: 400px">
                                     <a class="overlay2" href="#" style="height: 250px; width: 400px">
-                                        <h1 class="text2 font-weight-bolder text-left">CUPON #1</h1>
+                                        <h1 class="text2 font-weight-bolder text-left">CUPON #4</h1>
                                     </a>
                                 </div>
 
@@ -429,7 +431,7 @@
                                     </div>
                                     <h6>Política: </h6>
                                     <textarea class="form-control" aria-label="With textarea"
-                                              style="background: #ededed" disabled>Por su primera compra obten un 50% de descuento en la Rosa Nautica :o</textarea>
+                                              style="background: #ededed" disabled>Por su primera compra obten un 10% de descuento en la Rosa Nautica :o</textarea>
 
                                 </form>
                             </div>
@@ -440,7 +442,7 @@
                                     <img src="img/cupon1.jpg" alt="Avatar"
                                          class="image2 shadow" style="height: 250px; width: 400px">
                                     <a class="overlay2" href="#" style="height: 250px; width: 400px">
-                                        <h1 class="text2 font-weight-bolder text-left">CUPON #1</h1>
+                                        <h1 class="text2 font-weight-bolder text-left">CUPON #5</h1>
                                     </a>
                                 </div>
 
@@ -462,7 +464,7 @@
                                     </div>
                                     <h6>Política: </h6>
                                     <textarea class="form-control" aria-label="With textarea"
-                                              style="background: #ededed" disabled>Por su primera compra obten un 50% de descuento en la Rosa Nautica :o</textarea>
+                                              style="background: #ededed" disabled>Por su primera compra obten un 10% de descuento en la Rosa Nautica :o</textarea>
 
                                 </form>
                             </div>
@@ -473,7 +475,7 @@
                                     <img src="img/cupon1.jpg" alt="Avatar"
                                          class="image2 shadow" style="height: 250px; width: 400px">
                                     <a class="overlay2" href="#" style="height: 250px; width: 400px">
-                                        <h1 class="text2 font-weight-bolder text-left">CUPON #1</h1>
+                                        <h1 class="text2 font-weight-bolder text-left">CUPON #6</h1>
                                     </a>
                                 </div>
 
@@ -495,7 +497,7 @@
                                     </div>
                                     <h6>Política: </h6>
                                     <textarea class="form-control" aria-label="With textarea"
-                                              style="background: #ededed" disabled>Por su primera compra obten un 50% de descuento en la Rosa Nautica :o</textarea>
+                                              style="background: #ededed" disabled>Por su primera compra obten un 10% de descuento en la Rosa Nautica :o</textarea>
 
                                 </form>
                             </div>
