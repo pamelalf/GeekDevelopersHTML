@@ -205,6 +205,14 @@
               <div class="form-group row">
                 <div class="col-sm-2 mb-1 ">
                   <select class="form-control  ">
+                    <option value="" disabled selected>Fecha</option>
+                    <option value="Entregado">Hoy</option>
+                    <option value="Pendiente">Esta semana</option>
+                    <option value="Cancelado">Este mes</option>
+                  </select>
+                </div>
+                <div class="col-sm-2 mb-1 ">
+                  <select class="form-control  ">
                     <option value="" disabled selected>Estado</option>
                     <option value="Entregado">Entregado</option>
                     <option value="Pendiente">Pendiente</option>
@@ -230,7 +238,7 @@
                     <i class="fas fa-filter"></i>
                   </button>
                 </div>
-                <div class="col-sm-4 mb-1 ml-0" style="text-align: right">
+                <div class="col-sm-2 mb-1 ml-0" style="text-align: right">
                   <a class="btn btn-secondary">Quitar filtros</a>
                 </div>
               </div>
@@ -244,7 +252,7 @@
 
                 <div class="d-sm-flex align-items-center justify-content-between">
 
-                  <h5 class="font-weight-bold text-white text-lg-center mx-auto ">LISTA DE PEDIDOS POR DÍA</h5>
+                  <h5 class="font-weight-bold text-white text-lg-center mx-auto ">LISTA DE PEDIDOS DEL DÍA</h5>
 
                 </div>
 
